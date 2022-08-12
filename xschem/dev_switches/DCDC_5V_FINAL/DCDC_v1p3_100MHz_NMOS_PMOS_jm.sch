@@ -5,6 +5,7 @@ V {}
 S {}
 E {}
 T {PULSE(VL VH TD TR TF PW PER PHASE) } -810 60 0 0 0.4 0.4 {}
+T {cambio de prueba} 780 100 0 0 0.4 0.4 {}
 N -700 -320 -700 -300 { lab=GND}
 N 390 -510 430 -510 { lab=D1TOP_5V}
 N 470 -560 470 -540 { lab=VH}
