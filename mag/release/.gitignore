@@ -1,0 +1,10 @@
+precheck_results
+*/tmp
+*/*/tmp
+*.ext
+*.bak
+*.out
+*.log
+*.spice
+*.py
+*.tcl
