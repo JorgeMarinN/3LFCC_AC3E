@@ -5,5 +5,4 @@ precheck_results
 *.bak
 *.out
 *.log
-*.sim
 *.spice
