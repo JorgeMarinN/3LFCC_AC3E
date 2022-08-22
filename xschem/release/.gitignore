@@ -6,3 +6,4 @@ precheck_results
 *.out
 *.log
 *.spice
+*.mag

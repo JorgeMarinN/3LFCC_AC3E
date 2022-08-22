@@ -8,3 +8,4 @@ precheck_results
 *.spice
 *.py
 *.tcl
+*.sch
