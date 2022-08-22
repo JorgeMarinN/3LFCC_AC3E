@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1661035225
+timestamp 1661199807
 << checkpaint >>
 rect 170 61370 38630 137830
 rect 6770 -630 38630 61370
@@ -102,4 +102,14 @@ use pmos_waffle_48x48  pmos_waffle_48x48_1
 timestamp 1624430562
 transform 1 0 6200 0 -1 131800
 box -5400 -5400 31800 31800
+<< labels >>
+rlabel metal2 4168 131219 4797 131806 1 S1
+rlabel metal2 4225 66197 4854 66784 1 S2
+rlabel metal2 10261 57177 10890 57764 1 S3
+rlabel metal2 10064 5384 10693 5971 1 S4
+rlabel metal5 13240 2292 13869 2879 1 Vss
+rlabel metal5 8350 30451 8979 31038 1 fc2
+rlabel metal5 37352 61196 37981 61783 1 Vout
+rlabel metal5 7310 134235 7939 134822 1 Vdd
+rlabel metal5 2366 99271 2995 99858 1 fc1
 << end >>
