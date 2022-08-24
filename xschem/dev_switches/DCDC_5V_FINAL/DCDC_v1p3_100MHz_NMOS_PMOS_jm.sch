@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -38,12 +38,11 @@ N -520 -160 -520 -140 { lab=D2}
 N -520 -180 -500 -180 { lab=D2}
 N -520 -180 -520 -160 { lab=D2}
 N -520 -80 -520 -30 { lab=VSS}
-N 770 -360 870 -360 { lab=VOUT}
-N 870 -360 870 -340 { lab=VOUT}
+N 770 -360 870 -360 { lab=#net1}
+N 870 -360 870 -340 { lab=#net1}
 N 870 -280 870 -230 { lab=VSS}
-N 870 -360 1040 -360 { lab=VOUT}
 N 1040 -360 1040 -330 { lab=VOUT}
-N 1040 -210 1040 -160 { lab=VSS}
+N 1040 -270 1040 -220 { lab=VSS}
 N 80 -50 80 -20 {
 lab=D1}
 N 80 -20 160 -20 {
@@ -158,6 +157,10 @@ N 450 160 550 160 {
 lab=D1BOT_5V}
 N 550 140 550 160 {
 lab=D1BOT_5V}
+N 870 -360 930 -360 {
+lab=#net1}
+N 990 -360 1040 -360 {
+lab=VOUT}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 450 -310 0 0 {name=MN2
 L=0.5
 W=4.38
@@ -199,7 +202,7 @@ C {devices/vsource.sym} -700 -350 0 0 {name=V1 value=\{VIN\}}
 C {devices/gnd.sym} -700 -300 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 470 -560 0 0 {name=l7 sig_type=std_logic lab=VH}
 C {devices/lab_wire.sym} -700 -430 0 0 {name=l8 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} -810 -110 0 0 {name=V3 value="PULSE(0 \{VIN\} 5n 0.3n 0.3n 10n 20n)"}
+C {devices/vsource.sym} -810 -110 0 0 {name=V3 value="PULSE(0 \{VIN\} 5n 0.1n 0.1n 7n 20n)"}
 C {devices/lab_pin.sym} -790 -180 0 1 {name=l125 sig_type=std_logic lab=D1
 }
 C {devices/vsource.sym} -570 -350 0 0 {name=V2 value=0}
@@ -208,11 +211,11 @@ C {devices/lab_wire.sym} -570 -430 0 0 {name=l10 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 470 -140 0 0 {name=l6 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -810 -30 0 0 {name=l11 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 610 -360 0 1 {name=l12 sig_type=std_logic lab=VOUT_CORE}
-C {devices/vsource.sym} -520 -110 0 0 {name=V4 value="PULSE(0 \{VIN\} 15n 0.3n 0.3n 10n 20n)"}
+C {devices/vsource.sym} -520 -110 0 0 {name=V4 value="PULSE(0 \{VIN\} 15n 0.1n 0.1n 7n 20n)"}
 C {devices/lab_pin.sym} -500 -180 0 1 {name=l13 sig_type=std_logic lab=D2
 }
 C {devices/lab_wire.sym} -520 -30 0 0 {name=l14 sig_type=std_logic lab=VSS}
-C {devices/code_shown.sym} -790 170 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} -870 370 0 0 {name=s1 only_toplevel=false value="
 .param VIN = 1.8
 .param VH = 5
 .param RL = 50
@@ -222,17 +225,21 @@ C {devices/code_shown.sym} -790 170 0 0 {name=s1 only_toplevel=false value="
 .ic v(vout)=0
 .ic v(V_CFBOT) = 0
 *.probe vd(MP2:G:S)
-
+*.save all
+.save v(d1) v(d2) v(d1top_5v) v(d2_5v) v(d2bot_5v) v(d1bot_5v) v(vout) v(vout_core) v(vdd) v(vh) i(v1) i(v5) i(vmeas)
 .param mc_mm_switch=0
+.lib /home/jorge/Documents/Postdoc/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 *.lib /usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice ss
-.lib /foss/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice TT
+*.lib /foss/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice TT
 *.include /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 *.include /home/jorge/Documents/Postdoc/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
-.options savecurrents
+*.options savecurrents
 .control
-save all
+*save all
 tran 100n 2u
 write DCDC_v1p3_100MHz_NMOS_PMOS.raw
+*wrdata ~/Documents/Postdoc/chipathon2022/3LFCC_AC3E/xschem/dev_switches/DCDC_5V_FINAL/3LFCC_v1p3.txt tran.v(vout) tran.i(vmeas) tran.v(vdd) tran.i(v1) tran.v(vh) tran.i(v5)
+wrdata ~/Documents/Postdoc/chipathon2022/3LFCC_AC3E/xschem/dev_switches/DCDC_5V_FINAL/3LFCC_v1p3.txt tran.v(vout) tran.i(v5) tran.i(v1)
 .endc
 "}
 C {devices/lab_wire.sym} 300 -450 0 0 {name=l15 sig_type=std_logic lab=V_CFTOP}
@@ -248,14 +255,8 @@ value=50n
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} 870 -230 0 0 {name=l17 sig_type=std_logic lab=VSS}
-C {devices/res.sym} 1040 -240 2 0 {name=R38
-value=\{RL\}
-footprint=1206
-device=resistor
-m=1}
-C {devices/lab_wire.sym} 1040 -160 0 0 {name=l18 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 1040 -220 0 0 {name=l18 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1040 -360 0 1 {name=l19 sig_type=std_logic lab=VOUT}
-C {devices/vsource.sym} 1040 -300 0 0 {name=VS_RL value=0}
 C {devices/lab_pin.sym} 80 -50 0 1 {name=l20 sig_type=std_logic lab=D1
 }
 C {devices/lab_wire.sym} 510 -60 0 0 {name=l21 sig_type=std_logic lab=VH}
@@ -317,3 +318,5 @@ C {devices/lab_wire.sym} 500 70 0 0 {name=l39 sig_type=std_logic lab=VH}
 C {devices/lab_wire.sym} 560 70 0 0 {name=l40 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 550 140 0 0 {name=l41 sig_type=std_logic lab=D1BOT_5V}
 C {LS_FINAL.sym} 300 110 0 0 {name=x5}
+C {devices/isource.sym} 1040 -300 0 0 {name=I0 value=0.2m}
+C {devices/vsource.sym} 960 -360 3 0 {name=Vmeas value=0}
