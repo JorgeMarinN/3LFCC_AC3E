@@ -3,15 +3,17 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
+df=pd.read_fwf('3LFCC_v1p4.txt')
+df.to_csv('3LFCC_v1p4.csv', index=False)
 data = pd.read_csv("3LFCC_v1p4.csv").values
 num_rows, num_cols = data.shape
 print(num_rows)
 print(num_cols)
 #thres  = 0.9
-x_out = data[1000:num_rows,1]
-y_out = data[1000:num_rows,2]
-x_in = data[1000:num_rows,3]
-y_in = data[1000:num_rows,4]
+x_out = data[1000:num_rows,0]
+y_out = data[1000:num_rows,1]
+x_in = data[1000:num_rows,2]
+y_in = data[1000:num_rows,3]
 #x=x[~pd.isnull(x)]
 #y=y[~pd.isnull(y)]
 #kk2=np.diff(y > thres, prepend=False)
@@ -25,7 +27,7 @@ iin_rms = np.sqrt(np.mean(y_in**2))
 eff = (vout_rms*0.3/(iin_rms*5))*100
 print("I_in_rms",iin_rms,"[A]")
 print("V_out_rms:",vout_rms,"[V]")
-print("efiencia:", eff ,"[%]")
+print("eficiencia:", eff ,"[%]")
 plt.plot(x_in,y_in)
 plt.show()
 
