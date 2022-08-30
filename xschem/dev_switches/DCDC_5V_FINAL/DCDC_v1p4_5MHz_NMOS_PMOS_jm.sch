@@ -202,7 +202,7 @@ C {devices/vsource.sym} -700 -350 0 0 {name=V1 value=\{VIN\}}
 C {devices/gnd.sym} -700 -300 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 470 -560 0 0 {name=l7 sig_type=std_logic lab=VH}
 C {devices/lab_wire.sym} -700 -430 0 0 {name=l8 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} -810 -110 0 0 {name=V3 value="PULSE(0 \{VIN\} 50n 0.1n 0.1n 50n 200n)"}
+C {devices/vsource.sym} -810 -110 0 0 {name=V3 value="PULSE(0 \{VIN\} 5n 0.1n 0.1n 5n 20n)"}
 C {devices/lab_pin.sym} -790 -180 0 1 {name=l125 sig_type=std_logic lab=D1
 }
 C {devices/vsource.sym} -570 -350 0 0 {name=V2 value=0}
@@ -211,7 +211,7 @@ C {devices/lab_wire.sym} -570 -430 0 0 {name=l10 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 470 -140 0 0 {name=l6 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -810 -30 0 0 {name=l11 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 610 -360 0 1 {name=l12 sig_type=std_logic lab=VOUT_CORE}
-C {devices/vsource.sym} -520 -110 0 0 {name=V4 value="PULSE(0 \{VIN\} 150n 0.1n 0.1n 50n 200n)"}
+C {devices/vsource.sym} -520 -110 0 0 {name=V4 value="PULSE(0 \{VIN\} 15n 0.1n 0.1n 5n 20n)"}
 C {devices/lab_pin.sym} -500 -180 0 1 {name=l13 sig_type=std_logic lab=D2
 }
 C {devices/lab_wire.sym} -520 -30 0 0 {name=l14 sig_type=std_logic lab=VSS}

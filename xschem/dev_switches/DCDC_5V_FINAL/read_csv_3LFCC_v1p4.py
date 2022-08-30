@@ -27,6 +27,8 @@ print(vout_rms)
 print(eff)
 plt.plot(x_in,y_in)
 plt.show()
+plt.plot(x_out,y_out)
+plt.show()
 
 #plt.plot([1.9e-12,1.92e-12,1.94e-12,1.96e-12,1.98e-12,2e-12,2.02e-12,2.04e-12,2.06e-12,2.08e-12,2.1e-12],frq)
 #plt.show()
