@@ -5,12 +5,12 @@ V {}
 S {}
 E {}
 T {PULSE(VL VH TD TR TF PW PER PHASE) } -380 -120 0 0 0.4 0.4 {}
-N -480 -320 -480 -300 { lab=GND}
-N -480 -430 -480 -380 { lab=VDD}
-N -390 -320 -390 -300 { lab=GND}
-N -390 -430 -390 -380 { lab=VSS}
-N -310 -320 -310 -300 { lab=GND}
-N -310 -430 -310 -380 { lab=VH}
+N -490 -400 -490 -380 { lab=GND}
+N -490 -510 -490 -460 { lab=VDD}
+N -400 -400 -400 -380 { lab=GND}
+N -400 -510 -400 -460 { lab=VSS}
+N -320 -400 -320 -380 { lab=GND}
+N -320 -510 -320 -460 { lab=VH}
 N -160 -540 -160 -530 {
 lab=VH}
 N -160 -540 -150 -540 {
@@ -63,10 +63,10 @@ N 430 -340 430 -330 {
 lab=V_CFTOP}
 N 270 -330 430 -330 {
 lab=V_CFTOP}
-N 890 -450 890 -430 { lab=#net1}
+N 890 -450 890 -430 { lab=VOUT}
 N 890 -370 890 -320 { lab=VSS}
 N 890 -450 950 -450 {
-lab=#net1}
+lab=VOUT}
 N 1010 -450 1060 -450 {
 lab=VOUT}
 N 680 -450 780 -450 {
@@ -78,20 +78,26 @@ lab=VH}
 N 610 -410 640 -410 {
 lab=VSS}
 N 840 -450 870 -450 {
-lab=#net1}
+lab=VOUT}
 N 870 -450 890 -450 {
-lab=#net1}
-C {devices/vsource.sym} -480 -350 0 0 {name=V1 value=\{VIN\}}
-C {devices/gnd.sym} -480 -300 0 0 {name=l5 lab=GND}
-C {devices/lab_wire.sym} -480 -430 0 0 {name=l8 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} -160 -500 0 0 {name=V4 value="PULSE(0 \{VIN\} 0n 0.1n 0.1n 500n 1000n)"}
+lab=VOUT}
+N 950 -450 1010 -450 {
+lab=VOUT}
+N 1010 -360 1010 -320 {
+lab=VSS}
+N 1010 -450 1010 -420 {
+lab=VOUT}
+C {devices/vsource.sym} -490 -430 0 0 {name=V1 value=\{VIN\}}
+C {devices/gnd.sym} -490 -380 0 0 {name=l5 lab=GND}
+C {devices/lab_wire.sym} -490 -510 0 0 {name=l8 sig_type=std_logic lab=VDD}
+C {devices/vsource.sym} -160 -500 0 0 {name=V4 value="PULSE(0 5 0 0.001n 0.001n 665n 1000n)"}
 C {devices/lab_pin.sym} -150 -540 0 1 {name=l125 sig_type=std_logic lab=VH
 }
-C {devices/vsource.sym} -390 -350 0 0 {name=V2 value=0}
-C {devices/gnd.sym} -390 -300 0 0 {name=l9 lab=GND}
-C {devices/lab_wire.sym} -390 -430 0 0 {name=l10 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} -400 -430 0 0 {name=V2 value=0}
+C {devices/gnd.sym} -400 -380 0 0 {name=l9 lab=GND}
+C {devices/lab_wire.sym} -400 -510 0 0 {name=l10 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -170 -460 0 0 {name=l11 sig_type=std_logic lab=D1}
-C {devices/vsource.sym} -160 -320 0 0 {name=V6 value="PULSE(0 \{VIN\} 121n 0.1n 0.1n 278n 1000n)"}
+C {devices/vsource.sym} -160 -320 0 0 {name=V6 value="PULSE(0 5 174n 0.001n 0.001n 313n 1000n)"}
 C {devices/code_shown.sym} -850 -80 0 0 {name=s1 only_toplevel=false value="
 .param VIN = 5
 .param VH = 5
@@ -132,16 +138,16 @@ plot v(vout) v(vout_core)
 *plot v(v_cftop,v_cfbot) v(vout)
 .endc
 "}
-C {devices/vsource.sym} -310 -350 0 0 {name=V3 value=\{VH\}}
-C {devices/gnd.sym} -310 -300 0 0 {name=l23 lab=GND}
-C {devices/lab_wire.sym} -310 -430 0 0 {name=l24 sig_type=std_logic lab=VH}
-C {devices/vsource.sym} -160 -410 0 0 {name=V5 value="PULSE(\{VIN\} 0 21n 0.1n 0.1n 458n 1000n)"}
+C {devices/vsource.sym} -320 -430 0 0 {name=V3 value=\{VH\}}
+C {devices/gnd.sym} -320 -380 0 0 {name=l23 lab=GND}
+C {devices/lab_wire.sym} -320 -510 0 0 {name=l24 sig_type=std_logic lab=VH}
+C {devices/vsource.sym} -160 -410 0 0 {name=V5 value="PULSE(5 0 163n 0.001n 0.001n 336n 1000n)"}
 C {devices/lab_pin.sym} -150 -450 0 1 {name=l42 sig_type=std_logic lab=V_CFTOP}
 C {devices/lab_wire.sym} -170 -370 0 0 {name=l43 sig_type=std_logic lab=D2}
 C {devices/lab_pin.sym} -150 -360 0 1 {name=l44 sig_type=std_logic lab=D2_N
 }
 C {devices/lab_wire.sym} -170 -280 0 0 {name=l13 sig_type=std_logic lab=V_CFBOT}
-C {devices/vsource.sym} -160 -230 0 0 {name=V7 value="PULSE(\{VIN\} 0 620n 0.1n 0.1n 270n 1000n)"}
+C {devices/vsource.sym} -160 -230 0 0 {name=V7 value="PULSE(0 5 676n 0.001n 0.001n 310n 1000n)"}
 C {devices/lab_pin.sym} -150 -270 0 1 {name=l14 sig_type=std_logic lab=D1_N
 }
 C {devices/lab_wire.sym} -170 -190 0 0 {name=l45 sig_type=std_logic lab=VSS}
@@ -160,16 +166,23 @@ C {devices/lab_wire.sym} 270 -230 0 0 {name=l28 sig_type=std_logic lab=V_CFBOT}
 C {devices/lab_wire.sym} 680 -450 0 1 {name=l29 sig_type=std_logic lab=VOUT_CORE}
 C {devices/ind.sym} 810 -450 1 0 {name=L1
 m=1
-value=5n
+value=100u
 footprint=1206
 device=inductor}
 C {devices/capa.sym} 890 -400 0 0 {name=C1
 m=1
-value=50n
+value=12n
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} 890 -320 0 0 {name=l30 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1060 -450 0 1 {name=l31 sig_type=std_logic lab=VOUT}
-C {devices/vsource.sym} 980 -450 3 0 {name=Vmeas1 value=0}
 C {devices/lab_wire.sym} 640 -490 2 0 {name=l32 sig_type=std_logic lab=VH}
 C {devices/lab_wire.sym} 640 -410 2 0 {name=l33 sig_type=std_logic lab=VSS}
+C {devices/isource.sym} 1010 -390 0 0 {name=I0 value=0.15
+}
+C {devices/lab_wire.sym} 1010 -320 0 0 {name=l1 sig_type=std_logic lab=VSS}
+C {devices/res.sym} 1120 -340 0 0 {name=R1
+value=22
+footprint=1206
+device=resistor
+m=1}

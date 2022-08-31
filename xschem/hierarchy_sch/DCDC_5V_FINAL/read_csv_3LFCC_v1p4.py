@@ -21,12 +21,16 @@ y_in = data[1000:num_rows,3]
 #lgt=kk3.shape
 #print(lgt[0]/(x[kk3[-1]]-x[kk3[0]]))
 
-vout_rms = np.sqrt(np.mean(y_out**2))
-iin_rms = np.sqrt(np.mean(y_in**2))
+r = 22
+vout = np.mean(y_out)
+iin = np.mean(y_in)
+pout = (vout^2)/r
+pin = 5*iin
+
 ##eff = vout_rms*0.3/(iin_rms*5)*100
-eff = (vout_rms*0.3/(iin_rms*5))*100
-print("I_in_rms",iin_rms,"[A]")
-print("V_out_rms:",vout_rms,"[V]")
+eff = pout/pin
+print("I_in promedio",iin,"[A]")
+print("V_out promedio:",vout,"[V]")
 print("eficiencia:", eff ,"[%]")
 plt.plot(x_in,y_in)
 plt.show()
