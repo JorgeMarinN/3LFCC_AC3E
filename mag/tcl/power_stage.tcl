@@ -7,13 +7,15 @@
 #	Based on Open PMIC	#
 # #####################	#
 
+drc style drc(full)
+
 # NMOS 1
 box 0um 0 10um 10um
 getcell nmos_waffle_36x36.mag
 box 34um 61.61um 44um 71um
 paint {metal3 metal4 metal5}
-box 30um 59.25um 53um 68um 
-paint metal2
+#box 30um 59.25um 53um 68um 
+#paint metal2
 box 30um 57um 49.62um 60um
 paint metal2
 box 30um 52um 53um 57.49um 
