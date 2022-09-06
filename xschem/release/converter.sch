@@ -22,7 +22,7 @@ N 600 -230 650 -230 {
 lab=out}
 N 600 -190 650 -190 {
 lab=xxx}
-C {personal/3LFCC_AC3E/xschem/release/power_stage.sym} 200 -20 0 0 {name=X1}
+C {power_stage.sym} 200 -20 0 0 {name=X1}
 C {devices/capa.sym} 450 -50 3 0 {name=CFLY
 m=1
 value=6.8n

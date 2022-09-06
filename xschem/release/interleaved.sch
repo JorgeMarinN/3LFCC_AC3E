@@ -54,11 +54,11 @@ N -100 -380 20 -380 {}
 N -100 -280 20 -280 {}
 N -100 -180 20 -180 {}
 N -100 -80 20 -80 {}
-C {personal/3LFCC_AC3E/xschem/release/converter.sym} 610 60 0 0 {name=X1}
-C {personal/3LFCC_AC3E/xschem/release/level_shifter.sym} 170 -60 0 0 {name=x1}
-C {personal/3LFCC_AC3E/xschem/release/level_shifter.sym} 170 -160 0 0 {name=x2}
-C {personal/3LFCC_AC3E/xschem/release/level_shifter.sym} 170 -260 0 0 {name=x3}
-C {personal/3LFCC_AC3E/xschem/release/level_shifter.sym} 170 -360 0 0 {name=x4}
+C {converter.sym} 610 60 0 0 {name=X1}
+C {level_shifter.sym} 170 -60 0 0 {name=x1}
+C {level_shifter.sym} 170 -160 0 0 {name=x2}
+C {level_shifter.sym} 170 -260 0 0 {name=x3}
+C {level_shifter.sym} 170 -360 0 0 {name=x4}
 C {devices/ipin.sym} -300 -380 1 0 {name=p3 lab=VDD}
 C {devices/lab_pin.sym} -300 -320 3 0 {name=l7 sig_type=std_logic lab=VDD_}
 C {devices/lab_pin.sym} 360 -360 2 0 {name=l8 sig_type=std_logic lab=VDD_}

@@ -44,8 +44,8 @@ N 600 -110 640 -110 {
 lab=VN}
 N -150 -270 -150 -210 {
 lab=VDD_}
-C {personal/3LFCC_AC3E/xschem/release/interleaved.sym} -20 260 0 0 {name=X1}
-C {personal/3LFCC_AC3E/xschem/release/interleaved.sym} -20 -60 0 0 {name=X2}
+C {interleaved.sym} -20 260 0 0 {name=X1}
+C {interleaved.sym} -20 -60 0 0 {name=X2}
 C {devices/lab_pin.sym} 0 -260 0 0 {name=l1 sig_type=std_logic lab=VDD_}
 C {devices/lab_pin.sym} 0 60 0 0 {name=l2 sig_type=std_logic lab=VDD_}
 C {devices/lab_pin.sym} 440 -210 2 0 {name=l3 sig_type=std_logic lab=VP_}
