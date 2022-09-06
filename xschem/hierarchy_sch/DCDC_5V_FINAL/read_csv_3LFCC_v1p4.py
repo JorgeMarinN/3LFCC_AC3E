@@ -24,12 +24,14 @@ y_in = data[1000:num_rows,3]
 r = 22
 vout = np.mean(y_out)
 iin = np.mean(y_in)
-pout = (vout^2)/r
+iout = vout/r
+pout = vout*iout
 pin = 5*iin
 
 ##eff = vout_rms*0.3/(iin_rms*5)*100
 eff = pout/pin
 print("I_in promedio",iin,"[A]")
+print("I_out promedio",iout,"[A]")
 print("V_out promedio:",vout,"[V]")
 print("eficiencia:", eff ,"[%]")
 plt.plot(x_in,y_in)

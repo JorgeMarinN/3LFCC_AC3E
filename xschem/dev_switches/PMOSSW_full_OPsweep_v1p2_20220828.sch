@@ -45,10 +45,10 @@ save all
 
 
 *		Capacitance Gate
-*save @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cgg]
-*dc VGS -5 5 0.1 VDS 0 10 1
-*print @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cgg]
-*plot @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cgg]
+save @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cgg]
+dc VGS -5 5 0.1 VDS 0 10 1
+print @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cgg]
+plot @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cgg]
 
 *		Curvas Id vs VGS
 *save @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[id]
@@ -60,10 +60,10 @@ save all
 
 
 *		Curvas Id vs VDS
-save @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[id]
-dc VS 0 5 0.1 VGS -5 0 1
+*save @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[id]
+*dc VS 0 5 0.1 VGS -5 0 1
 
-plot @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[id]
+*plot @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[id]
 *print all
 .endc
 "}

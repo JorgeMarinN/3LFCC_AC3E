@@ -32,7 +32,7 @@ C {devices/code_shown.sym} 40 -970 0 0 {name=s1 only_toplevel=false value="
 *.param RL = 50
 *.option temp=70
 *.ic v(V_CFTOP) = VIN/2
-.lib /home/jorge/Documents/Postdoc/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.lib /foss/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice TT
 
 *.dc VDS 0 1.8 0.05
 *.op
@@ -44,13 +44,13 @@ save all
 *set noglob
 *save @m.xm1.msky130_fd_pr__nfet_g5v0d10v5[gm]
 *save @m.xm1.msky130_fd_pr__nfet_g5v0d10v5[vdsat]
-save @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cgg]
+save @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cds]
 *save @m.xm1.msky130_fd_pr__nfet_g5v0d10v5[vth]
 *op
-dc VGS -5 5 0.1 VS 10 20 1
+dc VGS -5 5 0.1 VS 0 5 1
 *print all
-print @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cgg]
-plot @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cgg]
+print @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cds]
+plot @m.xm1.msky130_fd_pr__pfet_g5v0d10v5[cds]
 *plot @m.xm1.msky130_fd_pr__nfet_g5v0d10v5
 .endc
 "}
