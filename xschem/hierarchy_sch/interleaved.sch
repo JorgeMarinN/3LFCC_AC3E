@@ -50,11 +50,18 @@ N 320 -80 360 -80 {
 lab=VP_}
 N 1220 -380 1220 -320 {
 lab=VP}
-N -100 -380 20 -380 {}
-N -100 -280 20 -280 {}
-N -100 -180 20 -180 {}
-N -100 -80 20 -80 {}
-C {personal/3LFCC_AC3E/xschem/hierarchy_sch/converter.sym} 610 60 0 0 {name=X1}
+N -100 -380 20 -380 {
+lab=D1}
+N -100 -280 20 -280 {
+lab=D2}
+N -100 -180 20 -180 {
+lab=D3}
+N -100 -80 20 -80 {
+lab=D4}
+N 810 20 810 90 {
+lab=fc1_read_int}
+N 900 20 900 90 {
+lab=fc2_read}
 C {personal/3LFCC_AC3E/xschem/dev_switches/DCDC_5V_FINAL/LS_FINAL.sym} 170 -60 0 0 {name=x1}
 C {personal/3LFCC_AC3E/xschem/dev_switches/DCDC_5V_FINAL/LS_FINAL.sym} 170 -160 0 0 {name=x2}
 C {personal/3LFCC_AC3E/xschem/dev_switches/DCDC_5V_FINAL/LS_FINAL.sym} 170 -260 0 0 {name=x3}
@@ -79,3 +86,8 @@ C {devices/ipin.sym} -100 -380 0 0 {name=p1 lab=D1}
 C {devices/ipin.sym} -100 -280 0 0 {name=p2 lab=D2}
 C {devices/ipin.sym} -100 -180 0 0 {name=p8 lab=D3}
 C {devices/ipin.sym} -100 -80 0 0 {name=p9 lab=D4}
+C {personal/3LFCC_AC3E/xschem/hierarchy_sch/converter.sym} 610 60 0 0 {name=X1}
+C {devices/opin.sym} 810 90 1 0 {name=p7 lab=fc1_read_int
+}
+C {devices/opin.sym} 900 90 1 0 {name=p10 lab=fc2_read_int
+}
