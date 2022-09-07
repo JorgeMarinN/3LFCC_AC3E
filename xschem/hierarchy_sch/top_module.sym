@@ -31,13 +31,13 @@ L 4 260 -300 260 -260 {}
 L 4 290 -300 290 -260 {}
 L 4 320 -300 320 -260 {}
 B 5 57.5 -62.5 62.5 -57.5 {name=D5
-dir=inout}
+dir=in}
 B 5 97.5 -62.5 102.5 -57.5 {name=D6
-dir=inout}
+dir=in}
 B 5 137.5 -62.5 142.5 -57.5 {name=D7
-dir=inout}
+dir=in}
 B 5 177.5 -62.5 182.5 -57.5 {name=D8
-dir=inout}
+dir=in}
 B 5 457.5 -142.5 462.5 -137.5 {name=VN
 dir=inout}
 B 5 457.5 -182.5 462.5 -177.5 {name=out
@@ -45,23 +45,23 @@ dir=inout}
 B 5 457.5 -222.5 462.5 -217.5 {name=VP
 dir=inout}
 B 5 57.5 -302.5 62.5 -297.5 {name=D1
-dir=inout}
+dir=in}
 B 5 97.5 -302.5 102.5 -297.5 {name=D2
-dir=inout}
+dir=in}
 B 5 137.5 -302.5 142.5 -297.5 {name=D3
-dir=inout}
+dir=in}
 B 5 177.5 -302.5 182.5 -297.5 {name=D4
-dir=inout}
+dir=in}
 B 5 -22.5 -182.5 -17.5 -177.5 {name=VDD
-dir=inout}
+dir=in}
 B 5 227.5 -302.5 232.5 -297.5 {name=fc1_read_top_1
-dir=inout}
+dir=out}
 B 5 257.5 -302.5 262.5 -297.5 {name=fc2_read_top_1
-dir=inout}
+dir=out}
 B 5 287.5 -302.5 292.5 -297.5 {name=fc1_read_top_2
-dir=inout}
+dir=out}
 B 5 317.5 -302.5 322.5 -297.5 {name=fc2_read_top_2
-dir=inout}
+dir=out}
 T {D1} 50 -250 0 0 0.25 0.25 {}
 T {D2} 90 -250 0 0 0.25 0.25 {}
 T {D3} 130 -250 0 0 0.25 0.25 {}
