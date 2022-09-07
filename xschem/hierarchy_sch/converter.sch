@@ -17,7 +17,7 @@ lab=s4}
 N 600 -270 650 -270 {
 lab=VP}
 N 600 -230 650 -230 {
-lab=out}
+lab=#net1}
 N 600 -190 650 -190 {
 lab=VN}
 N 420 0 420 70 {
@@ -26,8 +26,10 @@ N 480 0 480 70 {
 lab=fc2_read}
 N 420 -50 420 -0 {
 lab=fc1_read}
-N 480 -120 480 -100 {}
-N 480 -40 480 -0 {}
+N 480 -120 480 -100 {
+lab=#net2}
+N 480 -40 480 -0 {
+lab=fc2_read}
 C {personal/3LFCC_AC3E/xschem/hierarchy_sch/power_stage.sym} 200 -20 0 0 {name=X1v \{xschem version=3.0.0 file_version=1.2 \}
 G \{\}
 K \{type=subcircuit
@@ -89,7 +91,6 @@ C {devices/ipin.sym} 260 -220 0 0 {name=p3 lab=s3}
 C {devices/ipin.sym} 260 -190 0 0 {name=p4 lab=s4}
 C {devices/iopin.sym} 650 -270 0 0 {name=p5 lab=VP}
 C {devices/iopin.sym} 650 -190 0 0 {name=p6 lab=VN}
-C {devices/opin.sym} 650 -230 0 0 {name=p7 lab=out}
 C {devices/opin.sym} 420 70 1 0 {name=p8 lab=fc1_read
 }
 C {devices/opin.sym} 480 70 1 0 {name=p9 lab=fc2_read
@@ -99,3 +100,4 @@ value=0.001
 footprint=1206
 device=resistor
 m=1}
+C {devices/iopin.sym} 650 -230 0 0 {name=p14 lab=out}

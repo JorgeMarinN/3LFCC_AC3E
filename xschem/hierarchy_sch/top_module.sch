@@ -11,7 +11,7 @@ lab=VDD_}
 N 400 -210 440 -210 {
 lab=VP_}
 N 400 -160 440 -160 {
-lab=out_}
+lab=out}
 N 400 -110 440 -110 {
 lab=VN_}
 N 400 340 440 340 {
@@ -58,7 +58,6 @@ C {devices/lab_pin.sym} 0 -260 0 0 {name=l1 sig_type=std_logic lab=VDD_}
 C {devices/lab_pin.sym} 0 290 0 0 {name=l2 sig_type=std_logic lab=VDD_}
 C {devices/lab_pin.sym} 440 -210 2 0 {name=l3 sig_type=std_logic lab=VP_}
 C {devices/lab_pin.sym} 440 340 2 0 {name=l4 sig_type=std_logic lab=VP_}
-C {devices/lab_pin.sym} 440 -160 2 0 {name=l5 sig_type=std_logic lab=out_}
 C {devices/lab_pin.sym} 440 390 2 0 {name=l6 sig_type=std_logic lab=out_}
 C {devices/lab_pin.sym} 440 -110 2 0 {name=l7 sig_type=std_logic lab=VN_}
 C {devices/lab_pin.sym} 440 440 2 0 {name=l8 sig_type=std_logic lab=VN_}
@@ -75,10 +74,11 @@ C {devices/lab_pin.sym} 600 -160 0 0 {name=l10 sig_type=std_logic lab=out_}
 C {devices/lab_pin.sym} 600 -110 0 0 {name=l11 sig_type=std_logic lab=VN_}
 C {devices/iopin.sym} 640 -210 0 0 {name=p9 lab=VP}
 C {devices/iopin.sym} 640 -110 0 0 {name=p10 lab=VN}
-C {devices/opin.sym} 640 -160 0 0 {name=p11 lab=out}
 C {devices/lab_pin.sym} -150 -210 3 0 {name=l12 sig_type=std_logic lab=VDD_}
 C {devices/ipin.sym} -150 -270 1 0 {name=p12 lab=VDD}
 C {devices/opin.sym} 180 70 1 0 {name=p13 lab=fc1_read_top_1}
 C {devices/opin.sym} 250 70 1 0 {name=p14 lab=fc2_read_top_1}
 C {devices/opin.sym} 180 620 1 0 {name=p15 lab=fc1_read_top_2}
 C {devices/opin.sym} 250 620 1 0 {name=p16 lab=fc2_read_top_2}
+C {devices/iopin.sym} 640 -160 0 0 {name=p17 lab=out}
+C {devices/iopin.sym} 440 -160 0 0 {name=p11 lab=out}
