@@ -128,13 +128,13 @@ wrdata /foss/designs/personal/3LFCC_AC3E/xschem/hierarchy_sch/DCDC_5V_FINAL/3LFC
 *plot v(d1top_5v) v(d2_5v)
 *plot v(d2bot_5v) v(d1bot_5v)
 plot v(v_cftop,v_cfbot) v(vout_core)
-plot v(D1,VH) v(D1_N,VSS)
-plot v(D2,V_CFTOP) v(D2_N,V_CFBOT)
-plot  v(vout_core)
+*plot v(D1,VH) v(D1_N,VSS)
+*plot v(D2,V_CFTOP) v(D2_N,V_CFBOT)
+*plot  v(vout_core)
 plot i(v3) v(D1,VH) v(D1_N,VSS) 
 plot i(v3) v(D2,V_CFTOP) v(D2_N,V_CFBOT)
-plot i(v1) 
-plot i(v3) v(v_cftop,v_cfbot)
+*plot i(v1) 
+plot i(v3) v(v_cftop,v_cfbot) v(D1,VH) v(D1_N,VSS)  v(D2,V_CFTOP) v(D2_N,V_CFBOT)
 plot @m.xm4.msky130_fd_pr__nfet_g5v0d10v5[vds]
 
 
