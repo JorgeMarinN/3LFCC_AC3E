@@ -27,9 +27,9 @@ L 4 270 40 270 80 {}
 B 5 57.5 -202.5 62.5 -197.5 {name=VDD
 dir=inout}
 B 5 57.5 -102.5 62.5 -97.5 {name=D2
-dir=inout}
+dir=in}
 B 5 57.5 -152.5 62.5 -147.5 {name=D1
-dir=inout}
+dir=in}
 B 5 417.5 -152.5 422.5 -147.5 {name=VP
 dir=inout}
 B 5 417.5 -52.5 422.5 -47.5 {name=VN
@@ -37,13 +37,13 @@ dir=inout}
 B 5 417.5 -102.5 422.5 -97.5 {name=out
 dir=inout}
 B 5 57.5 -52.5 62.5 -47.5 {name=D3
-dir=inout}
+dir=in}
 B 5 57.5 -2.5 62.5 2.5 {name=D4
-dir=inout}
+dir=in}
 B 5 197.5 77.5 202.5 82.5 {name=fc1_read_int
-dir=inout}
+dir=out}
 B 5 267.5 77.5 272.5 82.5 {name=fc2_read_int
-dir=inout}
+dir=out}
 T {VDD} 130 -210 0 0 0.4 0.4 {}
 T {D1} 130 -160 0 0 0.4 0.4 {}
 T {D2} 130 -110 0 0 0.4 0.4 {}
