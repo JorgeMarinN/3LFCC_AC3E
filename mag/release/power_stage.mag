@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1662490911
+timestamp 1663434482
 << metal2 >>
 rect 3000 131460 5200 132000
 rect 3000 131270 4960 131460
@@ -83,19 +83,29 @@ rect 3400 6161 4400 7000
 rect 27000 4000 30000 25000
 rect 6000 1000 30000 4000
 use nmos_waffle_36x36  nmos_waffle_36x36_0
-timestamp 1661896674
+timestamp 1624430562
 transform 1 0 5400 0 1 5400
 box -5400 -5400 25200 25200
 use nmos_waffle_36x36  nmos_waffle_36x36_1
-timestamp 1661896674
+timestamp 1624430562
 transform 0 1 5400 -1 0 56200
 box -5400 -5400 25200 25200
 use pmos_waffle_48x48  pmos_waffle_48x48_0
-timestamp 1661896674
+timestamp 1624430562
 transform 0 1 5400 1 0 67400
 box -5400 -5400 31800 31800
 use pmos_waffle_48x48  pmos_waffle_48x48_1
-timestamp 1661896674
+timestamp 1624430562
 transform 1 0 5400 0 -1 131800
 box -5400 -5400 31800 31800
+<< labels >>
+rlabel metal5 6000 134000 7000 135000 7 VP
+rlabel metal2 3000 131000 4000 132000 7 s1
+rlabel metal5 1000 99000 2000 100000 7 fc1
+rlabel metal2 3000 66000 4000 67000 7 s2
+rlabel metal5 26000 61000 27000 62000 7 out
+rlabel metal2 3000 57000 4000 58000 7 s3
+rlabel metal5 1000 30500 2000 31500 7 fc2
+rlabel metal2 3000 5500 4000 6000 7 s4
+rlabel metal5 6000 2000 7000 3000 7 VN
 << end >>
