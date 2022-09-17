@@ -3,7 +3,7 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Power stage layout	#
-#   28-08-2022        	#
+#   17-09-2022        	#
 #	Based on Open PMIC	#
 # #####################	#
 
@@ -86,6 +86,26 @@ box 330um 1060um 360um 1330um
 paint {metal3 metal4 metal5}
 box 60um 1330um 360um 1360um
 paint {metal3 metal4 metal5}
+
+#labels
+box 60um 1340um 70um 1350um
+label VP west metal5
+box 30um 1310um 40um 1320um
+label s1 west metal2
+box 10um 990um 20um 1000um
+label fc1 west metal5
+box 30um 660um 40um 670um
+label s2 west metal2
+box 260um 610um 270um 620um
+label out west metal5
+box 30um 570um 40um 580um
+label s3 west metal2
+box 10um 305um 20um 315um
+label fc2 west metal5
+box 30um 55um 40um 60um
+label s4 west metal2
+box 60um 20um 70um 30um
+label VN west metal5
 
 save power_stage.mag
 
