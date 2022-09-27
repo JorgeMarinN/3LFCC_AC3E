@@ -9,10 +9,10 @@ data = pd.read_csv("3LFCC_v1p4.csv").values
 num_rows, num_cols = data.shape
 
 #thres  = 0.9
-x_out = data[126:246,0]
-y_out = data[126:246,1]
-x_in = data[126:246,2]
-y_in = data[126:246,3]
+x_out = data[138:278,0]
+y_out = data[138:278,1]
+x_in = data[138:278,2]
+y_in = data[138:278,3]
 
 #x=x[~pd.isnull(x)]
 #y=y[~pd.isnull(y)]
@@ -23,7 +23,7 @@ y_in = data[126:246,3]
 
 
 
-r = 22
+r = 18
 vout = np.mean(y_out)
 iin = (-1)*np.mean(y_in)
 iout = vout/r
@@ -40,7 +40,9 @@ print("potencia de entrada:",pin, "[W]")
 print("potencia de salida:",pout, "[W]")
 
 
+
 print("eficiencia:", eff ,"[%]")
+print("resistencia:",r)
 plt.plot(x_in,-y_in)
 plt.show()
 

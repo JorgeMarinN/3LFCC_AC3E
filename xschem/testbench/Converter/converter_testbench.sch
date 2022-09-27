@@ -89,14 +89,22 @@ N 310 -230 310 -140 {
 lab=V_CFBOT}
 N 310 -140 410 -140 {
 lab=V_CFBOT}
-C {devices/vsource.sym} -160 -500 0 0 {name=V4 value="PULSE(0 5 0 0.1n 0.1n 665n 1000n)"}
+N 170 -320 170 -270 {
+lab=V_CFTOP}
+N 170 -320 310 -320 {
+lab=V_CFTOP}
+N 170 -210 170 -140 {
+lab=V_CFBOT}
+N 170 -140 310 -140 {
+lab=V_CFBOT}
+C {devices/vsource.sym} -160 -500 0 0 {name=V4 value="PULSE(0 5 10n 2.5n 1n 646n 1000n)"}
 C {devices/lab_pin.sym} -150 -540 0 1 {name=l125 sig_type=std_logic lab=VH
 }
 C {devices/vsource.sym} -400 -430 0 0 {name=V2 value=0}
 C {devices/gnd.sym} -400 -380 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} -400 -510 0 0 {name=l10 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -170 -460 0 0 {name=l11 sig_type=std_logic lab=D1}
-C {devices/vsource.sym} -160 -320 0 0 {name=V6 value="PULSE(0 5 166n 0.1n 0.1n 333n 1000n)"}
+C {devices/vsource.sym} -160 -320 0 0 {name=V6 value="PULSE(0 5 176n 2.5n 1n 313n 1000n)"}
 C {devices/code_shown.sym} -850 -80 0 0 {name=s1 only_toplevel=false value="
 .param VIN = 5
 .param VH = 5
@@ -145,13 +153,13 @@ plot @m.xm4.msky130_fd_pr__nfet_g5v0d10v5[vds]
 C {devices/vsource.sym} -320 -430 0 0 {name=V3 value=\{VH\}}
 C {devices/gnd.sym} -320 -380 0 0 {name=l23 lab=GND}
 C {devices/lab_wire.sym} -320 -510 0 0 {name=l24 sig_type=std_logic lab=VH}
-C {devices/vsource.sym} -160 -410 0 0 {name=V5 value="PULSE(5 0 166n 0.1n 0.1n 333n 1000n)"}
+C {devices/vsource.sym} -160 -410 0 0 {name=V5 value="PULSE(5 0 166n 2.5n 1n 333n 1000n)"}
 C {devices/lab_pin.sym} -150 -450 0 1 {name=l42 sig_type=std_logic lab=V_CFTOP}
 C {devices/lab_wire.sym} -170 -370 0 0 {name=l43 sig_type=std_logic lab=D2}
 C {devices/lab_pin.sym} -150 -360 0 1 {name=l44 sig_type=std_logic lab=D2_N
 }
 C {devices/lab_wire.sym} -170 -280 0 0 {name=l13 sig_type=std_logic lab=V_CFBOT}
-C {devices/vsource.sym} -160 -230 0 0 {name=V7 value="PULSE(0 5 666n 0.1n 0.1n 333n 1000n)"}
+C {devices/vsource.sym} -160 -230 0 0 {name=V7 value="PULSE(0 5 666n 2.5n 1n 333n 1000n)"}
 C {devices/lab_pin.sym} -150 -270 0 1 {name=l14 sig_type=std_logic lab=D1_N
 }
 C {devices/lab_wire.sym} -170 -190 0 0 {name=l45 sig_type=std_logic lab=VSS}
@@ -169,9 +177,14 @@ C {devices/isource.sym} 910 -390 0 0 {name=I0 value=0.15
 }
 C {devices/lab_wire.sym} 830 -320 0 0 {name=l1 sig_type=std_logic lab=VSS}
 C {devices/res.sym} 830 -390 0 0 {name=R2
-value=22
+value=18
 footprint=1206
 device=resistor
 m=1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 310 -260 0 0 {name=C1 model=cap_mim_m3_2 W=30 L=30 MF=1978 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 410 -200 0 0 {name=C2 model=cap_mim_m3_1 W=30 L=30 MF=1978 spiceprefix=X}
+C {devices/capa.sym} 170 -240 0 0 {name=C3
+m=1
+value=100n
+footprint=1206
+device="ceramic capacitor"}
