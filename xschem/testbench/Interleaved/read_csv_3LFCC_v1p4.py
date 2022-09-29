@@ -9,10 +9,10 @@ data = pd.read_csv("3LFCC_v1p5.csv").values
 num_rows, num_cols = data.shape
 
 #thres  = 0.9
-x_out = data[126:246,0]
-y_out = data[126:246,1]
-x_in = data[126:246,2]
-y_in = data[126:246,3]
+x_out = data[243:472,0]
+y_out = data[243:472,1]
+x_in = data[243:472,2]
+y_in = data[243:472,3]
 
 #x=x[~pd.isnull(x)]
 #y=y[~pd.isnull(y)]

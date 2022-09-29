@@ -187,7 +187,7 @@ plot v(D1) v(D2)	v(v_cftop,v_cfbot)
 
 *Relación Pulso P y N para acondicionar tiempos muertos (reducir peaks)
 plot v(D1) v(D1_N) v(v_cftop,v_cfbot)
-plot v(D2) v(D2_N) i(v3)
+plot v(D1) v(D1_N) i(v3)
 *plot v(D1) v(D1_N)	 v(D2) v(D2_N) i(v3) v(v_cftop,v_cfbot)
 
 

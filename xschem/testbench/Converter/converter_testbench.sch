@@ -134,8 +134,9 @@ write converter_testbench.raw
 wrdata /foss/designs/personal/3LFCC_AC3E/xschem/testbench/Converter/3LFCC_v1p4.txt tran.v(vout_core) tran.i(v3)
 
 **Analisis para LS
-plot v(VH,D1) v(V_CFTOP,D2) v(v_cftop,v_cfbot)
-plot i(v3) v(v_cftop,v_cfbot)
+plot v(V_CFTOP,D2) v(D2_N,V_CFBOT) v(v_cftop,v_cfbot)
+plot v(V_CFTOP,D2) v(D2_N,V_CFBOT) i(v3)
+*plot i(v3) v(v_cftop,v_cfbot)
 **
 
 *plot v(D1,VH) v(D2,V_CFTOP) v(v_cftop,v_cfbot)
