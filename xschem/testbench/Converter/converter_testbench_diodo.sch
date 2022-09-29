@@ -9,38 +9,6 @@ N -400 -400 -400 -380 { lab=GND}
 N -400 -510 -400 -460 { lab=VSS}
 N -320 -400 -320 -380 { lab=GND}
 N -320 -510 -320 -460 { lab=VH}
-N -160 -540 -160 -530 {
-lab=VH}
-N -160 -540 -150 -540 {
-lab=VH}
-N -160 -470 -160 -460 {
-lab=D1}
-N -170 -460 -160 -460 {
-lab=D1}
-N -160 -450 -160 -440 {
-lab=V_CFTOP}
-N -160 -450 -150 -450 {
-lab=V_CFTOP}
-N -160 -380 -160 -370 {
-lab=D2}
-N -170 -370 -160 -370 {
-lab=D2}
-N -160 -360 -160 -350 {
-lab=D2_N}
-N -160 -360 -150 -360 {
-lab=D2_N}
-N -160 -290 -160 -280 {
-lab=V_CFBOT}
-N -170 -280 -160 -280 {
-lab=V_CFBOT}
-N -160 -270 -160 -260 {
-lab=D1_N}
-N -160 -270 -150 -270 {
-lab=D1_N}
-N -160 -200 -160 -190 {
-lab=VSS}
-N -170 -190 -160 -190 {
-lab=VSS}
 N 260 -500 310 -500 {
 lab=D1}
 N 260 -470 310 -470 {
@@ -85,14 +53,41 @@ N 310 -140 410 -140 {
 lab=V_CFBOT}
 N 410 -330 410 -320 {
 lab=V_CFTOP}
-C {devices/vsource.sym} -160 -500 0 0 {name=V4 value="PULSE(0 5 0 0.1n 0.1n 665n 1000n)"}
-C {devices/lab_pin.sym} -150 -540 0 1 {name=l125 sig_type=std_logic lab=VH
-}
+N -120 -530 -120 -520 {
+lab=VH}
+N -120 -530 -110 -530 {
+lab=VH}
+N -120 -460 -120 -450 {
+lab=D1}
+N -130 -450 -120 -450 {
+lab=D1}
+N -120 -440 -120 -430 {
+lab=V_CFTOP}
+N -120 -440 -110 -440 {
+lab=V_CFTOP}
+N -120 -370 -120 -360 {
+lab=D2}
+N -130 -360 -120 -360 {
+lab=D2}
+N -120 -350 -120 -340 {
+lab=D2_N}
+N -120 -350 -110 -350 {
+lab=D2_N}
+N -120 -280 -120 -270 {
+lab=V_CFBOT}
+N -130 -270 -120 -270 {
+lab=V_CFBOT}
+N -120 -260 -120 -250 {
+lab=D1_N}
+N -120 -260 -110 -260 {
+lab=D1_N}
+N -120 -190 -120 -180 {
+lab=VSS}
+N -130 -180 -120 -180 {
+lab=VSS}
 C {devices/vsource.sym} -400 -430 0 0 {name=V2 value=0}
 C {devices/gnd.sym} -400 -380 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} -400 -510 0 0 {name=l10 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} -170 -460 0 0 {name=l11 sig_type=std_logic lab=D1}
-C {devices/vsource.sym} -160 -320 0 0 {name=V6 value="PULSE(0 5 166n 0.1n 0.1n 333n 1000n)"}
 C {devices/code_shown.sym} -850 -80 0 0 {name=s1 only_toplevel=false value="
 .param VIN = 5
 .param VH = 5
@@ -141,16 +136,6 @@ plot @m.xm4.msky130_fd_pr__nfet_g5v0d10v5[vds]
 C {devices/vsource.sym} -320 -430 0 0 {name=V3 value=\{VH\}}
 C {devices/gnd.sym} -320 -380 0 0 {name=l23 lab=GND}
 C {devices/lab_wire.sym} -320 -510 0 0 {name=l24 sig_type=std_logic lab=VH}
-C {devices/vsource.sym} -160 -410 0 0 {name=V5 value="PULSE(5 0 166n 0.1n 0.1n 333n 1000n)"}
-C {devices/lab_pin.sym} -150 -450 0 1 {name=l42 sig_type=std_logic lab=V_CFTOP}
-C {devices/lab_wire.sym} -170 -370 0 0 {name=l43 sig_type=std_logic lab=D2}
-C {devices/lab_pin.sym} -150 -360 0 1 {name=l44 sig_type=std_logic lab=D2_N
-}
-C {devices/lab_wire.sym} -170 -280 0 0 {name=l13 sig_type=std_logic lab=V_CFBOT}
-C {devices/vsource.sym} -160 -230 0 0 {name=V7 value="PULSE(0 5 666n 0.1n 0.1n 333n 1000n)"}
-C {devices/lab_pin.sym} -150 -270 0 1 {name=l14 sig_type=std_logic lab=D1_N
-}
-C {devices/lab_wire.sym} -170 -190 0 0 {name=l45 sig_type=std_logic lab=VSS}
 C {personal/3LFCC_AC3E/xschem/hierarchy_sch/power_stage_diode.sym} 210 -240 0 0 {name=X1v \{xschem version=3.0.0 file_version=1.2 \}
 G \{\}
 K \{type=subcircuit
@@ -220,3 +205,18 @@ device=resistor
 m=1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 310 -260 0 0 {name=C1 model=cap_mim_m3_2 W=30 L=30 MF=1978 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 410 -200 0 0 {name=C2 model=cap_mim_m3_1 W=30 L=30 MF=1978 spiceprefix=X}
+C {devices/vsource.sym} -120 -490 0 0 {name=V4 value="PULSE(0 5 10n 2.5n 1n 646n 1000n)"}
+C {devices/lab_pin.sym} -110 -530 0 1 {name=l125 sig_type=std_logic lab=VH
+}
+C {devices/lab_wire.sym} -130 -450 0 0 {name=l11 sig_type=std_logic lab=D1}
+C {devices/vsource.sym} -120 -310 0 0 {name=V6 value="PULSE(0 5 176n 2.5n 1n 313n 1000n)"}
+C {devices/vsource.sym} -120 -400 0 0 {name=V5 value="PULSE(5 0 166n 2.5n 1n 333n 1000n)"}
+C {devices/lab_pin.sym} -110 -440 0 1 {name=l42 sig_type=std_logic lab=V_CFTOP}
+C {devices/lab_wire.sym} -130 -360 0 0 {name=l43 sig_type=std_logic lab=D2}
+C {devices/lab_pin.sym} -110 -350 0 1 {name=l44 sig_type=std_logic lab=D2_N
+}
+C {devices/lab_wire.sym} -130 -270 0 0 {name=l13 sig_type=std_logic lab=V_CFBOT}
+C {devices/vsource.sym} -120 -220 0 0 {name=V7 value="PULSE(0 5 666n 2.5n 1n 333n 1000n)"}
+C {devices/lab_pin.sym} -110 -260 0 1 {name=l14 sig_type=std_logic lab=D1_N
+}
+C {devices/lab_wire.sym} -130 -180 0 0 {name=l45 sig_type=std_logic lab=VSS}

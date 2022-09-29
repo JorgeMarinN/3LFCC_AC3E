@@ -144,6 +144,10 @@ N -910 -450 -910 -440 {
 lab=VSS}
 N -920 -440 -910 -440 {
 lab=VSS}
+N 160 -320 160 -280 {
+lab=V_CFTOP}
+N 160 -220 160 -140 {
+lab=V_CFBOT}
 C {devices/vsource.sym} -830 -240 0 0 {name=V2 value=0}
 C {devices/gnd.sym} -830 -190 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} -830 -320 0 0 {name=l10 sig_type=std_logic lab=VSS}
@@ -178,11 +182,11 @@ tran 100n 3u
 wrdata /foss/designs/personal/3LFCC_AC3E/xschem/testbench/interleaved/3LFCC_v1p5_jm.txt tran.v(vout_core) tran.i(v3)
 
 *Relación D1 D2 para combinar estados
-*plot v(D1) v(D2)	
+plot v(D1) v(D2)	v(v_cftop,v_cfbot)
 *plot v(D1_N) v(D2_N)
 
 *Relación Pulso P y N para acondicionar tiempos muertos (reducir peaks)
-plot v(D1) v(D1_N)	i(v3)
+plot v(D1) v(D1_N) v(v_cftop,v_cfbot)
 plot v(D2) v(D2_N) i(v3)
 *plot v(D1) v(D1_N)	 v(D2) v(D2_N) i(v3) v(v_cftop,v_cfbot)
 
@@ -190,9 +194,10 @@ plot v(D2) v(D2_N) i(v3)
 *Revisión de estados del convertidor en base a señal de Flycap (caso Cap_ext omitido para ver bien formas de onda de flycap)
 *plot v(v_cftop,v_cfbot) v(vout_core) i(v3)
 
-plot v(v_cftop,v_cfbot) v(D1) v(D2) i(v3)
-plot v(v_cftop,v_cfbot) v(D1) v(D1_N)	i(v3)
-plot v(D1) v(D1_N)	 v(D2) v(D2_N) v(v_cftop,v_cfbot)
+*plot v(v_cftop,v_cfbot) v(D1) v(D2)
+*plot v(v_cftop,v_cfbot) v(D2) v(D2_N)
+*plot v(v_cftop,v_cfbot) v(D1) v(D1_N)
+*plot v(v_cftop,v_cfbot) v(vout_core) 
 
 **Problema actual, eficiencia no se logra calcular debido a que no transicionan bien todo los estados, (Cuando el Flycap esta flotante no esta consumiendo energía, es decir la carga no esta conectada a la fuente de entrada...)
 ** Si bien D1- D1_N y D2- D2_N estan con sus respectivos tiempos muertos (redución de peaks), falta sincronizar bien D1 con D2 para lograr la conexión correcta para que la carga se conecte a la fuente en estado de flycap flotante.
@@ -416,3 +421,8 @@ C {devices/lab_wire.sym} -920 -710 0 0 {name=l4 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -920 -620 0 0 {name=l5 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -920 -530 0 0 {name=l6 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} -910 -750 0 0 {name=V1 value="PULSE(0 1.8 0 1n 1n 666n 1000n)"}
+C {devices/capa.sym} 160 -250 0 0 {name=C3
+m=1
+value=100n
+footprint=1206
+device="ceramic capacitor"}

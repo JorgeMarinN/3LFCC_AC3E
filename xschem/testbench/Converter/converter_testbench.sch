@@ -133,16 +133,23 @@ write converter_testbench.raw
 *wrdata ~/Documents/Postdoc/chipathon2022/3LFCC_AC3E/xschem/dev_switches/DCDC_5V_FINAL/3LFCC_v1p4.txt tran.v(vout) tran.i(vmeas) tran.v(vdd) tran.i(v3) tran.v(vh) tran.i(v5)
 wrdata /foss/designs/personal/3LFCC_AC3E/xschem/testbench/Converter/3LFCC_v1p4.txt tran.v(vout_core) tran.i(v3)
 
-*plot v(d1top_5v) v(d2_5v)
-*plot v(d2bot_5v) v(d1bot_5v)
-plot v(v_cftop,v_cfbot) v(vout_core)
-plot v(D1,VH) v(D1_N,VSS)
-plot v(D2,V_CFTOP) v(D2_N,V_CFBOT)
-plot  v(vout_core)
-plot i(v3) v(D1,VH) v(D1_N,VSS) 
-plot i(v3) v(D2,V_CFTOP) v(D2_N,V_CFBOT)
-plot i(v1) 
+**Analisis para LS
+plot v(VH,D1) v(V_CFTOP,D2) v(v_cftop,v_cfbot)
 plot i(v3) v(v_cftop,v_cfbot)
+**
+
+*plot v(D1,VH) v(D2,V_CFTOP) v(v_cftop,v_cfbot)
+*plot v(d2bot_5v) v(d1bot_5v)
+
+*plot v(v_cftop,v_cfbot) v(vout_core)
+*plot v(D1,VH) v(D1_N,VSS)
+*plot v(D2,V_CFTOP) v(D2_N,V_CFBOT)
+*plot  v(vout_core)
+*plot i(v3) v(D1,VH) v(D1_N,VSS) 
+*plot i(v3) v(D2,V_CFTOP) v(D2_N,V_CFBOT)
+
+*plot i(v1) 
+*plot i(v3) v(v_cftop,v_cfbot)
 plot @m.xm4.msky130_fd_pr__nfet_g5v0d10v5[vds]
 
 
@@ -177,14 +184,14 @@ C {devices/isource.sym} 910 -390 0 0 {name=I0 value=0.15
 }
 C {devices/lab_wire.sym} 830 -320 0 0 {name=l1 sig_type=std_logic lab=VSS}
 C {devices/res.sym} 830 -390 0 0 {name=R2
-value=18
+value=22
 footprint=1206
 device=resistor
 m=1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 310 -260 0 0 {name=C1 model=cap_mim_m3_2 W=30 L=30 MF=1978 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 410 -200 0 0 {name=C2 model=cap_mim_m3_1 W=30 L=30 MF=1978 spiceprefix=X}
-C {devices/capa.sym} 170 -240 0 0 {name=C3
+C {devices/capa.sym} 890 -230 0 0 {name=C3
 m=1
-value=100n
+value=30n
 footprint=1206
 device="ceramic capacitor"}
