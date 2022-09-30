@@ -65,10 +65,6 @@ lab=V_CFBOT}
 N -920 -210 -920 -190 { lab=GND}
 N -920 -320 -920 -270 { lab=VDIG}
 N -460 -340 -430 -340 {
-lab=D1_N_s}
-N -130 -320 -70 -320 {
-lab=VDIG}
-N -70 -380 -70 -320 {
 lab=VDIG}
 N -130 -340 -110 -340 {
 lab=VH}
@@ -77,10 +73,6 @@ lab=VH}
 N -130 -300 -90 -300 {
 lab=D1_N}
 N -460 -470 -430 -470 {
-lab=D2_N_s}
-N -130 -450 -70 -450 {
-lab=VDIG}
-N -70 -510 -70 -450 {
 lab=VDIG}
 N -130 -470 -110 -470 {
 lab=VH}
@@ -89,10 +81,6 @@ lab=VH}
 N -130 -430 -90 -430 {
 lab=D2_N}
 N -460 -610 -430 -610 {
-lab=D2_s}
-N -130 -590 -70 -590 {
-lab=VDIG}
-N -70 -650 -70 -590 {
 lab=VDIG}
 N -130 -610 -110 -610 {
 lab=VH}
@@ -101,10 +89,6 @@ lab=VH}
 N -130 -570 -90 -570 {
 lab=D2}
 N -460 -750 -430 -750 {
-lab=D1_s}
-N -130 -730 -70 -730 {
-lab=VDIG}
-N -70 -790 -70 -730 {
 lab=VDIG}
 N -130 -750 -110 -750 {
 lab=VH}
@@ -148,9 +132,33 @@ N 160 -320 160 -280 {
 lab=V_CFTOP}
 N 160 -220 160 -140 {
 lab=V_CFBOT}
+N -460 -730 -430 -730 {
+lab=D1_s}
+N -460 -590 -430 -590 {
+lab=D2_s}
+N -460 -450 -430 -450 {
+lab=D2_N_s}
+N -460 -320 -430 -320 {
+lab=D1_N_s}
+N -470 -560 -430 -560 {
+lab=VSS}
+N -430 -570 -430 -560 {
+lab=VSS}
+N -470 -700 -430 -700 {
+lab=VSS}
+N -430 -710 -430 -700 {
+lab=VSS}
+N -470 -420 -430 -420 {
+lab=VSS}
+N -430 -430 -430 -420 {
+lab=VSS}
+N -470 -290 -430 -290 {
+lab=VSS}
+N -430 -300 -430 -290 {
+lab=VSS}
 C {devices/vsource.sym} -830 -240 0 0 {name=V2 value=0}
 C {devices/gnd.sym} -830 -190 0 0 {name=l9 lab=GND}
-C {devices/lab_wire.sym} -830 -320 0 0 {name=l10 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -470 -560 0 0 {name=l10 sig_type=std_logic lab=VSS}
 C {devices/code_shown.sym} -850 -80 0 0 {name=s1 only_toplevel=false value="
 .param VIN = 5
 .param VDIG = 1.8
@@ -279,30 +287,29 @@ T \{power_stage\} 210 -240 0 0 0.25 0.25 \{\}
 C {devices/vsource.sym} -920 -240 0 0 {name=V8 value=\{VDIG\}}
 C {devices/gnd.sym} -920 -190 0 0 {name=l23 lab=GND}
 C {devices/lab_wire.sym} -920 -320 0 0 {name=l24 sig_type=std_logic lab=VDIG}
-C {devices/lab_pin.sym} -460 -340 2 1 {name=l14 sig_type=std_logic lab=D1_N_s
+C {devices/lab_pin.sym} -460 -320 2 1 {name=l14 sig_type=std_logic lab=D1_N_s
 }
-C {devices/lab_wire.sym} -70 -380 0 0 {name=l24 sig_type=std_logic lab=VDIG}
+C {devices/lab_wire.sym} -460 -340 0 0 {name=l24 sig_type=std_logic lab=VDIG}
 C {devices/lab_pin.sym} -110 -360 0 1 {name=l125 sig_type=std_logic lab=VH
 }
-C {devices/lab_pin.sym} -460 -470 2 1 {name=l1 sig_type=std_logic lab=D2_N_s
+C {devices/lab_pin.sym} -460 -450 2 1 {name=l1 sig_type=std_logic lab=D2_N_s
 }
-C {devices/lab_wire.sym} -70 -510 0 0 {name=l24 sig_type=std_logic lab=VDIG}
+C {devices/lab_wire.sym} -460 -470 0 0 {name=l24 sig_type=std_logic lab=VDIG}
 C {devices/lab_pin.sym} -110 -490 0 1 {name=l125 sig_type=std_logic lab=VH
 }
 C {devices/lab_pin.sym} -90 -300 0 1 {name=l14 sig_type=std_logic lab=D1_N
 }
 C {devices/lab_pin.sym} -90 -430 0 1 {name=l44 sig_type=std_logic lab=D2_N
 }
-C {devices/lab_pin.sym} -460 -610 2 1 {name=l1 sig_type=std_logic lab=D2_s
+C {devices/lab_pin.sym} -460 -590 2 1 {name=l1 sig_type=std_logic lab=D2_s
 }
-C {devices/lab_wire.sym} -70 -650 0 0 {name=l24 sig_type=std_logic lab=VDIG}
 C {devices/lab_pin.sym} -110 -630 0 1 {name=l125 sig_type=std_logic lab=VH
 }
 C {devices/lab_pin.sym} -90 -570 0 1 {name=l44 sig_type=std_logic lab=D2
 }
-C {devices/lab_pin.sym} -460 -750 2 1 {name=l1 sig_type=std_logic lab=D1_s
+C {devices/lab_pin.sym} -460 -730 2 1 {name=l1 sig_type=std_logic lab=D1_s
 }
-C {devices/lab_wire.sym} -70 -790 0 0 {name=l24 sig_type=std_logic lab=VDIG}
+C {devices/lab_wire.sym} -460 -750 0 0 {name=l24 sig_type=std_logic lab=VDIG}
 C {devices/lab_pin.sym} -110 -770 0 1 {name=l125 sig_type=std_logic lab=VH
 }
 C {devices/lab_pin.sym} -90 -710 0 1 {name=l44 sig_type=std_logic lab=D1
@@ -426,3 +433,8 @@ m=1
 value=100n
 footprint=1206
 device="ceramic capacitor"}
+C {devices/lab_wire.sym} -460 -610 0 0 {name=l7 sig_type=std_logic lab=VDIG}
+C {devices/lab_wire.sym} -470 -700 0 0 {name=l8 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -470 -420 0 0 {name=l12 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -470 -290 0 0 {name=l13 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -830 -320 0 0 {name=l15 sig_type=std_logic lab=VSS}
