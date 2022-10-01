@@ -7,3 +7,4 @@ MOCK TAPEOUT PINLIST: https://docs.google.com/spreadsheets/d/1Ac2RKUJIYC5eBKo0-C
 
 MOCK TAPEOUT LOG: https://drive.google.com/file/d/11btfHmuYdZ91BisA9Su-sscmEPSfBAlC/view?usp=sharing
 
+DESIGN REVIEW SLIDES: https://docs.google.com/presentation/d/1GItEW0Zg1UkJawQFmKXmlZBSU7FBkkB87kHu6xBb3vs/edit?usp=sharing

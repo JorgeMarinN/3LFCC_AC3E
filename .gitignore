@@ -5,3 +5,5 @@ precheck_results
 caravel/*
 dependencies
 mpw_precheck
+
+*.bak
