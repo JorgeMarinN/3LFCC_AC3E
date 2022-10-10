@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/personal/converter/sim/converter.sch
+** sch_path: /foss/designs/converter/sim/converter.sch
 **.subckt converter s1 s2 s3 s4 VP VN fc1_read fc2_read out
 *.ipin s1
 *.ipin s2
@@ -10,14 +10,14 @@
 *.opin fc2_read
 *.iopin out
 X1v s1 s2 s3 s4 fc1_read fc2_read out VP VN power_stage
-XC1 fc2_read fc1_read sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1978 m=1978
-XC2 fc1_read fc2_read sky130_fd_pr__cap_mim_m3_2 W=30 L=30 VM=1978 m=1978
+XC1 fc2_read fc1_read sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=2236 m=2236
+XC2 fc1_read fc2_read sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=2236 m=2236
 **.ends
 
 * expanding   symbol:  power_stage.sym # of pins=9
-** sym_path: /foss/designs/personal/converter/sim/power_stage.sym
-** sch_path: /foss/designs/personal/converter/sim/power_stage.sch
-.subckt power_stage  s1 s2 s3 s4 fc1 fc2 out VP VN
+** sym_path: /foss/designs/converter/sim/power_stage.sym
+** sch_path: /foss/designs/converter/sim/power_stage.sch
+.subckt power_stage s1 s2 s3 s4 fc1 fc2 out VP VN
 *.ipin s1
 *.ipin s2
 *.ipin s3

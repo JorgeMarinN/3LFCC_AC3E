@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1663277475
+timestamp 1665097055
 << nwell >>
 rect -10 839 600 1019
 << psubdiff >>

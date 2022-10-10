@@ -60,15 +60,16 @@ X18 a_n29_n2000# a_n129_n2026# a_n187_n2000# w_n1645_n2062# sky130_fd_pr__pfet_g
 X19 a_1551_n2000# a_1451_n2026# a_1393_n2000# w_n1645_n2062# sky130_fd_pr__pfet_g5v0d10v5 ad=5.8e+12p pd=4.058e+07u as=0p ps=0u w=2e+07u l=500000u
 .ends
 
-.subckt inv_400 cont_poly_min_9/VSUBS VH IN
+.subckt inv_400 a_n166_32166# w_n304_36844# cont_poly_min_9/VSUBS IN
 Xsky130_fd_pr__nfet_g5v0d10v5_PPR2BY_0 IN OUT IN IN cont_poly_min_9/VSUBS IN IN IN
 + cont_poly_min_9/VSUBS IN IN IN IN cont_poly_min_9/VSUBS OUT IN IN OUT IN cont_poly_min_9/VSUBS
 + cont_poly_min_9/VSUBS IN IN OUT cont_poly_min_9/VSUBS OUT IN OUT OUT cont_poly_min_9/VSUBS
 + cont_poly_min_9/VSUBS OUT OUT OUT cont_poly_min_9/VSUBS cont_poly_min_9/VSUBS cont_poly_min_9/VSUBS
 + IN IN IN IN cont_poly_min_9/VSUBS sky130_fd_pr__nfet_g5v0d10v5_PPR2BY
-Xsky130_fd_pr__pfet_g5v0d10v5_VJVCZ4_0 IN OUT IN IN VH IN IN IN VH IN IN IN IN VH
-+ OUT IN IN OUT IN VH VH IN IN OUT VH OUT IN OUT OUT VH VH OUT OUT OUT VH VH VH IN
-+ IN IN IN VH sky130_fd_pr__pfet_g5v0d10v5_VJVCZ4
+Xsky130_fd_pr__pfet_g5v0d10v5_VJVCZ4_0 IN OUT IN IN w_n304_36844# IN IN IN w_n304_36844#
++ IN IN IN IN w_n304_36844# OUT IN IN OUT IN w_n304_36844# w_n304_36844# IN IN OUT
++ w_n304_36844# OUT IN OUT OUT w_n304_36844# w_n304_36844# OUT OUT OUT w_n304_36844#
++ w_n304_36844# w_n304_36844# IN IN IN IN w_n304_36844# sky130_fd_pr__pfet_g5v0d10v5_VJVCZ4
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_RBMM6F a_207_n100# a_n207_n126# a_81_n126# a_15_n100#
@@ -147,7 +148,7 @@ X1 a_n108_n400# a_n208_n426# a_n266_n400# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=
 X2 a_208_n400# a_108_n426# a_50_n400# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.16e+12p pd=8.58e+06u as=0p ps=0u w=4e+06u l=500000u
 .ends
 
-.subckt cruzados OUT cont_poly_min_6/VSUBS VH IN2 IN1 m1_n1182_n3816#
+.subckt cruzados OUT cont_poly_min_6/VSUBS VH IN2 IN1
 Xsky130_fd_pr__pfet_g5v0d10v5_BUUKVD_0 VH m1_108_n44# OUT VH sky130_fd_pr__pfet_g5v0d10v5_BUUKVD
 Xsky130_fd_pr__pfet_g5v0d10v5_BUUKVD_1 VH OUT m1_108_n44# VH sky130_fd_pr__pfet_g5v0d10v5_BUUKVD
 Xsky130_fd_pr__nfet_g5v0d10v5_C7Z2GC_0 OUT IN1 IN1 cont_poly_min_6/VSUBS IN1 OUT cont_poly_min_6/VSUBS
@@ -159,9 +160,9 @@ Xsky130_fd_pr__nfet_g5v0d10v5_C7Z2GC_1 m1_108_n44# IN2 IN2 cont_poly_min_6/VSUBS
 
 * Top level circuit level_shifter
 
-Xinv_400_0 GND VH inv_400_0/IN inv_400
+Xinv_400_0 GND VH GND inv_400_0/IN inv_400
 Xinv_1_8_0 inv_1_8_0/OUT VDD IN GND inv_1_8
 Xstage_100_0 inv_400_0/IN IN cruzados_0/OUT VH GND stage_100
-Xcruzados_0 cruzados_0/OUT GND VH IN inv_1_8_0/OUT cruzados_0/OUT cruzados
+Xcruzados_0 cruzados_0/OUT GND VH IN inv_1_8_0/OUT cruzados
 .end
 

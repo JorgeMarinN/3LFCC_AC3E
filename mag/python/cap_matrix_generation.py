@@ -14,5 +14,5 @@ for column in range(0,m):
         if(column!=0 or cap!=0):
             f.write("getcell "+fileName+"\n")
             
-f.write("save flying_cap.mag\n")
+#f.write("save flying_cap.mag\n")
 f.close()
