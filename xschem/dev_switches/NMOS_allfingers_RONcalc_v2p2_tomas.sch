@@ -50,10 +50,11 @@ C {devices/code_shown.sym} 40 -880 0 0 {name=s1 only_toplevel=false value="
 .control
 save all
 *dc IDS 0.25 0.35 0.001 VGS 3 5 0.5
-dc IDS 0.25 0.35 0.001
+*dc IDS 0.25 0.35 0.001
+dc VGS 0.5 1.5 0.1 
 *dc temp 0 100 20
-print vds
-plot vds
+print VDS
+plot VDS
 print 1/@m.xm1.msky130_fd_pr__nfet_g5v0d10v5[gds]
 plot 1/@m.xm1.msky130_fd_pr__nfet_g5v0d10v5[gds]
 .endc
