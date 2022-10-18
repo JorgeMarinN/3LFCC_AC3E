@@ -1,5 +1,5 @@
-** sch_path: /foss/designs/personal/converter/sim/interleaved.sch
-**.subckt interleaved out VP D1 D2 D3 D4 VDD VN
+** sch_path: /foss/designs/topmodule/sim/core.sch
+**.subckt core out VP D1 D2 D3 D4 VDD VN
 *.opin out
 *.iopin VP
 *.ipin D1
@@ -8,17 +8,17 @@
 *.ipin D4
 *.iopin VDD
 *.iopin VN
-X1 net4 net3 net2 net1 out VP_ VN_ converter
-x1 VP_ D4 net1 VDD_ VN_ level_shifter
-x2 VP_ D3 net2 VDD_ VN_ level_shifter
-x3 VP_ D2 net3 VDD_ VN_ level_shifter
-x4 VP_ D1 net4 VDD_ VN_ level_shifter
+X1 net4 net3 net2 net1 out VP VN converter
+x1 VP VDD net1 D4 VN level_shifter
+x2 VP VDD net2 D3 VN level_shifter
+x3 VP VDD net3 D2 VN level_shifter
+x4 VP VDD net4 D1 VN level_shifter
 **.ends
 
 * expanding   symbol:  converter.sym # of pins=7
-** sym_path: /foss/designs/personal/converter/sim/converter.sym
-** sch_path: /foss/designs/personal/converter/sim/converter.sch
-.subckt converter  s1 s2 s3 s4 out VP VN
+** sym_path: /foss/designs/topmodule/sim/converter.sym
+** sch_path: /foss/designs/topmodule/sim/converter.sch
+.subckt converter s1 s2 s3 s4 out VP VN
 *.ipin s1
 *.ipin s2
 *.ipin s3
@@ -29,15 +29,15 @@ x4 VP_ D1 net4 VDD_ VN_ level_shifter
 *.opin fc2_read
 *.iopin out
 X1v s1 s2 s3 s4 fc1_read fc2_read out VP VN power_stage
-XC1 fc2_read fc1_read sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1978 m=1978
-XC2 fc1_read fc2_read sky130_fd_pr__cap_mim_m3_2 W=30 L=30 VM=1978 m=1978
+XC1 fc2_read fc1_read sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=2236 m=2236
+XC2 fc1_read fc2_read sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=2236 m=2236
 .ends
 
 
 * expanding   symbol:  level_shifter.sym # of pins=5
-** sym_path: /foss/designs/personal/converter/sim/level_shifter.sym
-** sch_path: /foss/designs/personal/converter/sim/level_shifter.sch
-.subckt level_shifter  VH VDD OUT IN VSS
+** sym_path: /foss/designs/topmodule/sim/level_shifter.sym
+** sch_path: /foss/designs/topmodule/sim/level_shifter.sch
+.subckt level_shifter VH VDD OUT IN VSS
 *.ipin IN
 *.iopin VDD
 *.iopin VH
@@ -77,9 +77,9 @@ XM10 OUT net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=20 nf=1 ad='int((nf+1
 
 
 * expanding   symbol:  power_stage.sym # of pins=9
-** sym_path: /foss/designs/personal/converter/sim/power_stage.sym
-** sch_path: /foss/designs/personal/converter/sim/power_stage.sch
-.subckt power_stage  s1 s2 s3 s4 fc1 fc2 out VP VN
+** sym_path: /foss/designs/topmodule/sim/power_stage.sym
+** sch_path: /foss/designs/topmodule/sim/power_stage.sch
+.subckt power_stage s1 s2 s3 s4 fc1 fc2 out VP VN
 *.ipin s1
 *.ipin s2
 *.ipin s3
