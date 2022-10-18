@@ -33,10 +33,10 @@ C {devices/code_shown.sym} 60 -890 0 0 {name=s1 only_toplevel=false value="
 save all
 *dc IDS 0.25 0.35 0.001 VGS 3 5 0.5
 *dc IDS 0.25 0.35 0.001
-dc VGS 16 19 0.1
+dc VGS 15 20 0.1
 *dc temp 0 100 20
 print VDS
-plot VDS
+plot VDS/300
 print 1/@m.xm1.msky130_fd_pr__pfet_g5v0d10v5[gds]
 plot 1/@m.xm1.msky130_fd_pr__pfet_g5v0d10v5[gds]
 .endc
