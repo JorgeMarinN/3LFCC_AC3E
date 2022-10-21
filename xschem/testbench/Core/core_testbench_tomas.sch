@@ -179,7 +179,7 @@ tran 100n 3u
 *write DCDC_v1p4_5MHz_NMOS_PMOS.raw
 *wrdata ~/Documents/Postdoc/chipathon2022/3LFCC_AC3E/xschem/dev_switches/DCDC_5V_FINAL/3LFCC_v1p4.txt tran.v(vout) tran.i(vmeas) tran.v(vdd) tran.i(v3) tran.v(vh) tran.i(v5)
 *wrdata /foss/designs/personal/3LFCC_AC3E/xschem/hierarchy_sch/DCDC_5V_FINAL/3LFCC_v1p4.txt tran.v(vout_core) tran.i(v1)
-wrdata /foss/designs/personal/3LFCC_AC3E/xschem/testbench/interleaved/3LFCC_v1p5_jm.txt tran.v(vout_core) tran.i(v3)
+wrdata /foss/designs/personal/3LFCC_AC3E/xschem/testbench/Core/3LFCC_v1p5_jm.txt tran.v(vout_core) tran.i(v3)
 
 *Relación D1 D2 para combinar estados
 *plot v(D1) v(D2)	v(v_cftop,v_cfbot)

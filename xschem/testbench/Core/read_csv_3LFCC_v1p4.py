@@ -23,7 +23,7 @@ y_in = data[243:472,3]
 
 
 
-r = 22
+r = 15
 vout = np.mean(y_out)
 iin = (-1)*np.mean(y_in)
 iout = vout/r

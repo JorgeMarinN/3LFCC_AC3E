@@ -49,9 +49,7 @@ lab=fc1_read_top_2}
 N 250 570 250 620 {
 lab=fc2_read_top_2}
 N 0 290 40 290 {
-lab=#net1}
-C {personal/3LFCC_AC3E/xschem/hierarchy_sch/interleaved.sym} -20 490 0 0 {name=X1}
-C {personal/3LFCC_AC3E/xschem/hierarchy_sch/interleaved.sym} -20 -60 0 0 {name=X2}
+lab=VDD}
 C {devices/lab_pin.sym} 440 -210 2 0 {name=l3 sig_type=std_logic lab=VP_}
 C {devices/lab_pin.sym} 440 340 2 0 {name=l4 sig_type=std_logic lab=VP_}
 C {devices/lab_pin.sym} 440 390 2 0 {name=l6 sig_type=std_logic lab=out_}
@@ -78,3 +76,5 @@ C {devices/opin.sym} 250 620 1 0 {name=p16 lab=fc2_read_top_2}
 C {devices/iopin.sym} 640 -160 0 0 {name=p17 lab=out}
 C {devices/iopin.sym} 440 -160 0 0 {name=p11 lab=out}
 C {devices/ipin.sym} 0 290 0 0 {name=p18 lab=VDD}
+C {personal/3LFCC_AC3E/xschem/hierarchy_sch/core.sym} -20 -60 0 0 {name=X1}
+C {personal/3LFCC_AC3E/xschem/hierarchy_sch/core.sym} -20 490 0 0 {name=X2}

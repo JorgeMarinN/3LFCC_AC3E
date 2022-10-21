@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.0.0 file_version=1.2 
 }
 G {}
 K {}
@@ -32,7 +32,7 @@ N 610 -410 640 -410 {
 lab=VSS}
 N 770 -450 830 -450 {
 lab=VOUT_CORE}
-N 830 -240 830 -200 {
+N 830 -360 830 -320 {
 lab=VSS}
 N 830 -450 830 -420 {
 lab=VOUT_CORE}
@@ -67,33 +67,33 @@ N -920 -320 -920 -270 { lab=VDIG}
 N -460 -340 -430 -340 {
 lab=VDIG}
 N -130 -340 -110 -340 {
-lab=VH_LS}
+lab=VH}
 N -110 -360 -110 -340 {
-lab=VH_LS}
+lab=VH}
 N -130 -300 -90 -300 {
 lab=D1_N}
 N -460 -470 -430 -470 {
 lab=VDIG}
 N -130 -470 -110 -470 {
-lab=VH_LS}
+lab=VH}
 N -110 -490 -110 -470 {
-lab=VH_LS}
+lab=VH}
 N -130 -430 -90 -430 {
 lab=D2_N}
 N -460 -610 -430 -610 {
 lab=VDIG}
 N -130 -610 -110 -610 {
-lab=VH_LS}
+lab=VH}
 N -110 -630 -110 -610 {
-lab=VH_LS}
+lab=VH}
 N -130 -570 -90 -570 {
 lab=D2}
 N -460 -750 -430 -750 {
 lab=VDIG}
 N -130 -750 -110 -750 {
-lab=VH_LS}
+lab=VH}
 N -110 -770 -110 -750 {
-lab=VH_LS}
+lab=VH}
 N -130 -710 -90 -710 {
 lab=D1}
 N -910 -790 -910 -780 {
@@ -156,10 +156,6 @@ N -470 -290 -430 -290 {
 lab=VSS}
 N -430 -300 -430 -290 {
 lab=VSS}
-N -660 -210 -660 -190 { lab=GND}
-N -660 -320 -660 -270 { lab=VH_LS}
-N 830 -360 830 -300 {
-lab=#net1}
 C {devices/vsource.sym} -830 -240 0 0 {name=V2 value=0}
 C {devices/gnd.sym} -830 -190 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} -470 -560 0 0 {name=l10 sig_type=std_logic lab=VSS}
@@ -176,7 +172,7 @@ C {devices/code_shown.sym} -850 -80 0 0 {name=s1 only_toplevel=false value="
 *.probe vd(MP2:G:S)
 *.save all
 *.save v(d1) v(d2) v(d1top_5v) v(d2_5v) v(d2bot_5v) v(d1bot_5v) v(vout) v(vout_core) v(vdd) v(vh) i(v1) i(v5) i(vmeas) v(v_cftop,v_cfbot)
-.save v(D1) v(D2) v(D1_N) v(D2_N) v(VOUT_CORE) v(vh) i(v3) v(v_cftop,v_cfbot) v(D1,v_cftop) v(D2,vout_core) v(D2_N,v_cfbot) v(D1_Nv,VSS) v(v_out_ls1) v(v_out_ls2) v(d2_n,v_cfbot) v(D1_s) v(D2_s)	v(D2_N_s) v(D1_N_s)
+.save v(D1) v(D2) v(D1_N) v(D2_N) v(VOUT_CORE) v(vh) i(v3) v(v_cftop,v_cfbot) v(D1,v_cftop) v(D2,vout_core) v(D2_N,v_cfbot) v(D1_Nv,VSS) v(v_out_ls1) v(v_out_ls2) v(d2_n,v_cfbot) v(D1_s)
 .save @m.xm4.msky130_fd_pr__nfet_g5v0d10v5[vds]
 .param mc_mm_switch=0
 *.lib /home/jorge/Documents/Postdoc/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
@@ -187,22 +183,20 @@ C {devices/code_shown.sym} -850 -80 0 0 {name=s1 only_toplevel=false value="
 .options savecurrents
 .control
 *save all
-tran 1n 30u
+tran 100n 3u
 *write DCDC_v1p4_5MHz_NMOS_PMOS.raw
 *wrdata ~/Documents/Postdoc/chipathon2022/3LFCC_AC3E/xschem/dev_switches/DCDC_5V_FINAL/3LFCC_v1p4.txt tran.v(vout) tran.i(vmeas) tran.v(vdd) tran.i(v3) tran.v(vh) tran.i(v5)
 *wrdata /foss/designs/personal/3LFCC_AC3E/xschem/hierarchy_sch/DCDC_5V_FINAL/3LFCC_v1p4.txt tran.v(vout_core) tran.i(v1)
-wrdata /foss/designs/personal/3LFCC_AC3E/xschem/testbench/Interleaved/3LFCC_v1p5_jmtest.txt tran.v(vout_core) tran.i(v3) tran.i(v4) tran.i(v9)
+wrdata /foss/designs/personal/3LFCC_AC3E/xschem/testbench/Core/3LFCC_v1p5_jm.txt tran.v(vout_core) tran.i(v3)
 
 *Relación D1 D2 para combinar estados
-plot v(D1) v(D2)+5	v(v_cftop,v_cfbot)
+*plot v(D1) v(D2)	v(v_cftop,v_cfbot)
 *plot v(D1_N) v(D2_N)
 
 *Relación Pulso P y N para acondicionar tiempos muertos (reducir peaks)
-plot v(D1) v(D1_N)+5 v(v_cftop,v_cfbot)
-plot v(D1) v(D1_N)+5 
-plot -i(v3)
+*plot v(D1) v(D1_N) v(v_cftop,v_cfbot)
+*plot v(D1) v(D1_N) i(v3)
 *plot v(D1) v(D1_N)	 v(D2) v(D2_N) i(v3) v(v_cftop,v_cfbot)
-plot v(D1_N_s) v(D2_N_s)+2 v(D2_s)+4 v(D1_s)+6
 
 
 *Revisión de estados del convertidor en base a señal de Flycap (caso Cap_ext omitido para ver bien formas de onda de flycap)
@@ -212,6 +206,11 @@ plot v(D1_N_s) v(D2_N_s)+2 v(D2_s)+4 v(D1_s)+6
 *plot v(v_cftop,v_cfbot) v(D2) v(D2_N)
 *plot v(v_cftop,v_cfbot) v(D1) v(D1_N)
 *plot v(v_cftop,v_cfbot) v(vout_core) 
+
+PLOTS TOMAS
+*plot v(D1_s) v(D1)
+plot v(D1,VH) v(D2,V_CFTOP) v(D2_N,V_CFBOT) v(D1_N,VSS)
+
 
 **Problema actual, eficiencia no se logra calcular debido a que no transicionan bien todo los estados, (Cuando el Flycap esta flotante no esta consumiendo energía, es decir la carga no esta conectada a la fuente de entrada...)
 ** Si bien D1- D1_N y D2- D2_N estan con sus respectivos tiempos muertos (redución de peaks), falta sincronizar bien D1 con D2 para lograr la conexión correcta para que la carga se conecte a la fuente en estado de flycap flotante.
@@ -232,15 +231,15 @@ C {devices/lab_wire.sym} 640 -490 2 0 {name=l32 sig_type=std_logic lab=VH}
 C {devices/lab_wire.sym} 640 -410 2 0 {name=l33 sig_type=std_logic lab=VSS}
 C {devices/isource.sym} 910 -390 0 0 {name=I0 value=0.15
 }
-C {devices/lab_wire.sym} 830 -200 0 0 {name=l1 sig_type=std_logic lab=VSS}
-C {devices/res.sym} 830 -270 0 0 {name=R2
-value=22
+C {devices/lab_wire.sym} 830 -320 0 0 {name=l1 sig_type=std_logic lab=VSS}
+C {devices/res.sym} 830 -390 0 0 {name=R2
+value=15
 footprint=1206
 device=resistor
 m=1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 310 -260 0 0 {name=C1 model=cap_mim_m3_2 W=30 L=30 MF=1978 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 410 -200 0 0 {name=C2 model=cap_mim_m3_1 W=30 L=30 MF=1978 spiceprefix=X}
-C {/foss/designs/personal/3LFCC_AC3E/xschem/hierarchy_sch/power_stage.sym} 210 -240 0 0 {name=X2v \{xschem version=3.0.0 file_version=1.2 \}
+C {personal/3LFCC_AC3E/xschem/hierarchy_sch/power_stage.sym} 210 -240 0 0 {name=X2v \{xschem version=3.0.0 file_version=1.2 \}
 G \{\}
 K \{type=subcircuit
 format="@name @pinlist @symname"
@@ -296,25 +295,31 @@ C {devices/lab_wire.sym} -920 -320 0 0 {name=l24 sig_type=std_logic lab=VDIG}
 C {devices/lab_pin.sym} -460 -320 2 1 {name=l14 sig_type=std_logic lab=D1_N_s
 }
 C {devices/lab_wire.sym} -460 -340 0 0 {name=l24 sig_type=std_logic lab=VDIG}
+C {devices/lab_pin.sym} -110 -360 0 1 {name=l125 sig_type=std_logic lab=VH
+}
 C {devices/lab_pin.sym} -460 -450 2 1 {name=l1 sig_type=std_logic lab=D2_N_s
 }
 C {devices/lab_wire.sym} -460 -470 0 0 {name=l24 sig_type=std_logic lab=VDIG}
+C {devices/lab_pin.sym} -110 -490 0 1 {name=l125 sig_type=std_logic lab=VH
+}
 C {devices/lab_pin.sym} -90 -300 0 1 {name=l14 sig_type=std_logic lab=D1_N
 }
 C {devices/lab_pin.sym} -90 -430 0 1 {name=l44 sig_type=std_logic lab=D2_N
 }
 C {devices/lab_pin.sym} -460 -590 2 1 {name=l1 sig_type=std_logic lab=D2_s
 }
+C {devices/lab_pin.sym} -110 -630 0 1 {name=l125 sig_type=std_logic lab=VH
+}
 C {devices/lab_pin.sym} -90 -570 0 1 {name=l44 sig_type=std_logic lab=D2
 }
 C {devices/lab_pin.sym} -460 -730 2 1 {name=l1 sig_type=std_logic lab=D1_s
 }
 C {devices/lab_wire.sym} -460 -750 0 0 {name=l24 sig_type=std_logic lab=VDIG}
-C {devices/lab_pin.sym} -110 -770 0 1 {name=l125 sig_type=std_logic lab=VH_LS
+C {devices/lab_pin.sym} -110 -770 0 1 {name=l125 sig_type=std_logic lab=VH
 }
 C {devices/lab_pin.sym} -90 -710 0 1 {name=l44 sig_type=std_logic lab=D1
 }
-C {/foss/designs/personal/3LFCC_AC3E/xschem/hierarchy_sch/LS_FINAL.sym} -280 -320 0 0 {name=x1 \{xschem version=3.1.0 file_version=1.2\}
+C {personal/3LFCC_AC3E/xschem/hierarchy_sch/LS_FINAL.sym} -280 -320 0 0 {name=x1 \{xschem version=3.1.0 file_version=1.2\}
 K \{type=subcircuit
 format="@name @pinlist @symname"
 template="name=x1"
@@ -339,7 +344,7 @@ B 5 -152.5 -22.5 -147.5 -17.5 \{name=IN dir=in \}
 L 4 -150 -20 -130 -20 \{\}
 T \{IN\} -125 -24 0 0 0.2 0.2 \{\}
 }
-C {/foss/designs/personal/3LFCC_AC3E/xschem/hierarchy_sch/LS_FINAL.sym} -280 -450 0 0 {name=x2 \{xschem version=3.1.0 file_version=1.2\}
+C {personal/3LFCC_AC3E/xschem/hierarchy_sch/LS_FINAL.sym} -280 -450 0 0 {name=x2 \{xschem version=3.1.0 file_version=1.2\}
 K \{type=subcircuit
 format="@name @pinlist @symname"
 template="name=x1"
@@ -364,7 +369,7 @@ B 5 -152.5 -22.5 -147.5 -17.5 \{name=IN dir=in \}
 L 4 -150 -20 -130 -20 \{\}
 T \{IN\} -125 -24 0 0 0.2 0.2 \{\}
 }
-C {/foss/designs/personal/3LFCC_AC3E/xschem/hierarchy_sch/LS_FINAL.sym} -280 -590 0 0 {name=x3 \{xschem version=3.1.0 file_version=1.2\}
+C {personal/3LFCC_AC3E/xschem/hierarchy_sch/LS_FINAL.sym} -280 -590 0 0 {name=x3 \{xschem version=3.1.0 file_version=1.2\}
 K \{type=subcircuit
 format="@name @pinlist @symname"
 template="name=x1"
@@ -389,7 +394,7 @@ B 5 -152.5 -22.5 -147.5 -17.5 \{name=IN dir=in \}
 L 4 -150 -20 -130 -20 \{\}
 T \{IN\} -125 -24 0 0 0.2 0.2 \{\}
 }
-C {/foss/designs/personal/3LFCC_AC3E/xschem/hierarchy_sch/LS_FINAL.sym} -280 -730 0 0 {name=x4 \{xschem version=3.1.0 file_version=1.2\}
+C {personal/3LFCC_AC3E/xschem/hierarchy_sch/LS_FINAL.sym} -280 -730 0 0 {name=x4 \{xschem version=3.1.0 file_version=1.2\}
 K \{type=subcircuit
 format="@name @pinlist @symname"
 template="name=x1"
@@ -430,7 +435,7 @@ C {devices/lab_wire.sym} -920 -530 0 0 {name=l6 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} -910 -750 0 0 {name=V1 value="PULSE(1.8 0 10n 1n 2.5n 646n 1000n)"}
 C {devices/capa.sym} 160 -250 0 0 {name=C3
 m=1
-value=680n
+value=100n
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} -460 -610 0 0 {name=l7 sig_type=std_logic lab=VDIG}
@@ -438,13 +443,3 @@ C {devices/lab_wire.sym} -470 -700 0 0 {name=l8 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -470 -420 0 0 {name=l12 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -470 -290 0 0 {name=l13 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -830 -320 0 0 {name=l15 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} -660 -240 0 0 {name=V4 value=\{VH\}}
-C {devices/gnd.sym} -660 -190 0 0 {name=l23 lab=GND}
-C {devices/lab_wire.sym} -660 -320 0 0 {name=l24 sig_type=std_logic lab=VH_LS}
-C {devices/lab_pin.sym} -110 -630 0 1 {name=l125 sig_type=std_logic lab=VH_LS
-}
-C {devices/lab_pin.sym} -110 -490 0 1 {name=l125 sig_type=std_logic lab=VH_LS
-}
-C {devices/lab_pin.sym} -110 -360 0 1 {name=l125 sig_type=std_logic lab=VH_LS
-}
-C {devices/vsource.sym} 830 -390 0 0 {name=V9 value=0}
