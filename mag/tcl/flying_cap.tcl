@@ -3,7 +3,7 @@
 #   AC3E - UTFSM      		#
 #   Project: 3LFCC    		#
 #   Flying capacitor layout	#
-#   09-10-2022        		#
+#   23-10-2022        		#
 # #########################	#
 
 drc style drc(full)
@@ -46,6 +46,23 @@ box 711.8um 1660um 1359.8um 1680um
 paint {metal3 metal5}
 box 712um 1660.2um 1359.6um 1669.8um
 paint {via3 via4}
+
+
+# pad 1
+box 0um 795.89um 95.7um 988.89um
+erase {metal3 metal5 mimcap mimcapcontact mimcap2} 
+box 0um 797.89um 93.7um 986.89um
+paint {metal3 metal4 metal5 } 
+box 0.5um 798.39um 93.2um 986.39um
+paint {via3 via4} 
+
+# pad 2
+box 0um 1210.6um 95.7um 1403.6um
+erase {metal4 mimcap mimcapcontact mimcap2 mimcap2contact} 
+box 0um 1212.6um 93.7um 1401.6um
+paint {metal3 metal4 metal5} 
+box 0.5um 1213.1um 93.2um 1401.1um
+paint {via3 via4} 
 
 #
 #source cap_matrix_43x46.tcl
