@@ -1,4 +1,4 @@
-* NGSPICE file created from core.ext - technology: sky130A
+* NGSPICE file created from interleaved.ext - technology: sky130A
 
 .subckt nmos_waffle_36x36 w_n1200_n1200# a_n50_n50# a_112_3350# a_112_1150#
 X0 w_n1200_n1200# a_n50_n50# a_112_3350# w_n1200_n1200# sky130_fd_pr__nfet_g5v0d10v5 ad=8.80377e+15p pd=2.14718e+10u as=3.49194e+15p ps=2.36764e+10u w=4.38e+06u l=500000u
@@ -7038,7 +7038,7 @@ X4510 w_n1200_n1200# a_n50_n50# a_112_3350# w_n1200_n1200# sky130_fd_pr__pfet_g5
 X4511 a_112_3350# a_n50_n50# w_n1200_n1200# w_n1200_n1200# sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=4.38e+06u l=500000u
 .ends
 
-.subckt power_stage VP s4 s3 s2 s1 fc2 VN fc1
+.subckt power_stage VP s4 s3 s2 s1 fc2 VN out fc1
 Xnmos_waffle_36x36_0 VN s4 fc2 fc2 nmos_waffle_36x36
 Xnmos_waffle_36x36_1 fc2 s3 out out nmos_waffle_36x36
 Xpmos_waffle_48x48_0 fc1 s2 out out pmos_waffle_48x48
@@ -11521,9 +11521,10 @@ X4471 m3_0_0# m3_142360_332000# sky130_fd_pr__cap_mim_m3_2 l=3e+07u w=3e+07u
 .ends
 
 .subckt converter power_stage_0/s4 power_stage_0/s3 power_stage_0/s2 power_stage_0/s1
-+ power_stage_0/fc2 power_stage_0/VP power_stage_0/VN
++ power_stage_0/fc2 power_stage_0/VN power_stage_0/VP power_stage_0/out
 Xpower_stage_0 power_stage_0/VP power_stage_0/s4 power_stage_0/s3 power_stage_0/s2
-+ power_stage_0/s1 power_stage_0/fc2 power_stage_0/VN power_stage_0/fc1 power_stage
++ power_stage_0/s1 power_stage_0/fc2 power_stage_0/VN power_stage_0/out power_stage_0/fc1
++ power_stage
 Xflying_cap_0 power_stage_0/fc1 power_stage_0/fc2 flying_cap
 .ends
 
@@ -11609,12 +11610,11 @@ X76 cruzados_0/OUT cruzados_0/IN1 inv_1_8_0/GND inv_1_8_0/GND sky130_fd_pr__nfet
 X77 inv_1_8_0/GND inv_400_0/IN inv_400_0/OUT inv_1_8_0/GND sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=500000u
 .ends
 
-
-* Top level circuit core
-
+.subckt core converter_0/power_stage_0/fc2 level_shifter_3/VH converter_0/power_stage_0/out
++ VDD VSUBS
 Xconverter_0 converter_0/power_stage_0/s4 converter_0/power_stage_0/s3 converter_0/power_stage_0/s2
-+ converter_0/power_stage_0/s1 converter_0/power_stage_0/fc2 level_shifter_3/VH VSUBS
-+ converter
++ converter_0/power_stage_0/s1 converter_0/power_stage_0/fc2 VSUBS level_shifter_3/VH
++ converter_0/power_stage_0/out converter
 Xlevel_shifter_0 converter_0/power_stage_0/s1 VSUBS VSUBS D1 level_shifter_3/VH level_shifter_3/VH
 + level_shifter_3/VH VDD D1 VDD VSUBS level_shifter
 Xlevel_shifter_1 converter_0/power_stage_0/s2 VSUBS VSUBS D2 level_shifter_3/VH level_shifter_3/VH
@@ -11623,5 +11623,12 @@ Xlevel_shifter_2 converter_0/power_stage_0/s3 VSUBS VSUBS D3 level_shifter_3/VH 
 + level_shifter_3/VH VDD D3 VDD VSUBS level_shifter
 Xlevel_shifter_3 converter_0/power_stage_0/s4 VSUBS VSUBS D1 level_shifter_3/VH level_shifter_3/VH
 + level_shifter_3/VH VDD D1 VDD VSUBS level_shifter
+.ends
+
+
+* Top level circuit interleaved
+
+Xcore_0 core_0/converter_0/power_stage_0/fc2 VH Vout core_1/VDD GND core
+Xcore_1 core_1/converter_0/power_stage_0/fc2 VH Vout core_1/VDD GND core
 .end
 

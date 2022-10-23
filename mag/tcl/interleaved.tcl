@@ -3,8 +3,15 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Interleaved layout	#
-#   09-10-2022        	#
+#   22-10-2022        	#
 # #####################	#
+
+# version invertida
+
+set midd 0
+set yoff 0
+set core1 [expr {$midd - 1372 - 8}]
+set core2 [expr {$midd + 8}]
 
 drc style drc(full)
 
@@ -23,102 +30,103 @@ see no m2contact
 see no m3contact
 see no via3
 see no via4
+see no mimcap
+see no mimcap2
+see no mimcap2contact
 
-getcell user_analog_project_wrapper_empty.mag
+# core
+box [expr {$core1}]um [expr {$yoff}]um [expr {$core1}]um [expr {$yoff}]um
+getcell core.mag
+rotate 180
+box [expr {$core2}]um [expr {$yoff}]um [expr {$core2}]um [expr {$yoff}]um
+getcell core.mag
+rotate 180
+sideways
 
-box 0um 1889um 20um 1895um
-paint metal3
-box 0um 2105um 20um 2111um
-paint metal3
-box 0um 2321um 20um 2327um
-paint metal3
-box 0um 2537um 20um 2543um
-paint metal3
-
-# Vdd
-box 340.97um 3450um 852.97um 3511.5um
-paint {metal3 metal4 metal5}
-box 850um 3450um 880um 3510um
-paint {metal3 metal4 metal5}
-box 879.47um 3450um 904.47um 3511.5um
-paint {metal3 metal4 metal5}
-box 350um 3460um 900um 3500um
-paint {via3 via4}
-box 840um 3388um 2580um 3448um
-paint {metal3 metal4 metal5}
-box 840um 3388um 900um 3460um
-paint {metal3 metal4 metal5}
-
-box 320um 3350um 380um 3510um
-paint {metal3 metal4 metal5}
-box 2520um 3350um 2580um 3440um
-paint {metal3 metal4 metal5}
-
-# Vout
-
-
-box 1010um 3326um 1890um 3386um
-paint {metal3 metal4 metal5}
+#box -10um -10um 0um 3520um
+#paint comment
+#box -10um -10um 2920um 0um
+#paint comment
+#box -10um 3510um 2920um 3520um
+#paint comment
+#box 2920um -10um 2930um 3520um
+#paint comment
 
 # GND
-box 1086.47um 3450um 1111.47um 3511.5um
+box [expr {$midd - 40}]um [expr {$yoff + 1770}]um [expr {$midd + 40}]um [expr {$yoff + 2000}]um
 paint {metal3 metal4 metal5}
-box 1110um 3450um 1140um 3510um
+box [expr {$midd - 130}]um [expr {$yoff + 2000}]um [expr {$midd + 130}]um [expr {$yoff + 2022}]um
 paint {metal3 metal4 metal5}
-box 1137.97um 3450um 1570um 3511.5um
+box [expr {$midd + 1}]um [expr {$yoff + 2012}]um [expr {$midd + 31}]um [expr {$yoff + 2214}]um
+paint {metal1 metal2}
+box [expr {$midd + 33}]um [expr {$yoff + 2012}]um [expr {$midd + 63}]um [expr {$yoff + 2214}]um
+paint {metal1 metal2}
+box [expr {$midd + 65}]um [expr {$yoff + 2012}]um [expr {$midd + 95}]um [expr {$yoff + 2214}]um
+paint {metal1 metal2}
+box [expr {$midd + 97}]um [expr {$yoff + 2012}]um [expr {$midd + 127}]um [expr {$yoff + 2214}]um
+paint {metal1 metal2}
+box [expr {$midd - 1}]um [expr {$yoff + 2012}]um [expr {$midd - 31}]um [expr {$yoff + 2214}]um
+paint {metal1 metal2}
+box [expr {$midd - 33}]um [expr {$yoff + 2012}]um [expr {$midd - 63}]um [expr {$yoff + 2214}]um
+paint {metal1 metal2}
+box [expr {$midd - 65}]um [expr {$yoff + 2012}]um [expr {$midd - 95}]um [expr {$yoff + 2214}]um
+paint {metal1 metal2}
+box [expr {$midd - 97}]um [expr {$yoff + 2012}]um [expr {$midd - 127}]um [expr {$yoff + 2214}]um
+paint {metal1 metal2}
+box [expr {$midd - 130}]um [expr {$yoff + 2152}]um [expr {$midd + 130}]um [expr {$yoff + 2182}]um
 paint {metal3 metal4 metal5}
+box [expr {$midd - 130}]um [expr {$yoff + 2184}]um [expr {$midd + 130}]um [expr {$yoff + 2214}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 130}]um [expr {$yoff + 2012}]um [expr {$midd + 130}]um [expr {$yoff + 2022}]um
+paint {metal1 metal2}
+box [expr {$midd - 129.85}]um [expr {$yoff + 2012.15}]um [expr {$midd + 129.85}]um [expr {$yoff + 2021.85}]um
+paint {m2contact m3contact via3 via4}
+box [expr {$midd - 130}]um [expr {$yoff + 2152}]um [expr {$midd + 130}]um [expr {$yoff + 2182}]um
+paint {metal1 metal2}
+box [expr {$midd - 129.85}]um [expr {$yoff + 2152.15}]um [expr {$midd + 129.85}]um [expr {$yoff + 2181.85}]um
+paint {m2contact m3contact via3 via4}
+box [expr {$midd - 130}]um [expr {$yoff + 2184}]um [expr {$midd + 130}]um [expr {$yoff + 2214}]um
+paint {metal1 metal2}
+box [expr {$midd - 129.85}]um [expr {$yoff + 2184.15}]um [expr {$midd + 129.85}]um [expr {$yoff + 2213.85}]um
+paint {m2contact m3contact via3 via4}
+box [expr {$midd - 15}]um [expr {$yoff + 2184}]um [expr {$midd + 15}]um [expr {$yoff + 2214}]um
+label GND west metal5
 
-box 0um 3401um 20um 3427um
-paint metal3
-box 81um 3500um 106um 3520um
-paint metal3
-box 341um 3500um 853um 3520um
+# VH
+box [expr {$midd - 1360}]um [expr {$yoff + 2088}]um [expr {$midd + 1360}]um [expr {$yoff + 2118}]um
 paint {metal3 metal4 metal5}
-box 853um 3500um 879um 3511um
+box [expr {$midd - 1360}]um [expr {$yoff + 2120}]um [expr {$midd + 1360}]um [expr {$yoff + 2150}]um
 paint {metal3 metal4 metal5}
-box 879um 3500um 904um 3520um
+box [expr {$midd + 1330}]um [expr {$yoff + 2060}]um [expr {$midd + 1360}]um [expr {$yoff + 2150}]um
 paint {metal3 metal4 metal5}
-box 1086um 3500um 1112um 3520um
+box [expr {$midd + 1298}]um [expr {$yoff + 2060}]um [expr {$midd + 1328}]um [expr {$yoff + 2150}]um
 paint {metal3 metal4 metal5}
-box 1111um 3500um 1138um 3511um
+box [expr {$midd - 1330}]um [expr {$yoff + 2060}]um [expr {$midd - 1360}]um [expr {$yoff + 2150}]um
 paint {metal3 metal4 metal5}
-box 1137um 3500um 1163um 3520um
+box [expr {$midd - 1298}]um [expr {$yoff + 2060}]um [expr {$midd - 1328}]um [expr {$yoff + 2150}]um
 paint {metal3 metal4 metal5}
-box 1595um 3500um 1620um 3520um
-paint {metal3 metal4 metal5}
-box 1620um 3500um 1647um 3511um
-paint {metal3 metal4 metal5}
-box 1646um 3500um 2092um 3520um
-paint {metal3 metal4 metal5}
-box 2327um 3500um 2352um 3520um
-paint metal3
-box 2833um 3500um 2858um 3520um
-paint metal3
-box 2900um 3390um 2920um 3415um
-paint metal3
+box [expr {$midd - 15}]um [expr {$yoff + 2120}]um [expr {$midd + 15}]um [expr {$yoff + 2150}]um
+label VH west metal5
 
-box 2900um 2933um 2920um 2939um
-paint metal3 
-box 2900um 2486um 2920um 2492um
-paint metal3 
-box 2900um 2264um 2920um 2270um
-paint metal3 
-box 2900um 2041um 2920um 2047um
-paint metal3 
+# Vout
+box [expr {$midd - 650}]um [expr {$yoff + 2024}]um [expr {$midd + 650}]um [expr {$yoff + 2054}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 930}]um [expr {$yoff + 2056}]um [expr {$midd + 930}]um [expr {$yoff + 2086}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd + 580}]um [expr {$yoff + 2000}]um [expr {$midd + 610}]um [expr {$yoff + 2086}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd + 548}]um [expr {$yoff + 2000}]um [expr {$midd + 578}]um [expr {$yoff + 2086}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 580}]um [expr {$yoff + 2000}]um [expr {$midd - 610}]um [expr {$yoff + 2086}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 548}]um [expr {$yoff + 2000}]um [expr {$midd - 578}]um [expr {$yoff + 2086}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 15}]um [expr {$yoff + 2056}]um [expr {$midd + 15}]um [expr {$yoff + 2086}]um
+label Vout west metal5
 
+# VDD
+box [expr {$midd - 20}]um [expr {$yoff + 1669.5}]um [expr {$midd + 20}]um [expr {$yoff + 1671.5}]um
+paint metal1
 
-# 
-box 0um 0um 10um 3520um
-paint comment
-box 0um 0um 2920um 10um
-paint comment
-box 0um 3510um 2920um 3520um
-paint comment
-box 2910um 0um 2920um 3520um
-paint comment
-box 70um 1310um 80um 3010um
-getcell core.mag
-box 1458um 1310um 1468um 3010um
-getcell core.mag
-sideways
+save interleaved.mag
 
