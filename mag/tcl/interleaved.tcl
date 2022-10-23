@@ -3,7 +3,7 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Interleaved layout	#
-#   22-10-2022        	#
+#   23-10-2022        	#
 # #####################	#
 
 # version invertida
@@ -55,58 +55,74 @@ sideways
 # GND
 box [expr {$midd - 40}]um [expr {$yoff + 1770}]um [expr {$midd + 40}]um [expr {$yoff + 2000}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd - 130}]um [expr {$yoff + 2000}]um [expr {$midd + 130}]um [expr {$yoff + 2022}]um
+box [expr {$midd - 260}]um [expr {$yoff + 2000}]um [expr {$midd + 30}]um [expr {$yoff + 2022}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd + 1}]um [expr {$yoff + 2012}]um [expr {$midd + 31}]um [expr {$yoff + 2214}]um
+box [expr {$midd - 129}]um [expr {$yoff + 2012}]um [expr {$midd - 99}]um [expr {$yoff + 2244}]um
 paint {metal1 metal2}
-box [expr {$midd + 33}]um [expr {$yoff + 2012}]um [expr {$midd + 63}]um [expr {$yoff + 2214}]um
+box [expr {$midd - 97}]um [expr {$yoff + 2012}]um [expr {$midd - 67}]um [expr {$yoff + 2244}]um
 paint {metal1 metal2}
-box [expr {$midd + 65}]um [expr {$yoff + 2012}]um [expr {$midd + 95}]um [expr {$yoff + 2214}]um
+box [expr {$midd - 65}]um [expr {$yoff + 2012}]um [expr {$midd - 35}]um [expr {$yoff + 2244}]um
 paint {metal1 metal2}
-box [expr {$midd + 97}]um [expr {$yoff + 2012}]um [expr {$midd + 127}]um [expr {$yoff + 2214}]um
+box [expr {$midd - 33}]um [expr {$yoff + 2012}]um [expr {$midd - 3}]um [expr {$yoff + 2244}]um
 paint {metal1 metal2}
-box [expr {$midd - 1}]um [expr {$yoff + 2012}]um [expr {$midd - 31}]um [expr {$yoff + 2214}]um
+box [expr {$midd - 131}]um [expr {$yoff + 2012}]um [expr {$midd - 161}]um [expr {$yoff + 2244}]um
 paint {metal1 metal2}
-box [expr {$midd - 33}]um [expr {$yoff + 2012}]um [expr {$midd - 63}]um [expr {$yoff + 2214}]um
+box [expr {$midd - 163}]um [expr {$yoff + 2012}]um [expr {$midd - 193}]um [expr {$yoff + 2244}]um
 paint {metal1 metal2}
-box [expr {$midd - 65}]um [expr {$yoff + 2012}]um [expr {$midd - 95}]um [expr {$yoff + 2214}]um
+box [expr {$midd - 195}]um [expr {$yoff + 2012}]um [expr {$midd - 225}]um [expr {$yoff + 2244}]um
 paint {metal1 metal2}
-box [expr {$midd - 97}]um [expr {$yoff + 2012}]um [expr {$midd - 127}]um [expr {$yoff + 2214}]um
+box [expr {$midd - 257}]um [expr {$yoff + 2012}]um [expr {$midd - 227}]um [expr {$yoff + 2244}]um
 paint {metal1 metal2}
-box [expr {$midd - 130}]um [expr {$yoff + 2152}]um [expr {$midd + 130}]um [expr {$yoff + 2182}]um
-paint {metal3 metal4 metal5}
-box [expr {$midd - 130}]um [expr {$yoff + 2184}]um [expr {$midd + 130}]um [expr {$yoff + 2214}]um
-paint {metal3 metal4 metal5}
-box [expr {$midd - 130}]um [expr {$yoff + 2012}]um [expr {$midd + 130}]um [expr {$yoff + 2022}]um
+box [expr {$midd - 257}]um [expr {$yoff + 2214}]um [expr {$midd - 3}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2 metal3 metal4 metal5}
+box [expr {$midd - 257}]um [expr {$yoff + 2182}]um [expr {$midd - 3}]um [expr {$yoff + 2212}]um
+paint {metal1 metal2 metal3 metal4 metal5}
+box [expr {$midd - 260}]um [expr {$yoff + 2012}]um [expr {$midd + 0}]um [expr {$yoff + 2022}]um
 paint {metal1 metal2}
-box [expr {$midd - 129.85}]um [expr {$yoff + 2012.15}]um [expr {$midd + 129.85}]um [expr {$yoff + 2021.85}]um
+box [expr {$midd - 259.85}]um [expr {$yoff + 2012.15}]um [expr {$midd - 0.15}]um [expr {$yoff + 2021.85}]um
 paint {m2contact m3contact via3 via4}
-box [expr {$midd - 130}]um [expr {$yoff + 2152}]um [expr {$midd + 130}]um [expr {$yoff + 2182}]um
-paint {metal1 metal2}
-box [expr {$midd - 129.85}]um [expr {$yoff + 2152.15}]um [expr {$midd + 129.85}]um [expr {$yoff + 2181.85}]um
+box [expr {$midd - 256.85}]um [expr {$yoff + 2214.15}]um [expr {$midd - 3.15}]um [expr {$yoff + 2243.85}]um
 paint {m2contact m3contact via3 via4}
-box [expr {$midd - 130}]um [expr {$yoff + 2184}]um [expr {$midd + 130}]um [expr {$yoff + 2214}]um
-paint {metal1 metal2}
-box [expr {$midd - 129.85}]um [expr {$yoff + 2184.15}]um [expr {$midd + 129.85}]um [expr {$yoff + 2213.85}]um
+box [expr {$midd - 256.85}]um [expr {$yoff + 2182.15}]um [expr {$midd - 3.15}]um [expr {$yoff + 2211.85}]um
 paint {m2contact m3contact via3 via4}
-box [expr {$midd - 15}]um [expr {$yoff + 2184}]um [expr {$midd + 15}]um [expr {$yoff + 2214}]um
+box [expr {$midd - 257}]um [expr {$yoff + 2214}]um [expr {$midd - 227}]um [expr {$yoff + 2244}]um
 label GND west metal5
 
 # VH
-box [expr {$midd - 1360}]um [expr {$yoff + 2088}]um [expr {$midd + 1360}]um [expr {$yoff + 2118}]um
+box [expr {$midd - 1360}]um [expr {$yoff + 2182}]um [expr {$midd - 516}]um [expr {$yoff + 2212}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd - 1360}]um [expr {$yoff + 2120}]um [expr {$midd + 1360}]um [expr {$yoff + 2150}]um
+box [expr {$midd - 1328}]um [expr {$yoff + 2214}]um [expr {$midd - 516}]um [expr {$yoff + 2244}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd + 1330}]um [expr {$yoff + 2060}]um [expr {$midd + 1360}]um [expr {$yoff + 2150}]um
+box [expr {$midd - 578}]um [expr {$yoff + 2088}]um [expr {$midd + 322}]um [expr {$yoff + 2118}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd + 1298}]um [expr {$yoff + 2060}]um [expr {$midd + 1328}]um [expr {$yoff + 2150}]um
+box [expr {$midd - 578}]um [expr {$yoff + 2120}]um [expr {$midd + 322}]um [expr {$yoff + 2150}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd - 1330}]um [expr {$yoff + 2060}]um [expr {$midd - 1360}]um [expr {$yoff + 2150}]um
+box [expr {$midd - 578}]um [expr {$yoff + 2088}]um [expr {$midd - 548}]um [expr {$yoff + 2244}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd - 1298}]um [expr {$yoff + 2060}]um [expr {$midd - 1328}]um [expr {$yoff + 2150}]um
+box [expr {$midd - 546}]um [expr {$yoff + 2088}]um [expr {$midd - 516}]um [expr {$yoff + 2244}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd - 15}]um [expr {$yoff + 2120}]um [expr {$midd + 15}]um [expr {$yoff + 2150}]um
-label VH west metal5
+box [expr {$midd + 260}]um [expr {$yoff + 2088}]um [expr {$midd + 290}]um [expr {$yoff + 2182}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd + 292}]um [expr {$yoff + 2088}]um [expr {$midd + 322}]um [expr {$yoff + 2182}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd + 260}]um [expr {$yoff + 2120}]um [expr {$midd + 1360}]um [expr {$yoff + 2150}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd + 260}]um [expr {$yoff + 2152}]um [expr {$midd + 1360}]um [expr {$yoff + 2182}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd + 1330}]um [expr {$yoff + 2060}]um [expr {$midd + 1360}]um [expr {$yoff + 2182}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd + 1298}]um [expr {$yoff + 2060}]um [expr {$midd + 1328}]um [expr {$yoff + 2182}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 1360}]um [expr {$yoff + 2060}]um [expr {$midd - 1330}]um [expr {$yoff + 2212}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 1328}]um [expr {$yoff + 2060}]um [expr {$midd - 1298}]um [expr {$yoff + 2244}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 1360}]um [expr {$yoff + 2150}]um [expr {$midd - 1266}]um [expr {$yoff + 2180}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 1296}]um [expr {$yoff + 2150}]um [expr {$midd - 1266}]um [expr {$yoff + 2244}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 546}]um [expr {$yoff + 2214}]um [expr {$midd - 516}]um [expr {$yoff + 2244}]um
+label VH east metal5
 
 # Vout
 box [expr {$midd - 650}]um [expr {$yoff + 2024}]um [expr {$midd + 650}]um [expr {$yoff + 2054}]um
@@ -117,12 +133,44 @@ box [expr {$midd + 580}]um [expr {$yoff + 2000}]um [expr {$midd + 610}]um [expr 
 paint {metal3 metal4 metal5}
 box [expr {$midd + 548}]um [expr {$yoff + 2000}]um [expr {$midd + 578}]um [expr {$yoff + 2086}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd - 580}]um [expr {$yoff + 2000}]um [expr {$midd - 610}]um [expr {$yoff + 2086}]um
+box [expr {$midd - 610}]um [expr {$yoff + 2000}]um [expr {$midd - 580}]um [expr {$yoff + 2086}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd - 548}]um [expr {$yoff + 2000}]um [expr {$midd - 578}]um [expr {$yoff + 2086}]um
+box [expr {$midd - 578}]um [expr {$yoff + 2000}]um [expr {$midd - 548}]um [expr {$yoff + 2086}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd - 15}]um [expr {$yoff + 2056}]um [expr {$midd + 15}]um [expr {$yoff + 2086}]um
-label Vout west metal5
+box [expr {$midd + 99}]um [expr {$yoff + 2024}]um [expr {$midd + 129}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2}
+box [expr {$midd + 67}]um [expr {$yoff + 2024}]um [expr {$midd + 97}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2}
+box [expr {$midd + 35}]um [expr {$yoff + 2024}]um [expr {$midd + 65}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2}
+box [expr {$midd + 3}]um [expr {$yoff + 2024}]um [expr {$midd + 33}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2}
+box [expr {$midd + 131}]um [expr {$yoff + 2024}]um [expr {$midd + 161}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2}
+box [expr {$midd + 163}]um [expr {$yoff + 2024}]um [expr {$midd + 193}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2}
+box [expr {$midd + 195}]um [expr {$yoff + 2024}]um [expr {$midd + 225}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2}
+box [expr {$midd + 227}]um [expr {$yoff + 2024}]um [expr {$midd + 257}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2}
+box [expr {$midd + 3}]um [expr {$yoff + 2214}]um [expr {$midd + 257}]um [expr {$yoff + 2244}]um
+paint {metal1 metal2 metal3 metal4 metal5}
+box [expr {$midd + 3}]um [expr {$yoff + 2182}]um [expr {$midd + 257}]um [expr {$yoff + 2212}]um
+paint {metal1 metal2 metal3 metal4 metal5}
+box [expr {$midd + 3}]um [expr {$yoff + 2056}]um [expr {$midd + 257}]um [expr {$yoff + 2086}]um
+paint {metal1 metal2}
+box [expr {$midd + 3}]um [expr {$yoff + 2024}]um [expr {$midd + 257}]um [expr {$yoff + 2054}]um
+paint {metal1 metal2}
+box [expr {$midd + 3.15}]um [expr {$yoff + 2214.15}]um [expr {$midd + 256.85}]um [expr {$yoff + 2243.85}]um
+paint {m2contact m3contact via3 via4}
+box [expr {$midd + 3.15}]um [expr {$yoff + 2182.15}]um [expr {$midd + 256.85}]um [expr {$yoff + 2211.85}]um
+paint {m2contact m3contact via3 via4}
+box [expr {$midd + 3.15}]um [expr {$yoff + 2056.15}]um [expr {$midd + 256.85}]um [expr {$yoff + 2085.85}]um
+paint {m2contact m3contact via3 via4}
+box [expr {$midd + 3.15}]um [expr {$yoff + 2024.15}]um [expr {$midd + 256.85}]um [expr {$yoff + 2053.85}]um
+paint {m2contact m3contact via3 via4}
+box [expr {$midd + 227}]um [expr {$yoff + 2214}]um [expr {$midd + 257}]um [expr {$yoff + 2244}]um
+label Vout east metal5
 
 # VDD
 box [expr {$midd - 20}]um [expr {$yoff + 1669.5}]um [expr {$midd + 20}]um [expr {$yoff + 1671.5}]um
