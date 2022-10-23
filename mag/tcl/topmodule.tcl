@@ -3,8 +3,11 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Topmodule layout	#
-#   09-10-2022        	#
+#   22-10-2022        	#
 # #####################	#
+
+set midd 1460
+set yoff 1250
 
 drc style drc(full)
 
@@ -16,6 +19,7 @@ see no mvpsubstratepdiff
 see no mvnsubstratendiff
 see no mvpsubstratepcontact
 see no mvnsubstratencontact
+see no polysilicon
 see no locali
 see no viali
 see no metal1
@@ -23,8 +27,14 @@ see no m2contact
 see no m3contact
 see no via3
 see no via4
+see no mimcap
+see no mimcap2
+see no mimcapcontact
+see no mimcap2contact
 
 getcell user_analog_project_wrapper_empty.mag
+box [expr {$midd - 1380}]um [expr {$yoff}]um [expr {$midd - 1380}]um [expr {$yoff}]um
+getcell interleaved.mag
 
 box 0um 1889um 20um 1895um
 paint metal3
@@ -36,37 +46,47 @@ box 0um 2537um 20um 2543um
 paint metal3
 
 # Vdd
-box 340.97um 3450um 852.97um 3511.5um
+box 340um 3500um 853um 3511.5um
 paint {metal3 metal4 metal5}
-box 850um 3450um 880um 3510um
+box 850um 3500um 880um 3510um
 paint {metal3 metal4 metal5}
-box 879.47um 3450um 904.47um 3511.5um
-paint {metal3 metal4 metal5}
-box 350um 3460um 900um 3500um
-paint {via3 via4}
-box 840um 3388um 2580um 3448um
-paint {metal3 metal4 metal5}
-box 840um 3388um 900um 3460um
-paint {metal3 metal4 metal5}
-
-box 320um 3350um 380um 3510um
-paint {metal3 metal4 metal5}
-box 2520um 3350um 2580um 3440um
+box 879.47um 3500um 905um 3511.5um
 paint {metal3 metal4 metal5}
 
 # Vout
-
-
-box 1010um 3326um 1890um 3386um
+box 1470um 3500um 1619.97um 3511.5um
+paint {metal3 metal4 metal5}
+box 1610um 3500um 1650um 3510um
+paint {metal3 metal4 metal5}
+box 1646.47um 3500um 1671.47um 3511.5um
 paint {metal3 metal4 metal5}
 
 # GND
-box 1086.47um 3450um 1111.47um 3511.5um
+box 1086.47um 3500um 1111.47um 3511.5um
 paint {metal3 metal4 metal5}
-box 1110um 3450um 1140um 3510um
+box 1110um 3500um 1140um 3510um
 paint {metal3 metal4 metal5}
-box 1137.97um 3450um 1570um 3511.5um
+box 1137.97um 3500um 1460um 3511.5um
 paint {metal3 metal4 metal5}
+
+# FC1_1
+box 60um 2910m 70um 3510um
+paint metal3
+
+# FC1_2
+box 40um 2850m 50um 3430um
+paint metal3
+
+# FC2_1
+box 2850um 2910m 2860um 3510um
+paint metal3
+
+# FC2_2
+box 2870um 2850m 2880um 3420um
+paint metal3
+
+
+# ##
 
 box 0um 3401um 20um 3427um
 paint metal3
