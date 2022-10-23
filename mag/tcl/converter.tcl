@@ -3,8 +3,12 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Converter layout	#
-#   17-09-2022        	#
+#   21-10-2022        	#
 # #####################	#
+
+# version invertida
+
+set gap 20
 
 see no mvndiffusion
 see no mvpdiffusion
@@ -19,28 +23,29 @@ see no viali
 see no metal1
 see no m2contact
 see no m3contact
+see no mimcap
+see no mimcap2
+
+drc style drc(full)
 
 #
-box 0.3um 0um 10um 10um
-getcell flying_cap.mag
-
-box 0um 1500um 10um 1510um
+box 0um 0um 10um 10um
 getcell power_stage.mag
-rotate -90
+rotate 90
+
+box 0um [expr {380 + $gap}]um 10um [expr {390 + $gap}]um
+getcell flying_cap.mag
+rotate 180
 
 # connections
-box 80um 1470um 690um 1540um
+box 690um 330um 1300um [expr {390 + $gap}]um
 paint metal4
-box 80um 1482um 690um 1540um
-paint {metal3 metal5}
-box 81um 1483um 689um 1500um
+box 691um 330um 1299um 360um
 paint {via3 via4}
 
-box 820um 1470um 1300um 1540um
+box 70um 330um 560um [expr {390 + $gap}]um
 paint {metal3 metal5}
-box 820um 1482um 1300um 1540um
-paint metal4
-box 821um 1483um 1299um 1500um
+box 71um 330um 559um 360um
 paint {via3 via4}
 
 drc style drc(full)
