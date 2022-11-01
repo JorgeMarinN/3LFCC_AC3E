@@ -3,10 +3,14 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Topmodule layout	#
-#   09-10-2022        	#
+#   01-11-2022        	#
 # #####################	#
 
+set midd 1460
+set yoff 1255
+
 drc style drc(full)
+tech unlock glass
 
 see no mvndiffusion
 see no mvpdiffusion
@@ -16,6 +20,7 @@ see no mvpsubstratepdiff
 see no mvnsubstratendiff
 see no mvpsubstratepcontact
 see no mvnsubstratencontact
+see no polysilicon
 see no locali
 see no viali
 see no metal1
@@ -23,102 +28,192 @@ see no m2contact
 see no m3contact
 see no via3
 see no via4
+see no mimcap
+see no mimcap2
+see no mimcapcontact
+see no mimcap2contact
 
-getcell user_analog_project_wrapper_empty.mag
+box 0um 0um 10um 10um
+paint comment
+#getcell user_analog_project_wrapper_empty.mag
+box [expr {$midd - 1388.4}]um [expr {$yoff}]um [expr {$midd - 1388.4}]um [expr {$yoff}]um
+getcell interleaved.mag
 
-box 0um 1889um 20um 1895um
-paint metal3
-box 0um 2105um 20um 2111um
-paint metal3
-box 0um 2321um 20um 2327um
-paint metal3
-box 0um 2537um 20um 2543um
-paint metal3
+box 142.8um 3411um 442.8um 3511um
+paint comment
+box 642.8um 3411um 942.8um 3511um
+paint comment
+box 1142.8um 3411um 1442.8um 3511um
+paint comment
+box 1642.8um 3411um 1942.8um 3511um
+paint comment
+box 2142.8um 3411um 2442.8um 3511um
+paint comment
 
-# Vdd
-box 340.97um 3450um 852.97um 3511.5um
-paint {metal3 metal4 metal5}
-box 850um 3450um 880um 3510um
-paint {metal3 metal4 metal5}
-box 879.47um 3450um 904.47um 3511.5um
-paint {metal3 metal4 metal5}
-box 350um 3460um 900um 3500um
-paint {via3 via4}
-box 840um 3388um 2580um 3448um
-paint {metal3 metal4 metal5}
-box 840um 3388um 900um 3460um
-paint {metal3 metal4 metal5}
-
-box 320um 3350um 380um 3510um
-paint {metal3 metal4 metal5}
-box 2520um 3350um 2580um 3440um
+# VH1
+box 340um 3500um 625.97um 3511.5um
 paint {metal3 metal4 metal5}
 
-# Vout
-
-
-box 1010um 3326um 1890um 3386um
+# Vout1
+box 730um 3500um 853um 3511.5um
+paint {metal3 metal4 metal5}
+box 850um 3500um 880um 3510um
+paint {metal3 metal4 metal5}
+box 879.47um 3500um 905um 3511.5um
 paint {metal3 metal4 metal5}
 
 # GND
-box 1086.47um 3450um 1111.47um 3511.5um
+box 1086.47um 3500um 1111.47um 3511.5um
 paint {metal3 metal4 metal5}
-box 1110um 3450um 1140um 3510um
+box 1110um 3500um 1140um 3510um
 paint {metal3 metal4 metal5}
-box 1137.97um 3450um 1570um 3511.5um
+box 1137.97um 3500um 1190um 3511.5um
 paint {metal3 metal4 metal5}
 
-box 0um 3401um 20um 3427um
-paint metal3
-box 81um 3500um 106um 3520um
-paint metal3
-box 341um 3500um 853um 3520um
+# Vout2
+box 1594.97um 3500um 1619.97um 3511.5um
 paint {metal3 metal4 metal5}
-box 853um 3500um 879um 3511um
+box 1610um 3500um 1650um 3510um
 paint {metal3 metal4 metal5}
-box 879um 3500um 904um 3520um
+box 1646.47um 3500um 1810um 3511.5um
 paint {metal3 metal4 metal5}
-box 1086um 3500um 1112um 3520um
-paint {metal3 metal4 metal5}
-box 1111um 3500um 1138um 3511um
-paint {metal3 metal4 metal5}
-box 1137um 3500um 1163um 3520um
-paint {metal3 metal4 metal5}
-box 1595um 3500um 1620um 3520um
-paint {metal3 metal4 metal5}
-box 1620um 3500um 1647um 3511um
-paint {metal3 metal4 metal5}
-box 1646um 3500um 2092um 3520um
-paint {metal3 metal4 metal5}
-box 2327um 3500um 2352um 3520um
-paint metal3
-box 2833um 3500um 2858um 3520um
-paint metal3
-box 2900um 3390um 2920um 3415um
-paint metal3
 
-box 2900um 2933um 2920um 2939um
-paint metal3 
-box 2900um 2486um 2920um 2492um
-paint metal3 
-box 2900um 2264um 2920um 2270um
-paint metal3 
-box 2900um 2041um 2920um 2047um
-paint metal3 
+# VH2
+box 2066.97um 3500um 2360um 3511.5um
+paint {metal3 metal4 metal5}
 
+
+# ## DI Routing ###
+
+#D1 -> io_in[20]
+box 9um [expr {$yoff + 1668}]um 80um [expr {$yoff + 1669}]um
+paint {metal1}
+box 9.05um [expr {$yoff + 1668.05}]um 9.95um [expr {$yoff + 1668.95}]um
+paint {m2contact}
+box 9um 1244um 10um [expr {$yoff + 1669}]um
+paint {metal2}
+box 9.05um 1244.05um 9.95um 1244.95um
+paint {m3contact}
+box 0um 1242um 10um 1247um
+paint {metal3}
+label D1 west metal3
+#D2 -> io_in[19]
+box 10.5um [expr {$yoff + 1666.5}]um 82um [expr {$yoff + 1667.5}]um
+paint {metal1}
+box 10.55um [expr {$yoff + 1666.55}]um 11.45um [expr {$yoff + 1667.45}]um
+paint {m2contact}
+box 10.5um 1459.5um 11.5um [expr {$yoff + 1667.5}]um
+paint {metal2}
+box 10.55um 1459.55um 11.45um 1460.45um
+paint {m3contact}
+box 0um 1457um 11.5um 1462um
+paint {metal3}
+label D2 west metal3
+#D3 -> io_in[18]
+box 12um [expr {$yoff + 1665}]um 84um [expr {$yoff + 1666}]um
+paint {metal1}
+box 12.05um [expr {$yoff + 1665.05}]um 12.95um [expr {$yoff + 1665.95}]um
+paint {m2contact}
+box 12um 1675um 13um [expr {$yoff + 1666}]um
+paint {metal2}
+box 12.05um 1675.05um 12.95um 1675.95um
+paint {m3contact}
+box 0um 1673um 13um 1678um
+paint metal3
+label D3 west metal3
+#D4 -> io_in[17]
+box 13.5um [expr {$yoff + 1663.5}]um 86um [expr {$yoff + 1664.5}]um
+paint {metal1}
+box 13.55um [expr {$yoff + 1663.55}]um 14.45um [expr {$yoff + 1664.45}]um
+paint {m2contact}
+box 13.5um 1891um 14.5um [expr {$yoff + 1664.5}]um
+paint {metal2}
+box 13.55um 1891.05um 14.45um 1891.95um
+paint {m3contact}
+box 0um 1889um 14.5um 1894um
+paint metal3
+label D4 west metal3
+#D5 -> io_in[7]
+box 2830um [expr {$yoff + 1668}]um 2911um [expr {$yoff + 1669}]um
+paint {metal1}
+box 2910.05um [expr {$yoff + 1668.05}]um 2910.95um [expr {$yoff + 1668.95}]um
+paint {m2contact}
+box 2910um 1364um 2911um [expr {$yoff + 1669}]um
+paint {metal2}
+box 2910.05um 1364.05um 2910.95um 1364.95um
+paint {m3contact}
+box 2910um 1362um 2920um 1367um
+paint {metal3}
+label D5 east metal3
+#D6 -> io_in[8]
+box 2830um [expr {$yoff + 1666.5}]um 2909.5um [expr {$yoff + 1667.5}]um
+paint {metal1}
+box 2908.55um [expr {$yoff + 1666.55}]um 2909.45um [expr {$yoff + 1667.45}]um
+paint {m2contact}
+box 2908.5um 1586um 2909.5um [expr {$yoff + 1667.5}]um
+paint {metal2}
+box 2908.55um 1586.05um 2909.45um 1586.95um
+paint {m3contact}
+box 2908.5um 1584um 2920um 1589um
+paint {metal3}
+label D6 east metal3
+#D7 -> io_in[9]
+box 2830um [expr {$yoff + 1665}]um 2908um [expr {$yoff + 1666}]um
+paint {metal1}
+box 2907.05um [expr {$yoff + 1665.05}]um 2907.95um [expr {$yoff + 1665.95}]um
+paint {m2contact}
+box 2907um 1812um 2908um [expr {$yoff + 1666}]um
+paint {metal2}
+box 2907.05um 1812.05um 2907.95um 1812.95um
+paint {m3contact}
+box 2907um 1810um 2920um 1815um
+paint metal3
+label D7 east metal3
+#D8 -> io_in[10]
+box 2830um [expr {$yoff + 1663.5}]um 2906.5um [expr {$yoff + 1664.5}]um
+paint {metal1}
+box 2905.55um [expr {$yoff + 1663.55}]um 2906.45um [expr {$yoff + 1664.45}]um
+paint {m2contact}
+box 2905.5um 2044um 2906.5um [expr {$yoff + 1664.5}]um
+paint {metal2}
+box 2905.55um 2044.05um 2906.45um 2044.95um
+paint {m3contact}
+box 2905.5um 2042um 2920um 2047um
+paint metal3
+label D8 east metal3
+
+# ## FC Routing ###
+
+# FC1_1
+box 60um 2910um 70um 3510um
+paint metal3
+box 60um 2900um 80um 2910um
+paint metal3
+# FC1_2
+box 45um 2460um 55um 3430um
+paint metal3
+box 45um 2450um 80um 2460um
+paint metal3
+# FC2_1
+box 2850um 2910um 2860um 3510um
+paint metal3
+box 2830um 2900um 2860um 2910um
+paint metal3
+# FC2_2
+box 2865um 2450um 2875um 3420um
+paint metal3
+box 2830um 2450um 2875um 2460um
+paint metal3
 
 # 
-box 0um 0um 10um 3520um
+box -10um -10um 0um 3530um
 paint comment
-box 0um 0um 2920um 10um
+box -10um -10um 2930um 0um
 paint comment
-box 0um 3510um 2920um 3520um
+box -10um 3520um 2920um 3530um
 paint comment
-box 2910um 0um 2920um 3520um
+box 2920um -10um 2930um 3530um
 paint comment
-box 70um 1250um 80um 3010um
-getcell core.mag
-box 1458um 1250um 1468um 3010um
-getcell core.mag
-sideways
+
+save topmodule.mag
 

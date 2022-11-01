@@ -26,19 +26,19 @@ lab=#net4}
 N 570 -220 650 -220 {
 lab=#net4}
 N 1060 -60 1120 -60 {
-lab=#net5}
+lab=VN}
 N 1060 -130 1120 -130 {
 lab=out}
 N 1060 -200 1120 -200 {
 lab=VP}
 N 320 -380 360 -380 {
-lab=VP}
+lab=VDD}
 N 320 -280 360 -280 {
-lab=VP}
+lab=VDD}
 N 320 -180 360 -180 {
-lab=VP}
+lab=VDD}
 N 320 -80 360 -80 {
-lab=VP}
+lab=VDD}
 N -100 -360 20 -360 {
 lab=D1}
 N -100 -260 20 -260 {
@@ -58,25 +58,31 @@ lab=VDD}
 N -40 -80 20 -80 {
 lab=VDD}
 N -0 -340 20 -340 {
-lab=#net5}
+lab=VN}
 N 0 -340 -0 20 {
-lab=#net5}
+lab=VN}
 N 0 -240 20 -240 {
-lab=#net5}
+lab=VN}
 N 0 -140 20 -140 {
-lab=#net5}
+lab=VN}
 N -0 -40 20 -40 {
-lab=#net5}
-N -0 20 1100 20 {
-lab=#net5}
+lab=VN}
+N 0 120 1100 120 {
+lab=VN}
 N 1100 -60 1100 20 {
-lab=#net5}
-N 1100 -380 1100 -200 {
-lab=VP}
-N 360 -380 1100 -380 {
-lab=VP}
+lab=VN}
 N 360 -380 360 -80 {
-lab=VP}
+lab=VDD}
+N 810 30 810 60 {
+lab=fc1}
+N 890 30 890 60 {
+lab=fc2}
+N 1100 20 1100 120 {
+lab=VN}
+N 0 20 0 120 {
+lab=VN}
+N 360 -380 380 -380 {
+lab=VDD}
 C {converter.sym} 610 60 0 0 {name=X1}
 C {level_shifter.sym} 170 -60 0 0 {name=x1}
 C {level_shifter.sym} 170 -160 0 0 {name=x2}
@@ -90,3 +96,6 @@ C {devices/ipin.sym} -100 -160 0 0 {name=p8 lab=D3}
 C {devices/ipin.sym} -100 -60 0 0 {name=p9 lab=D4}
 C {devices/iopin.sym} -30 -380 2 0 {name=p10 lab=VDD}
 C {devices/iopin.sym} 1110 -60 0 0 {name=p3 lab=VN}
+C {devices/iopin.sym} 370 -380 0 0 {name=p10 lab=VH}
+C {devices/iopin.sym} 810 50 1 0 {name=p3 lab=fc1}
+C {devices/iopin.sym} 890 50 1 0 {name=p3 lab=fc2}
