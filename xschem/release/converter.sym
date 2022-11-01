@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
@@ -20,19 +21,25 @@ L 4 40 -280 90 -280 {}
 L 4 390 -260 450 -260 {}
 L 4 390 -190 450 -190 {}
 L 4 390 -120 450 -120 {}
+L 4 200 -80 200 -30 {}
+L 4 280 -80 280 -30 {}
 B 5 37.5 -282.5 42.5 -277.5 {name=s1
 dir=inout}
 B 5 37.5 -222.5 42.5 -217.5 {name=s2
 dir=inout}
 B 5 37.5 -162.5 42.5 -157.5 {name=s3
 dir=inout}
-B 5 37.5 -102.5 42.5 -97.5 {name=s4
+B 5 277.5 -32.5 282.5 -27.5 {name=fc2
 dir=inout}
 B 5 447.5 -192.5 452.5 -187.5 {name=out
 dir=inout}
 B 5 447.5 -262.5 452.5 -257.5 {name=VP
 dir=inout}
 B 5 447.5 -122.5 452.5 -117.5 {name=VN
+dir=inout}
+B 5 37.5 -102.5 42.5 -97.5 {name=s4
+dir=inout}
+B 5 197.5 -32.5 202.5 -27.5 {name=fc1
 dir=inout}
 T {out
 } 350 -200 0 0 0.35 0.35 {}
@@ -43,3 +50,5 @@ T {s3} 100 -170 0 0 0.35 0.35 {}
 T {s4} 100 -110 0 0 0.35 0.35 {}
 T {VP} 350 -270 0 0 0.35 0.35 {}
 T {converter} 200 -230 0 0 0.35 0.35 {}
+T {fc1} 190 -110 0 0 0.35 0.35 {}
+T {fc2} 270 -110 0 0 0.35 0.35 {}
