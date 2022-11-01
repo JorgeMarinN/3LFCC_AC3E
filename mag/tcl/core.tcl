@@ -3,7 +3,7 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Core layout			#
-#   23-10-2022        	#
+#   01-11-2022        	#
 # #####################	#
 
 # version invertida
@@ -44,16 +44,10 @@ getcell converter.mag
 # VH
 box 20um [expr {$yoff}]um 1372um [expr {$yoff + 2}]um
 paint metal1
-box 1355um 375um 1360um [expr {$yoff}]um
-paint metal1
-box 1355um 375um 1360um 380um
-paint metal2
-box 1355.05um 375.05um 1359.95um 379.95um
-paint {m2contact m3contact}
-box 1355um 310um 1360um 380um
-paint metal3
+box 1370um [expr {$yoff}]um 1372um [expr {$yoff + 2}]um
+label VLS east metal1
 
-# VSS
+# GND
 box 10um [expr {$yoff + 2.5}]um 1372um [expr {$yoff + 4.5}]um
 paint metal1
 box 10um 375um 15um [expr {$yoff + 2.5}]um
@@ -185,6 +179,6 @@ paint metal1
 box [expr {$LS4 + 17.55}]um [expr {$yoff + 12.05}]um [expr {$LS4 + 18.45}]um [expr {$yoff + 12.95}]um
 paint m2contact
 box 1365um [expr {$yoff + 12}]um 1366um [expr {$yoff + 13}]um
-label D1 west metal1
+label D4 west metal1
 
 save core.mag

@@ -3,10 +3,8 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Interleaved layout	#
-#   31-10-2022        	#
+#   01-11-2022        	#
 # #####################	#
-
-# version invertida
 
 set midd 0
 set yoff 0
@@ -264,11 +262,15 @@ box [expr {$midd + 336}]um [expr {$yoff + 2194}]um [expr {$midd + 590}]um [expr 
 paint {metal1 metal2 metal3 metal4 metal5}
 box [expr {$midd + 336}]um [expr {$yoff + 2226}]um [expr {$midd + 590}]um [expr {$yoff + 2256}]um
 paint {metal1 metal2 metal3 metal4 metal5}
-label Vout1 east metal5
+label Vout2 east metal5
 box [expr {$midd + 336.15}]um [expr {$yoff + 2194.15}]um [expr {$midd + 589.85}]um [expr {$yoff + 2223.85}]um
 paint {m2contact m3contact via3 via4}
 box [expr {$midd + 336.15}]um [expr {$yoff + 2226.15}]um [expr {$midd + 589.85}]um [expr {$yoff + 2255.85}]um
 paint {m2contact m3contact via3 via4}
+
+# VDD
+box [expr {$midd - 30}]um [expr {$yoff + 1669.5}]um [expr {$midd + 30}]um [expr {$yoff + 1671.5}]um
+paint metal1
 
 
 # ## 2nd Guard Rings (Diodes) ##

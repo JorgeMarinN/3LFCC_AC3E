@@ -3,7 +3,7 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Topmodule layout	#
-#   31-10-2022        	#
+#   01-11-2022        	#
 # #####################	#
 
 set midd 1460
@@ -82,32 +82,8 @@ paint {metal3 metal4 metal5}
 box 2066.97um 3500um 2360um 3511.5um
 paint {metal3 metal4 metal5}
 
-# FC1_1
-box 60um 2910um 70um 3510um
-paint metal3
-box 60um 2900um 80um 2910um
-paint metal3
 
-# FC1_2
-box 45um 2460um 55um 3430um
-paint metal3
-box 45um 2450um 80um 2460um
-paint metal3
-
-# FC2_1
-box 2850um 2910um 2860um 3510um
-paint metal3
-box 2830um 2900um 2860um 2910um
-paint metal3
-
-# FC2_2
-box 2865um 2450um 2875um 3420um
-paint metal3
-box 2830um 2450um 2875um 2460um
-paint metal3
-
-
-# ## DI Routing ##
+# ## DI Routing ###
 
 #D1 -> io_in[20]
 box 9um [expr {$yoff + 1668}]um 80um [expr {$yoff + 1669}]um
@@ -120,6 +96,7 @@ box 9.05um 1244.05um 9.95um 1244.95um
 paint {m3contact}
 box 0um 1242um 10um 1247um
 paint {metal3}
+label D1 west metal3
 #D2 -> io_in[19]
 box 10.5um [expr {$yoff + 1666.5}]um 82um [expr {$yoff + 1667.5}]um
 paint {metal1}
@@ -131,6 +108,7 @@ box 10.55um 1459.55um 11.45um 1460.45um
 paint {m3contact}
 box 0um 1457um 11.5um 1462um
 paint {metal3}
+label D2 west metal3
 #D3 -> io_in[18]
 box 12um [expr {$yoff + 1665}]um 84um [expr {$yoff + 1666}]um
 paint {metal1}
@@ -142,6 +120,7 @@ box 12.05um 1675.05um 12.95um 1675.95um
 paint {m3contact}
 box 0um 1673um 13um 1678um
 paint metal3
+label D3 west metal3
 #D4 -> io_in[17]
 box 13.5um [expr {$yoff + 1663.5}]um 86um [expr {$yoff + 1664.5}]um
 paint {metal1}
@@ -153,6 +132,7 @@ box 13.55um 1891.05um 14.45um 1891.95um
 paint {m3contact}
 box 0um 1889um 14.5um 1894um
 paint metal3
+label D4 west metal3
 #D5 -> io_in[7]
 box 2830um [expr {$yoff + 1668}]um 2911um [expr {$yoff + 1669}]um
 paint {metal1}
@@ -164,6 +144,7 @@ box 2910.05um 1364.05um 2910.95um 1364.95um
 paint {m3contact}
 box 2910um 1362um 2920um 1367um
 paint {metal3}
+label D5 east metal3
 #D6 -> io_in[8]
 box 2830um [expr {$yoff + 1666.5}]um 2909.5um [expr {$yoff + 1667.5}]um
 paint {metal1}
@@ -175,6 +156,7 @@ box 2908.55um 1586.05um 2909.45um 1586.95um
 paint {m3contact}
 box 2908.5um 1584um 2920um 1589um
 paint {metal3}
+label D6 east metal3
 #D7 -> io_in[9]
 box 2830um [expr {$yoff + 1665}]um 2908um [expr {$yoff + 1666}]um
 paint {metal1}
@@ -186,6 +168,7 @@ box 2907.05um 1812.05um 2907.95um 1812.95um
 paint {m3contact}
 box 2907um 1810um 2920um 1815um
 paint metal3
+label D7 east metal3
 #D8 -> io_in[10]
 box 2830um [expr {$yoff + 1663.5}]um 2906.5um [expr {$yoff + 1664.5}]um
 paint {metal1}
@@ -196,6 +179,30 @@ paint {metal2}
 box 2905.55um 2044.05um 2906.45um 2044.95um
 paint {m3contact}
 box 2905.5um 2042um 2920um 2047um
+paint metal3
+label D8 east metal3
+
+# ## FC Routing ###
+
+# FC1_1
+box 60um 2910um 70um 3510um
+paint metal3
+box 60um 2900um 80um 2910um
+paint metal3
+# FC1_2
+box 45um 2460um 55um 3430um
+paint metal3
+box 45um 2450um 80um 2460um
+paint metal3
+# FC2_1
+box 2850um 2910um 2860um 3510um
+paint metal3
+box 2830um 2900um 2860um 2910um
+paint metal3
+# FC2_2
+box 2865um 2450um 2875um 3420um
+paint metal3
+box 2830um 2450um 2875um 2460um
 paint metal3
 
 # 
