@@ -1,4 +1,4 @@
-timestamp 1665425771
+timestamp 1666543010
 version 8.3
 tech sky130A
 style ngspice()
@@ -10,117 +10,117 @@ parameters sky130_fd_pr__nfet_g5v0d10v5 l=l w=w a1=as p1=ps a2=ad p2=pd
 parameters sky130_fd_pr__nfet_20v0 l=l w=w a1=as a2=ad p1=ps p2=pd
 parameters sky130_fd_pr__pfet_g5v0d10v5 l=l w=w a1=as p1=ps a2=ad p2=pd
 parameters sky130_fd_pr__pfet_20v0 l=l w=w a1=as a2=ad p1=ps p2=pd
-node "a_n786_2346#" 5845 2025.72 -786 2346 p 0 0 0 0 0 0 0 0 0 0 0 0 92800 3432 23200 916 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52300 1246 0 0 72216 4520 134272 6334 19332 1112 0 0 0 0 0 0 0 0
-node "cruzados_0/IN1" 6850 2125.25 -1803 3334 pdif 0 0 0 0 0 0 0 0 38800 1588 38800 1588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 268008 6088 0 0 49164 3504 96414 5302 102997 4198 0 0 0 0 0 0 0 0
-node "inv_400_0/OUT" 325 38876.9 368 206 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 2320000 81160 2320000 81160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2725440 161680 3891000 173240 329000 6780 0 0 0 0 0 0 0 0
-node "cruzados_0/IN2" 723 4436.28 -1883 3568 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2532114 59114 0 0 26928 2400 459060 9212 324264 10794 0 0 0 0 0 0 0 0
-node "inv_400_0/IN" 63479 19006.6 -1700 4320 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 580000 20580 580000 20580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16863788 350248 0 0 707404 43040 1345044 52852 517000 11464 0 0 0 0 0 0 0 0
-node "cruzados_0/OUT" 5964 4387.82 -1800 6720 p 0 0 0 0 0 0 0 0 0 0 0 0 92800 3432 23200 916 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2199016 46834 0 0 85680 5720 746588 17426 166536 4684 0 0 0 0 0 0 0 0
-node "inv_1_8_0/VDD" 6231 1410.3 -1931 3092 nw 0 0 0 0 330620 2304 0 0 17918 1122 38800 1588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40476 2594 83570 3004 0 0 0 0 0 0 0 0 0 0
-node "cruzados_0/VH" 20209 67493.3 -1924 6680 nw 0 0 0 0 20017084 22176 0 0 0 0 0 0 375012 14712 3294400 115804 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2307284 129748 4494432 147552 159584 5692 0 0 0 0 0 0 0 0
-substrate "inv_1_8_0/GND" 0 0 -1895 3785 ndif 0 0 0 0 0 0 0 0 38800 1588 18057 1004 3433600 120836 655464 16572 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2707876 139004 4567464 144640 0 0 0 0 0 0 0 0 0 0
-cap "inv_400_0/IN" "cruzados_0/IN2" 1982.35
-cap "cruzados_0/IN1" "cruzados_0/OUT" 476.893
-cap "cruzados_0/VH" "cruzados_0/OUT" 2844.87
-cap "cruzados_0/VH" "inv_1_8_0/VDD" 74.1156
-cap "cruzados_0/IN1" "inv_1_8_0/VDD" 983.977
-cap "cruzados_0/IN2" "inv_400_0/OUT" 120.141
-cap "cruzados_0/IN1" "cruzados_0/VH" 99.4552
-cap "a_n786_2346#" "cruzados_0/IN2" 477.896
-cap "cruzados_0/OUT" "cruzados_0/IN2" 1595.96
-cap "inv_400_0/IN" "inv_400_0/OUT" 7338.7
-cap "cruzados_0/IN2" "inv_1_8_0/VDD" 522.66
-cap "a_n786_2346#" "inv_400_0/IN" 90.9322
-cap "cruzados_0/IN1" "cruzados_0/IN2" 1277.18
-cap "cruzados_0/VH" "cruzados_0/IN2" 2099.85
-cap "cruzados_0/OUT" "inv_400_0/IN" 2399.37
-cap "a_n786_2346#" "inv_400_0/OUT" 56.8418
-cap "inv_400_0/IN" "inv_1_8_0/VDD" 7.03358
-cap "cruzados_0/OUT" "inv_400_0/OUT" 87.6057
-cap "cruzados_0/IN1" "inv_400_0/IN" 47.8075
-cap "cruzados_0/VH" "inv_400_0/IN" 15399.9
-cap "a_n786_2346#" "cruzados_0/OUT" 343.985
-cap "a_n786_2346#" "inv_1_8_0/VDD" 8.68413
-cap "cruzados_0/VH" "inv_400_0/OUT" 38764.2
-cap "cruzados_0/IN1" "inv_400_0/OUT" 8.01213
-cap "cruzados_0/IN1" "a_n786_2346#" 98.904
-cap "a_n786_2346#" "cruzados_0/VH" 450.579
-cap "cruzados_0/OUT" "inv_1_8_0/VDD" 430.184
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 3270 206 3271 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 3112 206 3113 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 2954 206 2955 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 2796 206 2797 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 2638 206 2639 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 2480 206 2481 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 2322 206 2323 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 2164 206 2165 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 2006 206 2007 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 1848 206 1849 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 1690 206 1691 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 1532 206 1533 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 1374 206 1375 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 1216 206 1217 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 1058 206 1059 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 900 206 901 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 742 206 743 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 584 206 585 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 426 206 427 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "inv_1_8_0/GND" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 268 206 269 207 l=100 w=4000 "inv_1_8_0/GND" "inv_400_0/IN" 200 0 "inv_1_8_0/GND" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -496 2372 -495 2373 l=100 w=400 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "cruzados_0/VH" 400 0 "a_n786_2346#" 400 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -786 2372 -785 2373 l=100 w=400 "cruzados_0/VH" "a_n786_2346#" 200 0 "cruzados_0/VH" 400 0 "cruzados_0/OUT" 400 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -168 3132 -167 3133 l=100 w=800 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_1_8_0/GND" 800 0 "a_n786_2346#" 800 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -326 3132 -325 3133 l=100 w=800 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "a_n786_2346#" 800 0 "inv_1_8_0/GND" 800 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -484 3132 -483 3133 l=100 w=800 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_1_8_0/GND" 800 0 "a_n786_2346#" 800 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -782 3132 -781 3133 l=100 w=800 "inv_1_8_0/GND" "cruzados_0/IN1" 200 0 "inv_1_8_0/GND" 800 0 "cruzados_0/OUT" 800 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -940 3132 -939 3133 l=100 w=800 "inv_1_8_0/GND" "cruzados_0/IN1" 200 0 "cruzados_0/OUT" 800 0 "inv_1_8_0/GND" 800 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -1098 3132 -1097 3133 l=100 w=800 "inv_1_8_0/GND" "cruzados_0/IN1" 200 0 "inv_1_8_0/GND" 800 0 "cruzados_0/OUT" 800 0
-device msubckt sky130_fd_pr__pfet_01v8 -1449 3334 -1448 3335 l=30 w=200 "inv_1_8_0/VDD" "cruzados_0/IN2" 60 0 "inv_1_8_0/VDD" 200 0 "cruzados_0/IN1" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 -1545 3334 -1544 3335 l=30 w=200 "inv_1_8_0/VDD" "cruzados_0/IN2" 60 0 "cruzados_0/IN1" 200 0 "inv_1_8_0/VDD" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 -1641 3334 -1640 3335 l=30 w=200 "inv_1_8_0/VDD" "cruzados_0/IN2" 60 0 "inv_1_8_0/VDD" 200 0 "cruzados_0/IN1" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 -1737 3334 -1736 3335 l=30 w=200 "inv_1_8_0/VDD" "cruzados_0/IN2" 60 0 "cruzados_0/IN1" 200 0 "inv_1_8_0/VDD" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 -1833 3334 -1832 3335 l=30 w=200 "inv_1_8_0/VDD" "cruzados_0/IN2" 60 0 "inv_1_8_0/VDD" 200 0 "cruzados_0/IN1" 200 0
-device msubckt sky130_fd_pr__nfet_01v8 -1449 3785 -1448 3786 l=30 w=200 "inv_1_8_0/GND" "cruzados_0/IN2" 60 0 "inv_1_8_0/GND" 200 0 "cruzados_0/IN1" 200 0
-device msubckt sky130_fd_pr__nfet_01v8 -1545 3785 -1544 3786 l=30 w=200 "inv_1_8_0/GND" "cruzados_0/IN2" 60 0 "cruzados_0/IN1" 200 0 "inv_1_8_0/GND" 200 0
-device msubckt sky130_fd_pr__nfet_01v8 -1641 3785 -1640 3786 l=30 w=200 "inv_1_8_0/GND" "cruzados_0/IN2" 60 0 "inv_1_8_0/GND" 200 0 "cruzados_0/IN1" 200 0
-device msubckt sky130_fd_pr__nfet_01v8 -1737 3785 -1736 3786 l=30 w=200 "inv_1_8_0/GND" "cruzados_0/IN2" 60 0 "cruzados_0/IN1" 200 0 "inv_1_8_0/GND" 200 0
-device msubckt sky130_fd_pr__nfet_01v8 -1833 3785 -1832 3786 l=30 w=200 "inv_1_8_0/GND" "cruzados_0/IN2" 60 0 "inv_1_8_0/GND" 200 0 "cruzados_0/IN1" 200 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 3270 4754 3271 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 3112 4754 3113 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 2954 4754 2955 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 2796 4754 2797 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 2638 4754 2639 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 2480 4754 2481 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 2322 4754 2323 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 2164 4754 2165 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 2006 4754 2007 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 1848 4754 1849 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 1690 4754 1691 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 1532 4754 1533 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 1374 4754 1375 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 1216 4754 1217 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 1058 4754 1059 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 900 4754 901 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 742 4754 743 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 584 4754 585 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 426 4754 427 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "inv_400_0/OUT" 4000 0 "cruzados_0/VH" 4000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 268 4754 269 4755 l=100 w=4000 "cruzados_0/VH" "inv_400_0/IN" 200 0 "cruzados_0/VH" 4000 0 "inv_400_0/OUT" 4000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -378 4320 -377 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_400_0/IN" 2000 0 "inv_1_8_0/GND" 2000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -536 4320 -535 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_1_8_0/GND" 2000 0 "inv_400_0/IN" 2000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -694 4320 -693 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_400_0/IN" 2000 0 "inv_1_8_0/GND" 2000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -852 4320 -851 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_1_8_0/GND" 2000 0 "inv_400_0/IN" 2000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -1010 4320 -1009 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_400_0/IN" 2000 0 "inv_1_8_0/GND" 2000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -1168 4320 -1167 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_1_8_0/GND" 2000 0 "inv_400_0/IN" 2000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -1326 4320 -1325 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_400_0/IN" 2000 0 "inv_1_8_0/GND" 2000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -1484 4320 -1483 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_1_8_0/GND" 2000 0 "inv_400_0/IN" 2000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -1642 4320 -1641 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_400_0/IN" 2000 0 "inv_1_8_0/GND" 2000 0
-device msubckt sky130_fd_pr__nfet_g5v0d10v5 -1800 4320 -1799 4321 l=100 w=2000 "inv_1_8_0/GND" "cruzados_0/IN2" 200 0 "inv_1_8_0/GND" 2000 0 "inv_400_0/IN" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -378 6746 -377 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "inv_400_0/IN" 2000 0 "cruzados_0/VH" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -536 6746 -535 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "cruzados_0/VH" 2000 0 "inv_400_0/IN" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -694 6746 -693 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "inv_400_0/IN" 2000 0 "cruzados_0/VH" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -852 6746 -851 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "cruzados_0/VH" 2000 0 "inv_400_0/IN" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -1010 6746 -1009 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "inv_400_0/IN" 2000 0 "cruzados_0/VH" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -1168 6746 -1167 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "cruzados_0/VH" 2000 0 "inv_400_0/IN" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -1326 6746 -1325 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "inv_400_0/IN" 2000 0 "cruzados_0/VH" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -1484 6746 -1483 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "cruzados_0/VH" 2000 0 "inv_400_0/IN" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -1642 6746 -1641 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "inv_400_0/IN" 2000 0 "cruzados_0/VH" 2000 0
-device msubckt sky130_fd_pr__pfet_g5v0d10v5 -1800 6746 -1799 6747 l=100 w=2000 "cruzados_0/VH" "cruzados_0/OUT" 200 0 "cruzados_0/VH" 2000 0 "inv_400_0/IN" 2000 0
+node "a_1660_2346#" 5845 2025.72 1660 2346 p 0 0 0 0 0 0 0 0 0 0 0 0 92800 3432 23200 916 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52300 1246 0 0 72216 4520 134272 6334 19332 1112 0 0 0 0 0 0 0 0
+node "level_shifter_0/cruzados_0/IN1" 6850 2125.25 643 3334 pdif 0 0 0 0 0 0 0 0 38800 1588 38800 1588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 268008 6088 0 0 49164 3504 96414 5302 102997 4198 0 0 0 0 0 0 0 0
+node "level_shifter_0/inv_400_0/OUT" 324 39949.1 2814 206 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 2320000 81160 2320000 81160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2725440 161680 4777092 172164 1042400 7408 1024000 7040 1024000 7040 1024000 7040 0 0
+node "level_shifter_0/cruzados_0/IN2" 723 4436.28 563 3568 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2532114 59114 0 0 26928 2400 459060 9212 324264 10794 0 0 0 0 0 0 0 0
+node "level_shifter_0/inv_400_0/IN" 63479 18850.1 746 4320 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 580000 20580 580000 20580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16863788 350248 0 0 707404 43040 1345044 52852 517000 11464 0 0 0 0 0 0 0 0
+node "level_shifter_0/cruzados_0/OUT" 5964 4387.82 646 6720 p 0 0 0 0 0 0 0 0 0 0 0 0 92800 3432 23200 916 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2199016 46834 0 0 85680 5720 746588 17426 166536 4684 0 0 0 0 0 0 0 0
+node "level_shifter_0/inv_1_8_0/VDD" 6231 1410.3 515 3092 nw 0 0 0 0 330620 2304 0 0 17918 1122 38800 1588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40476 2594 83570 3004 0 0 0 0 0 0 0 0 0 0
+node "level_shifter_0/cruzados_0/VH" 20209 67453.6 522 6680 nw 0 0 0 0 20017084 22176 0 0 0 0 0 0 375012 14712 3294400 115804 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2307284 129748 4494432 147552 159584 5692 0 0 0 0 0 0 0 0
+substrate "level_shifter_0/inv_1_8_0/GND" 0 0 551 3785 ndif 0 0 0 0 0 0 0 0 38800 1588 18057 1004 3433600 120836 655464 16572 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2707876 139004 4567464 144640 0 0 0 0 0 0 0 0 0 0
+cap "level_shifter_0/cruzados_0/OUT" "a_1660_2346#" 343.985
+cap "level_shifter_0/cruzados_0/IN2" "level_shifter_0/cruzados_0/VH" 2099.85
+cap "level_shifter_0/inv_400_0/OUT" "level_shifter_0/cruzados_0/IN1" 8.01213
+cap "level_shifter_0/inv_1_8_0/VDD" "a_1660_2346#" 8.68413
+cap "level_shifter_0/cruzados_0/IN2" "level_shifter_0/inv_400_0/OUT" 186.183
+cap "level_shifter_0/inv_400_0/IN" "level_shifter_0/cruzados_0/VH" 15399.5
+cap "level_shifter_0/cruzados_0/OUT" "level_shifter_0/cruzados_0/IN1" 476.893
+cap "level_shifter_0/inv_1_8_0/VDD" "level_shifter_0/cruzados_0/IN1" 983.977
+cap "level_shifter_0/cruzados_0/OUT" "level_shifter_0/cruzados_0/IN2" 1595.96
+cap "level_shifter_0/inv_400_0/IN" "level_shifter_0/inv_400_0/OUT" 12799.4
+cap "level_shifter_0/cruzados_0/IN2" "level_shifter_0/inv_1_8_0/VDD" 522.66
+cap "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/OUT" 39366.2
+cap "a_1660_2346#" "level_shifter_0/cruzados_0/IN1" 98.904
+cap "level_shifter_0/cruzados_0/IN2" "a_1660_2346#" 477.896
+cap "level_shifter_0/cruzados_0/OUT" "level_shifter_0/inv_400_0/IN" 2399.37
+cap "level_shifter_0/inv_400_0/IN" "level_shifter_0/inv_1_8_0/VDD" 7.03358
+cap "level_shifter_0/cruzados_0/OUT" "level_shifter_0/cruzados_0/VH" 2844.87
+cap "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_1_8_0/VDD" 74.1156
+cap "level_shifter_0/cruzados_0/OUT" "level_shifter_0/inv_400_0/OUT" 87.6057
+cap "level_shifter_0/inv_400_0/IN" "a_1660_2346#" 90.9322
+cap "level_shifter_0/cruzados_0/IN2" "level_shifter_0/cruzados_0/IN1" 1277.18
+cap "level_shifter_0/cruzados_0/VH" "a_1660_2346#" 450.579
+cap "level_shifter_0/inv_400_0/OUT" "a_1660_2346#" 56.8418
+cap "level_shifter_0/cruzados_0/OUT" "level_shifter_0/inv_1_8_0/VDD" 430.184
+cap "level_shifter_0/inv_400_0/IN" "level_shifter_0/cruzados_0/IN1" 47.8075
+cap "level_shifter_0/inv_400_0/IN" "level_shifter_0/cruzados_0/IN2" 1982.35
+cap "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/IN1" 99.4552
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5716 206 5717 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5558 206 5559 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5400 206 5401 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5242 206 5243 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5084 206 5085 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4926 206 4927 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4768 206 4769 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4610 206 4611 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4452 206 4453 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4294 206 4295 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4136 206 4137 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3978 206 3979 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3820 206 3821 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3662 206 3663 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3504 206 3505 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3346 206 3347 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3188 206 3189 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3030 206 3031 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 2872 206 2873 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/inv_1_8_0/GND" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 2714 206 2715 207 l=100 w=4000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_1_8_0/GND" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1950 2372 1951 2373 l=100 w=400 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/cruzados_0/VH" 400 0 "a_1660_2346#" 400 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1660 2372 1661 2373 l=100 w=400 "level_shifter_0/cruzados_0/VH" "a_1660_2346#" 200 0 "level_shifter_0/cruzados_0/VH" 400 0 "level_shifter_0/cruzados_0/OUT" 400 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 2278 3132 2279 3133 l=100 w=800 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_1_8_0/GND" 800 0 "a_1660_2346#" 800 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 2120 3132 2121 3133 l=100 w=800 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "a_1660_2346#" 800 0 "level_shifter_0/inv_1_8_0/GND" 800 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1962 3132 1963 3133 l=100 w=800 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_1_8_0/GND" 800 0 "a_1660_2346#" 800 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1664 3132 1665 3133 l=100 w=800 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN1" 200 0 "level_shifter_0/inv_1_8_0/GND" 800 0 "level_shifter_0/cruzados_0/OUT" 800 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1506 3132 1507 3133 l=100 w=800 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN1" 200 0 "level_shifter_0/cruzados_0/OUT" 800 0 "level_shifter_0/inv_1_8_0/GND" 800 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1348 3132 1349 3133 l=100 w=800 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN1" 200 0 "level_shifter_0/inv_1_8_0/GND" 800 0 "level_shifter_0/cruzados_0/OUT" 800 0
+device msubckt sky130_fd_pr__pfet_01v8 997 3334 998 3335 l=30 w=200 "level_shifter_0/inv_1_8_0/VDD" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/inv_1_8_0/VDD" 200 0 "level_shifter_0/cruzados_0/IN1" 200 0
+device msubckt sky130_fd_pr__pfet_01v8 901 3334 902 3335 l=30 w=200 "level_shifter_0/inv_1_8_0/VDD" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/cruzados_0/IN1" 200 0 "level_shifter_0/inv_1_8_0/VDD" 200 0
+device msubckt sky130_fd_pr__pfet_01v8 805 3334 806 3335 l=30 w=200 "level_shifter_0/inv_1_8_0/VDD" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/inv_1_8_0/VDD" 200 0 "level_shifter_0/cruzados_0/IN1" 200 0
+device msubckt sky130_fd_pr__pfet_01v8 709 3334 710 3335 l=30 w=200 "level_shifter_0/inv_1_8_0/VDD" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/cruzados_0/IN1" 200 0 "level_shifter_0/inv_1_8_0/VDD" 200 0
+device msubckt sky130_fd_pr__pfet_01v8 613 3334 614 3335 l=30 w=200 "level_shifter_0/inv_1_8_0/VDD" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/inv_1_8_0/VDD" 200 0 "level_shifter_0/cruzados_0/IN1" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 997 3785 998 3786 l=30 w=200 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/inv_1_8_0/GND" 200 0 "level_shifter_0/cruzados_0/IN1" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 901 3785 902 3786 l=30 w=200 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/cruzados_0/IN1" 200 0 "level_shifter_0/inv_1_8_0/GND" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 805 3785 806 3786 l=30 w=200 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/inv_1_8_0/GND" 200 0 "level_shifter_0/cruzados_0/IN1" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 709 3785 710 3786 l=30 w=200 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/cruzados_0/IN1" 200 0 "level_shifter_0/inv_1_8_0/GND" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 613 3785 614 3786 l=30 w=200 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 60 0 "level_shifter_0/inv_1_8_0/GND" 200 0 "level_shifter_0/cruzados_0/IN1" 200 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 5716 4754 5717 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 5558 4754 5559 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 5400 4754 5401 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 5242 4754 5243 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 5084 4754 5085 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 4926 4754 4927 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 4768 4754 4769 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 4610 4754 4611 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 4452 4754 4453 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 4294 4754 4295 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 4136 4754 4137 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 3978 4754 3979 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 3820 4754 3821 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 3662 4754 3663 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 3504 4754 3505 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 3346 4754 3347 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 3188 4754 3189 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 3030 4754 3031 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 2872 4754 2873 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/inv_400_0/OUT" 4000 0 "level_shifter_0/cruzados_0/VH" 4000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 2714 4754 2715 4755 l=100 w=4000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/inv_400_0/IN" 200 0 "level_shifter_0/cruzados_0/VH" 4000 0 "level_shifter_0/inv_400_0/OUT" 4000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 2068 4320 2069 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/inv_1_8_0/GND" 2000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1910 4320 1911 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_1_8_0/GND" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1752 4320 1753 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/inv_1_8_0/GND" 2000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1594 4320 1595 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_1_8_0/GND" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1436 4320 1437 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/inv_1_8_0/GND" 2000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1278 4320 1279 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_1_8_0/GND" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1120 4320 1121 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/inv_1_8_0/GND" 2000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 962 4320 963 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_1_8_0/GND" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 804 4320 805 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/inv_1_8_0/GND" 2000 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 646 4320 647 4321 l=100 w=2000 "level_shifter_0/inv_1_8_0/GND" "level_shifter_0/cruzados_0/IN2" 200 0 "level_shifter_0/inv_1_8_0/GND" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 2068 6746 2069 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/cruzados_0/VH" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1910 6746 1911 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/cruzados_0/VH" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1752 6746 1753 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/cruzados_0/VH" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1594 6746 1595 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/cruzados_0/VH" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1436 6746 1437 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/cruzados_0/VH" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1278 6746 1279 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/cruzados_0/VH" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1120 6746 1121 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/cruzados_0/VH" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 962 6746 963 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/cruzados_0/VH" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 804 6746 805 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/inv_400_0/IN" 2000 0 "level_shifter_0/cruzados_0/VH" 2000 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 646 6746 647 6747 l=100 w=2000 "level_shifter_0/cruzados_0/VH" "level_shifter_0/cruzados_0/OUT" 200 0 "level_shifter_0/cruzados_0/VH" 2000 0 "level_shifter_0/inv_400_0/IN" 2000 0

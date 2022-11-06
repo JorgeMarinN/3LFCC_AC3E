@@ -3,7 +3,7 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Interleaved layout	#
-#   01-11-2022        	#
+#   03-11-2022        	#
 # #####################	#
 
 set midd 0
@@ -35,10 +35,10 @@ see no mimcap2
 see no mimcap2contact
 
 # core
-box [expr {$core1}]um [expr {$yoff}]um [expr {$core1}]um [expr {$yoff}]um
+box [expr {$core1}]um [expr {$yoff - 10}]um [expr {$core1}]um [expr {$yoff}]um
 getcell core.mag
 rotate 180
-box [expr {$core2}]um [expr {$yoff}]um [expr {$core2}]um [expr {$yoff}]um
+box [expr {$core2}]um [expr {$yoff - 10}]um [expr {$core2}]um [expr {$yoff}]um
 getcell core.mag
 rotate 180
 sideways
@@ -54,11 +54,11 @@ sideways
 
 #box 140um 3410um 440um 3510um
 #paint comment
-#box 640um 3410um 940um 3510um
+#box -817.2um 2156um -517.2um 2256um
 #paint comment
-#box 1140um 3410um 1440um 3510um
+#box -317.2um 2156um -17.2um 2256um
 #paint comment
-#box 1640um 3410um 1940um 3510um
+#box 182.8um 2156um 482.8um 2256um
 #paint comment
 #box 2140um 3410um 2440um 3510um
 #paint comment
@@ -103,10 +103,10 @@ paint {metal1 metal2 metal3 metal4 metal5}
 box [expr {$midd - 276}]um [expr {$yoff + 2226}]um [expr {$midd - 20}]um [expr {$yoff + 2256}]um
 paint {metal1 metal2 metal3 metal4 metal5}
 label GND east metal5
-box [expr {$midd - 275.85}]um [expr {$yoff + 2194.15}]um [expr {$midd - 20.15}]um [expr {$yoff + 2223.85}]um
-paint {m2contact m3contact via3 via4}
-box [expr {$midd - 275.85}]um [expr {$yoff + 2226.15}]um [expr {$midd - 20.15}]um [expr {$yoff + 2255.85}]um
-paint {m2contact m3contact via3 via4}
+#box [expr {$midd - 275.85}]um [expr {$yoff + 2194.15}]um [expr {$midd - 20.15}]um [expr {$yoff + 2223.85}]um
+#paint {m2contact m3contact via3 via4}
+#box [expr {$midd - 275.85}]um [expr {$yoff + 2226.15}]um [expr {$midd - 20.15}]um [expr {$yoff + 2255.85}]um
+#paint {m2contact m3contact via3 via4}
 box [expr {$midd - 276}]um [expr {$yoff + 2194}]um [expr {$midd - 246}]um [expr {$yoff + 2256}]um
 paint {metal3 metal4 metal5}
 box [expr {$midd - 50}]um [expr {$yoff + 2194}]um [expr {$midd - 20}]um [expr {$yoff + 2256}]um
@@ -142,7 +142,9 @@ box [expr {$midd - 1100}]um [expr {$yoff + 2060}]um [expr {$midd - 1070}]um [exp
 paint {metal3 metal4 metal5}
 box [expr {$midd - 1050}]um [expr {$yoff + 2092}]um [expr {$midd - 1020}]um [expr {$yoff + 2256}]um
 paint {metal3 metal4 metal5}
-box [expr {$midd - 1320}]um [expr {$yoff + 2226}]um [expr {$midd - 1020}]um [expr {$yoff + 2256}]um
+box [expr {$midd - 860}]um [expr {$yoff + 2092}]um [expr {$midd - 830}]um [expr {$yoff + 2256}]um
+paint {metal3 metal4 metal5}
+box [expr {$midd - 1320}]um [expr {$yoff + 2226}]um [expr {$midd - 830}]um [expr {$yoff + 2256}]um
 paint {metal3 metal4 metal5}
 label VH east metal5
 box [expr {$midd + 600}]um [expr {$yoff + 2092}]um [expr {$midd + 630}]um [expr {$yoff + 2256}]um
@@ -208,9 +210,9 @@ paint {metal1 metal2 metal3 metal4 metal5}
 box [expr {$midd - 726}]um [expr {$yoff + 2226}]um [expr {$midd - 472}]um [expr {$yoff + 2256}]um
 paint {metal1 metal2 metal3 metal4 metal5}
 label Vout1 east metal5
-box [expr {$midd - 725.85}]um [expr {$yoff + 2194.15}]um [expr {$midd - 472.15}]um [expr {$yoff + 2223.85}]um
+box [expr {$midd - 501.85}]um [expr {$yoff + 2194.15}]um [expr {$midd - 472.15}]um [expr {$yoff + 2223.85}]um
 paint {m2contact m3contact via3 via4}
-box [expr {$midd - 725.85}]um [expr {$yoff + 2226.15}]um [expr {$midd - 472.15}]um [expr {$yoff + 2255.85}]um
+box [expr {$midd - 501.85}]um [expr {$yoff + 2226.15}]um [expr {$midd - 472.15}]um [expr {$yoff + 2255.85}]um
 paint {m2contact m3contact via3 via4}
 box [expr {$midd - 726}]um [expr {$yoff + 2194}]um [expr {$midd - 696}]um [expr {$yoff + 2256}]um
 paint {metal3 metal4 metal5}
@@ -263,18 +265,17 @@ paint {metal1 metal2 metal3 metal4 metal5}
 box [expr {$midd + 336}]um [expr {$yoff + 2226}]um [expr {$midd + 590}]um [expr {$yoff + 2256}]um
 paint {metal1 metal2 metal3 metal4 metal5}
 label Vout2 east metal5
-box [expr {$midd + 336.15}]um [expr {$yoff + 2194.15}]um [expr {$midd + 589.85}]um [expr {$yoff + 2223.85}]um
+box [expr {$midd + 496.15}]um [expr {$yoff + 2194.15}]um [expr {$midd + 589.85}]um [expr {$yoff + 2223.85}]um
 paint {m2contact m3contact via3 via4}
-box [expr {$midd + 336.15}]um [expr {$yoff + 2226.15}]um [expr {$midd + 589.85}]um [expr {$yoff + 2255.85}]um
+box [expr {$midd + 496.15}]um [expr {$yoff + 2226.15}]um [expr {$midd + 589.85}]um [expr {$yoff + 2255.85}]um
 paint {m2contact m3contact via3 via4}
 
 # VDD
-box [expr {$midd - 30}]um [expr {$yoff + 1669.5}]um [expr {$midd + 30}]um [expr {$yoff + 1671.5}]um
+box [expr {$midd - 30}]um [expr {$yoff + 1670.5}]um [expr {$midd + 30}]um [expr {$yoff + 1673}]um
 paint metal1
 
 
 # ## 2nd Guard Rings (Diodes) ##
-
 # NMOS' to VH
 box [expr {$midd + 305}]um [expr {$yoff + 1970}]um [expr {$midd + 325}]um [expr {$yoff + 2154}]um
 paint {metal2}
@@ -289,41 +290,20 @@ paint {m3contact via3 via4}
 box [expr {$midd - 324.85}]um [expr {$yoff + 2124.15}]um [expr {$midd - 305.05}]um [expr {$yoff + 2153.85}]um
 paint {m3contact via3 via4}
 # PMOS' to GND
-box [expr {$midd + 700}]um [expr {$yoff + 1653}]um [expr {$midd + 1290}]um [expr {$yoff + 1730}]um
+box [expr {$midd + 700}]um [expr {$yoff + 1670}]um [expr {$midd + 1290}]um [expr {$yoff + 1720}]um
 paint metal2
-box [expr {$midd - 1290}]um [expr {$yoff + 1653}]um [expr {$midd - 700}]um [expr {$yoff + 1730}]um
+box [expr {$midd - 1290}]um [expr {$yoff + 1670}]um [expr {$midd - 700}]um [expr {$yoff + 1720}]um
 paint metal2
-box [expr {$midd - 1380}]um [expr {$yoff + 1653}]um [expr {$midd + 1380}]um [expr {$yoff + 1663}]um
-paint {metal1 metal2}
-box [expr {$midd - 20}]um [expr {$yoff + 1710}]um [expr {$midd + 20}]um [expr {$yoff + 1810}]um
+box [expr {$midd - 20}]um [expr {$yoff + 1680}]um [expr {$midd + 20}]um [expr {$yoff + 1810}]um
 paint metal3
-box [expr {$midd - 20}]um [expr {$yoff + 1660}]um [expr {$midd + 20}]um [expr {$yoff + 1720}]um
+box [expr {$midd - 20}]um [expr {$yoff + 1661}]um [expr {$midd + 20}]um [expr {$yoff + 1705}]um
 paint metal2
-box [expr {$midd - 19.95}]um [expr {$yoff + 1710.05}]um [expr {$midd + 19.95}]um [expr {$yoff + 1719.95}]um
+box [expr {$midd - 20}]um [expr {$yoff + 1661}]um [expr {$midd + 20}]um [expr {$yoff + 1664}]um
+paint metal1
+box [expr {$midd - 17.95}]um [expr {$yoff + 1661.05}]um [expr {$midd + 17.95}]um [expr {$yoff + 1663.95}]um
+paint m2contact
+box [expr {$midd - 19.95}]um [expr {$yoff + 1680.05}]um [expr {$midd + 19.95}]um [expr {$yoff + 1704.95}]um
 paint {m3contact}
-# 
-box [expr {$midd + 90}]um [expr {$yoff + 1660}]um [expr {$midd + 550}]um [expr {$yoff + 1700}]um
-paint metal2
-box [expr {$midd - 550}]um [expr {$yoff + 1660}]um [expr {$midd - 90}]um [expr {$yoff + 1700}]um
-paint metal2
-box [expr {$midd - 1379.95}]um [expr {$yoff + 1653.05}]um [expr {$midd + 1379.95}]um [expr {$yoff + 1662.95}]um
-paint m2contact
-box [expr {$midd + 700}]um [expr {$yoff + 1680}]um [expr {$midd + 1290}]um [expr {$yoff + 1690}]um
-paint metal1
-box [expr {$midd - 1290}]um [expr {$yoff + 1680}]um [expr {$midd - 700}]um [expr {$yoff + 1690}]um
-paint metal1
-box [expr {$midd + 700.05}]um [expr {$yoff + 1680.05}]um [expr {$midd + 1289.95}]um [expr {$yoff + 1689.95}]um
-paint m2contact
-box [expr {$midd - 1289.95}]um [expr {$yoff + 1680.05}]um [expr {$midd - 700.05}]um [expr {$yoff + 1689.95}]um
-paint m2contact
-box [expr {$midd + 90}]um [expr {$yoff + 1680}]um [expr {$midd + 550}]um [expr {$yoff + 1690}]um
-paint metal1
-box [expr {$midd - 550}]um [expr {$yoff + 1680}]um [expr {$midd - 90}]um [expr {$yoff + 1690}]um
-paint metal1
-box [expr {$midd + 90.05}]um [expr {$yoff + 1680.05}]um [expr {$midd + 549.95}]um [expr {$yoff + 1689.95}]um
-paint m2contact
-box [expr {$midd - 549.95}]um [expr {$yoff + 1680.15}]um [expr {$midd - 90.15}]um [expr {$yoff + 1689.95}]um
-paint m2contact
 
 save interleaved.mag
 
