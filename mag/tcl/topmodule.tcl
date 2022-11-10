@@ -3,7 +3,7 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Topmodule layout	#
-#   05-11-2022        	#
+#   09-11-2022        	#
 # #####################	#
 
 set midd 1460
@@ -90,25 +90,15 @@ paint metal3
 
 # ## Power Pads ###
 box 142.8um 3411um 442.8um 3511um
-paint {metal1 metal2 metal3 metal4 metal5}
-box 143um 3411.2um 442.6um 3510.8um
-paint {m2contact m3contact via3 via4 glass}
+getcell power_pad.mag
 box 642.8um 3411um 942.8um 3511um
-paint {metal1 metal2 metal3 metal4 metal5}
-box 643um 3411.2um 942.6um 3510.8um
-paint {m2contact m3contact via3 via4 glass}
+getcell power_pad.mag
 box 1142.8um 3411um 1442.8um 3511um
-paint {metal1 metal2 metal3 metal4 metal5}
-box 1143um 3411.2um 1442.6um 3510.8um
-paint {m2contact m3contact via3 via4 glass}
+getcell power_pad.mag
 box 1642.8um 3411um 1942.8um 3511um
-paint {metal1 metal2 metal3 metal4 metal5}
-box 1643um 3411.2um 1942.6um 3510.8um
-paint {m2contact m3contact via3 via4 glass}
+getcell power_pad.mag
 box 2142.8um 3411um 2442.8um 3511um
-paint {metal1 metal2 metal3 metal4 metal5}
-box 2143um 3411.2um 2442.6um 3510.8um
-paint {m2contact m3contact via3 via4 glass}
+getcell power_pad.mag
 
 # ## FC Pads ###
 box [expr {$midd - 1385.4}]um [expr {$yoff + 1437.3}]um [expr {$midd - 1285.8}]um [expr {$yoff + 1657}]um
