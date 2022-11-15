@@ -1,0 +1,16 @@
+magic
+tech sky130A
+timestamp 1668451787
+use calibration_pad  calibration_pad_0
+timestamp 1668450285
+transform 0 1 0 -1 0 10000
+box 0 0 10000 22500
+use calibration_pad  calibration_pad_1
+timestamp 1668450285
+transform 0 -1 48530 1 0 0
+box 0 0 10000 22500
+use sky130_fd_pr__res_generic_po_KL3G6K  sky130_fd_pr__res_generic_po_KL3G6K_0
+timestamp 1668450766
+transform 0 1 24265 -1 0 5000
+box -1583 -1853 1583 1853
+<< end >>
