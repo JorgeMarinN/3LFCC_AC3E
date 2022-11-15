@@ -3,7 +3,7 @@
 #   AC3E - UTFSM      		#
 #   Project: 3LFCC    		#
 #   Flying capacitor layout	#
-#   05-11-2022        		#
+#   11-11-2022        		#
 # #########################	#
 
 drc style drc(full)
@@ -53,9 +53,7 @@ delete
 
 # pad 1
 box [expr {95.7-100-1.6}]um [expr {1435.50 + 1.6}]um [expr {95.7-1.6}]um [expr {1658.8-1.6}]um 
-paint {m1,m2,m3,m4,m5}
-box [expr {95.7-100-1.4}]um [expr {1435.50 + 1.8}]um [expr {95.7-1.8}]um [expr {1658.8-1.8}]um 
-paint {m2contact, m3contact, via3, via4}
+getcell fc_pad.mag
 box [expr {95.7-1.6}]um [expr {1435.50+10}]um [expr {95.7}]um [expr {1435.5+20}]um 
 paint {m3,m5}
 box [expr {95.7-1.6}]um [expr {1435.50+10+31.9}]um [expr {95.7}]um [expr {1435.5+20+31.9}]um 
@@ -85,22 +83,20 @@ paint {m3,m5}
 
 # pad 2
 box [expr {95.7-100-1.6}]um [expr {988.9 + 1.6}]um [expr {95.7-1.6}]um [expr {1212.200-1.6}]um 
-paint {m1,m2,m3,m4,m5}
-box [expr {95.7 - 100 - 1.4}]um [expr {988.9 + 1.8}]um [expr {95.7-1.8}]um [expr {1212.200-1.8}]um 
-paint {m2contact, m3contact, via3, via4}
-box [expr {95.7-1.6}]um [expr {988.9+10}]um [expr {95.7}]um [expr {988.9+20}]um 
+getcell fc_pad.mag
+box 90um [expr {988.9+10}]um [expr {95.7}]um [expr {988.9+20}]um 
 paint {m4}
-box [expr {95.7-1.6}]um [expr {988.9+10+31.9}]um [expr {95.7}]um [expr {988.9+20+31.9}]um 
+box 90um [expr {988.9+10+31.9}]um [expr {95.7}]um [expr {988.9+20+31.9}]um 
 paint {m4}
-box [expr {95.7-1.6}]um [expr {988.9+10+31.9*2}]um [expr {95.7}]um [expr {988.9+20+31.9*2}]um 
+box 90um [expr {988.9+10+31.9*2}]um [expr {95.7}]um [expr {988.9+20+31.9*2}]um 
 paint {m4}
-box [expr {95.7-1.6}]um [expr {988.9+10+31.9*3}]um [expr {95.7}]um [expr {988.9+20+31.9*3}]um 
+box 90um [expr {988.9+10+31.9*3}]um [expr {95.7}]um [expr {988.9+20+31.9*3}]um 
 paint {m4}
-box [expr {95.7-1.6}]um [expr {988.9+10+31.9*4}]um [expr {95.7}]um [expr {988.9+20+31.9*4}]um 
+box 90um [expr {988.9+10+31.9*4}]um [expr {95.7}]um [expr {988.9+20+31.9*4}]um 
 paint {m4}
-box [expr {95.7-1.6}]um [expr {988.9+10+31.9*5}]um [expr {95.7}]um [expr {988.9+20+31.9*5}]um 
+box 90um [expr {988.9+10+31.9*5}]um [expr {95.7}]um [expr {988.9+20+31.9*5}]um 
 paint {m4}
-box [expr {95.7-1.6}]um [expr {988.9+10+(31.9*6)}]um [expr {95.7}]um [expr {988.9+20+31.9*6}]um 
+box 90um [expr {988.9+10+(31.9*6)}]um [expr {95.7}]um [expr {988.9+20+31.9*6}]um 
 paint {m4}
 box [expr {95.7-1.6-30.3+10}]um [expr {988.9}]um [expr {95.7-1.6-30.3+20}]um [expr {988.9+1.6}]um 
 paint {m4}
@@ -116,19 +112,21 @@ box [expr {95.7-1.6-30.3+10-31.9*2}]um [expr {1212.200-1.6}]um [expr {95.7-1.6-3
 paint {m4}
 
 # extra connection 1
-box 10um 1640um 689.9um 1670um
+box 10um 1657um 95um 1670um
+paint {metal1 metal2}
+box 94.1um 1640um 689.9um 1670um
 paint {metal1 metal2}
 box 10.2um 1660.2um 689.7um 1669.8um
 paint {m2contact m3contact}
-box 90um 1580um 250um 1610um
+box 94.1um 1580um 250um 1610um
 paint {metal1 metal2}
 box 220um 1580um 250um 1660um
 paint {metal1 metal2}
-box 90um 1520um 390um 1550um
+box 94.1um 1520um 390um 1550um
 paint {metal1 metal2}
 box 360um 1520um 390um 1660um
 paint {metal1 metal2}
-box 90um 1460um 540um 1490um
+box 94.1um 1460um 540um 1490um
 paint {metal1 metal2}
 box 510um 1460um 540um 1660um
 paint {metal1 metal2}
@@ -140,17 +138,19 @@ box 712um 1660.2um 1359.6um 1669.8um
 paint {m2contact m3contact}
 box 710um 1640um 1360um 1670um
 paint {metal1 metal2}
-box 10um 1190um 740um 1220um
+box 10um 1210um 95um 1220um
 paint {metal1 metal2}
-box 90um 1150um 850um 1180um
+box 94.1um 1190um 740um 1220um
 paint {metal1 metal2}
-box 90um 1110um 960um 1140um
+box 94.1um 1150um 850um 1180um
 paint {metal1 metal2}
-box 90um 1070um 1070um 1100um
+box 94.1um 1110um 960um 1140um
 paint {metal1 metal2}
-box 90um 1030um 1180um 1060um
+box 94.1um 1070um 1070um 1100um
 paint {metal1 metal2}
-box 90um 990um 1290um 1020um
+box 94.1um 1030um 1180um 1060um
+paint {metal1 metal2}
+box 94.1um 990um 1290um 1020um
 paint {metal1 metal2}
 box 710um 1190um 740um 1670um
 paint {metal1 metal2}

@@ -1,0 +1,131 @@
+magic
+tech sky130A
+timestamp 1668387625
+<< metal3 >>
+rect 0 9500 30000 10000
+rect 0 0 30000 500
+<< metal4 >>
+rect 0 0 30000 10000
+<< metal5 >>
+rect 0 0 30000 10000
+use stack30um_3_5  stack30um_3_5_0
+timestamp 1668366436
+transform 1 0 0 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_1
+timestamp 1668366436
+transform 1 0 0 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_2
+timestamp 1668366436
+transform 1 0 0 0 1 6500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_3
+timestamp 1668366436
+transform 1 0 3000 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_4
+timestamp 1668366436
+transform 1 0 3000 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_5
+timestamp 1668366436
+transform 1 0 3000 0 1 6500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_6
+timestamp 1668366436
+transform 1 0 6000 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_7
+timestamp 1668366436
+transform 1 0 6000 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_8
+timestamp 1668366436
+transform 1 0 6000 0 1 6500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_9
+timestamp 1668366436
+transform 1 0 9000 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_10
+timestamp 1668366436
+transform 1 0 9000 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_11
+timestamp 1668366436
+transform 1 0 9000 0 1 6500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_12
+timestamp 1668366436
+transform 1 0 12000 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_13
+timestamp 1668366436
+transform 1 0 12000 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_14
+timestamp 1668366436
+transform 1 0 12000 0 1 6500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_15
+timestamp 1668366436
+transform 1 0 15000 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_16
+timestamp 1668366436
+transform 1 0 15000 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_17
+timestamp 1668366436
+transform 1 0 15000 0 1 6500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_18
+timestamp 1668366436
+transform 1 0 18000 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_19
+timestamp 1668366436
+transform 1 0 18000 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_20
+timestamp 1668366436
+transform 1 0 18000 0 1 6500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_21
+timestamp 1668366436
+transform 1 0 21000 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_22
+timestamp 1668366436
+transform 1 0 21000 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_23
+timestamp 1668366436
+transform 1 0 21000 0 1 6500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_24
+timestamp 1668366436
+transform 1 0 24000 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_25
+timestamp 1668366436
+transform 1 0 24000 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_26
+timestamp 1668366436
+transform 1 0 24000 0 1 6500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_27
+timestamp 1668366436
+transform 1 0 27000 0 1 500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_28
+timestamp 1668366436
+transform 1 0 27000 0 1 3500
+box 0 0 3000 3000
+use stack30um_3_5  stack30um_3_5_29
+timestamp 1668366436
+transform 1 0 27000 0 1 6500
+box 0 0 3000 3000
+<< end >>
