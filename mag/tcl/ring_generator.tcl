@@ -4,10 +4,10 @@ tech unlock *
 #VARIABLES
 set {layer} obsactive
 set ring_width 100
-set x1 43.870
-set y1 43.850
-set x2 262.110
-set y2 262.090
+set x1 4.150
+set y1 313.940
+set x2 302.150
+set y2 611.940
 
 
 #PAINTING LEFT SIDE
