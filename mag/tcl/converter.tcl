@@ -3,12 +3,10 @@
 #   AC3E - UTFSM      	#
 #   Project: 3LFCC    	#
 #   Converter layout	#
-#   21-10-2022        	#
+#   03-11-2022        	#
 # #####################	#
 
-# version invertida
-
-set gap 20
+set gap 30
 
 see no mvndiffusion
 see no mvpdiffusion

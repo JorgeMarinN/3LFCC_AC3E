@@ -1,11 +1,57 @@
-Equate elements:  no current cell.
-Equate elements:  no current cell.
-Equate elements:  no current cell.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_2 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_2      |Circuit 2: sky130_fd_pr__cap_mim_m3_2      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_2 and sky130_fd_pr__cap_mim_m3_2 are equivalent.
 Flattening unmatched subcell nmos_waffle_36x36 in circuit power_stage (1)(2 instances)
 Flattening unmatched subcell pmos_waffle_48x48 in circuit power_stage (1)(2 instances)
 
+Cell power_stage (1) disconnected node: VSUBS
 Class power_stage (1):  Merged 14060 parallel devices.
+Cell power_stage (1) disconnected node: VSUBS
 Subcircuit summary:
 Circuit 1: power_stage                     |Circuit 2: power_stage                     
 -------------------------------------------|-------------------------------------------
@@ -31,11 +77,36 @@ out                                        |out
 VP                                         |VP                                         
 (no matching pin)                          |nmos_waffle_36x36_1/dw_n5900_n5900#        
 (no matching pin)                          |nmos_waffle_36x36_0/dw_n5900_n5900#        
+(no matching pin)                          |VSUBS                                      
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes power_stage and power_stage are equivalent.
-Equate elements:  no current cell.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 Flattening unmatched subcell flying_cap in circuit converter (1)(1 instance)
 Flattening unmatched subcell unit_cap in circuit converter (1)(2194 instances)
 
@@ -66,6 +137,7 @@ VN                                         |power_stage_0/VN **Mismatch**
 out                                        |power_stage_0/out **Mismatch**             
 (no matching pin)                          |power_stage_0/nmos_waffle_36x36_1/dw_n5900 
 (no matching pin)                          |power_stage_0/nmos_waffle_36x36_0/dw_n5900 
+(no matching pin)                          |VSUBS                                      
 ---------------------------------------------------------------------------------------
 Cell pin lists for converter and converter altered to match.
 
@@ -124,6 +196,9 @@ D4                                         |D4
 ---------------------------------------------------------------------------------------
 Cell pin lists for core and core altered to match.
 
+Cell interleaved (1) disconnected node: m3_n55200_438800#
+Cell interleaved (1) disconnected node: m4_n55200_438800#
+Cell interleaved (1) disconnected node: GND
 Subcircuit summary:
 Circuit 1: interleaved                     |Circuit 2: interleaved                     
 -------------------------------------------|-------------------------------------------
@@ -157,10 +232,12 @@ fc1_1                                      |core_0/converter_0/power_stage_0/fc1
 fc2_1                                      |core_1/converter_0/power_stage_0/fc1 **Mis 
 VH                                         |VH                                         
 VDD                                        |core_1/VDD **Mismatch**                    
-GND                                        |GND                                        
+GND                                        |VSUBS **Mismatch**                         
+(no matching pin)                          |m3_n55200_438800#                          
+(no matching pin)                          |m4_n55200_438800#                          
+(no matching pin)                          |GND                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists for interleaved and interleaved altered to match.
-Flattening unmatched subcell topmodule in circuit user_analog_project_wrapper (1)(1 instance)
 
 Cell user_analog_project_wrapper (0) disconnected node: vssa1
 Cell user_analog_project_wrapper (0) disconnected node: vssa2
@@ -666,9 +743,6 @@ Cell user_analog_project_wrapper (0) disconnected node: gpio_noesd[3]
 Cell user_analog_project_wrapper (0) disconnected node: gpio_noesd[2]
 Cell user_analog_project_wrapper (0) disconnected node: gpio_noesd[1]
 Cell user_analog_project_wrapper (0) disconnected node: gpio_noesd[0]
-Cell user_analog_project_wrapper (0) disconnected node: io_analog[8]
-Cell user_analog_project_wrapper (0) disconnected node: io_analog[7]
-Cell user_analog_project_wrapper (0) disconnected node: io_analog[2]
 Cell user_analog_project_wrapper (0) disconnected node: io_clamp_high[2]
 Cell user_analog_project_wrapper (0) disconnected node: io_clamp_high[1]
 Cell user_analog_project_wrapper (0) disconnected node: io_clamp_high[0]
@@ -1450,35 +1524,41 @@ Cell user_analog_project_wrapper (1) disconnected node: wbs_we_i
 Subcircuit summary:
 Circuit 1: user_analog_project_wrapper     |Circuit 2: user_analog_project_wrapper     
 -------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_generic_m3 (3)           |sky130_fd_pr__res_generic_m3 (3)           
 interleaved (1)                            |interleaved (1)                            
-Number of devices: 1                       |Number of devices: 1                       
-Number of nets: 19                         |Number of nets: 19                         
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 22                         |Number of nets: 22                         
 ---------------------------------------------------------------------------------------
-Circuits match uniquely.
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
 Netlists match uniquely.
+Circuits match correctly.
 
 Subcircuit pins:
 Circuit 1: user_analog_project_wrapper     |Circuit 2: user_analog_project_wrapper     
 -------------------------------------------|-------------------------------------------
-vdda2                                      |vdda2                                      
+io_analog[8]                               |io_analog[8]                               
+io_analog[1]                               |io_analog[1]                               
+io_analog[4]                               |io_analog[4]                               
+io_analog[6]                               |io_analog[6]                               
 io_in[10]                                  |io_in[10]                                  
+vdda1                                      |vdda1                                      
 io_in[9]                                   |io_in[9]                                   
 io_in[8]                                   |io_in[8]                                   
 io_in[7]                                   |io_in[7]                                   
+vccd1                                      |vccd1                                      
+io_analog[0]                               |io_analog[0]                               
+io_analog[5]                               |io_analog[5]                               
 io_in[17]                                  |io_in[17]                                  
 io_in[18]                                  |io_in[18]                                  
 io_in[19]                                  |io_in[19]                                  
-vdda1                                      |vdda1                                      
-io_analog[9]                               |io_analog[9]                               
-io_in[20]                                  |io_in[20]                                  
-io_analog[6]                               |io_analog[6]                               
-io_analog[1]                               |io_analog[1]                               
-vccd1                                      |vccd1                                      
-io_analog[3]                               |io_analog[8] **Mismatch**                  
-io_analog[4]                               |io_analog[4]                               
 io_analog[10]                              |io_analog[10]                              
-io_analog[0]                               |io_analog[0]                               
-io_analog[5]                               |io_analog[5]                               
+io_in[20]                                  |io_in[20]                                  
+vdda2                                      |vdda2                                      
+io_analog[9]                               |io_analog[9]                               
+io_analog[7]                               |io_analog[7]                               
+io_analog[3]                               |io_analog[3]                               
+io_analog[2]                               |io_analog[2]                               
 vssa1                                      |vssa1                                      
 vssa2                                      |vssa2                                      
 vccd2                                      |vccd2                                      
@@ -2120,21 +2200,7 @@ la_oenb[3]                                 |la_oenb[3]
 la_oenb[2]                                 |la_oenb[2]                                 
 la_oenb[1]                                 |la_oenb[1]                                 
 la_oenb[0]                                 |la_oenb[0]                                 
-io_analog[8]                               |(no matching pin)                          
-io_analog[7]                               |(no matching pin)                          
-io_analog[2]                               |(no matching pin)                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for user_analog_project_wrapper and user_analog_project_wrapper altered to match.
-
-Subcircuit summary:
-Circuit 1: user_analog_project_wrapper_sch |Circuit 2: user_analog_project_wrapper_lay 
--------------------------------------------|-------------------------------------------
-user_analog_project_wrapper (1)            |user_analog_project_wrapper (1)            
-Number of devices: 1                       |Number of devices: 1                       
-Number of nets: 663                        |Number of nets: 663                        
----------------------------------------------------------------------------------------
-Circuits match uniquely.
-Netlists match uniquely.
-Cells have no pins;  pin matching not needed.
-Device classes user_analog_project_wrapper_schem.spice and user_analog_project_wrapper_layout.spice are equivalent.
+Cell pin lists are equivalent.
+Device classes user_analog_project_wrapper and user_analog_project_wrapper are equivalent.
 Circuits match uniquely.

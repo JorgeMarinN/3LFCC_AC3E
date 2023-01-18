@@ -1,0 +1,300 @@
+magic
+tech sky130A
+timestamp 1668366526
+<< metal1 >>
+rect 0 2800 400 3000
+rect 600 2800 1200 3000
+rect 1400 2800 2000 3000
+rect 2200 2800 2800 3000
+rect 0 2600 600 2800
+rect 800 2600 1400 2800
+rect 1600 2600 2200 2800
+rect 2400 2600 3000 2800
+rect 200 2400 800 2600
+rect 1000 2400 1600 2600
+rect 1800 2400 2400 2600
+rect 2600 2400 3000 2600
+rect 0 2200 200 2400
+rect 400 2200 1000 2400
+rect 1200 2200 1800 2400
+rect 2000 2200 2600 2400
+rect 2800 2200 3000 2400
+rect 0 2000 400 2200
+rect 600 2000 1200 2200
+rect 1400 2000 2000 2200
+rect 2200 2000 2800 2200
+rect 0 1800 600 2000
+rect 800 1800 1400 2000
+rect 1600 1800 2200 2000
+rect 2400 1800 3000 2000
+rect 200 1600 800 1800
+rect 1000 1600 1600 1800
+rect 1800 1600 2400 1800
+rect 2600 1600 3000 1800
+rect 0 1400 200 1600
+rect 400 1400 1000 1600
+rect 1200 1400 1800 1600
+rect 2000 1400 2600 1600
+rect 2800 1400 3000 1600
+rect 0 1200 400 1400
+rect 600 1200 1200 1400
+rect 1400 1200 2000 1400
+rect 2200 1200 2800 1400
+rect 0 1000 600 1200
+rect 800 1000 1400 1200
+rect 1600 1000 2200 1200
+rect 2400 1000 3000 1200
+rect 200 800 800 1000
+rect 1000 800 1600 1000
+rect 1800 800 2400 1000
+rect 2600 800 3000 1000
+rect 0 600 200 800
+rect 400 600 1000 800
+rect 1200 600 1800 800
+rect 2000 600 2600 800
+rect 2800 600 3000 800
+rect 0 400 400 600
+rect 600 400 1200 600
+rect 1400 400 2000 600
+rect 2200 400 2800 600
+rect 0 200 600 400
+rect 800 200 1400 400
+rect 1600 200 2200 400
+rect 2400 200 3000 400
+rect 200 0 800 200
+rect 1000 0 1600 200
+rect 1800 0 2400 200
+rect 2600 0 3000 200
+<< metal2 >>
+rect 0 0 3000 3000
+<< metal3 >>
+rect 0 0 3000 3000
+<< metal4 >>
+rect 0 0 3000 3000
+<< metal5 >>
+rect 0 0 3000 3000
+use stack_2um_1_5  stack_2um_1_5_0
+timestamp 1668349473
+transform 1 0 0 0 1 0
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_1
+timestamp 1668349473
+transform 1 0 0 0 1 800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_2
+timestamp 1668349473
+transform 1 0 0 0 1 1600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_3
+timestamp 1668349473
+transform 1 0 0 0 1 2400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_4
+timestamp 1668349473
+transform 1 0 200 0 1 600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_5
+timestamp 1668349473
+transform 1 0 200 0 1 1400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_6
+timestamp 1668349473
+transform 1 0 200 0 1 2200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_7
+timestamp 1668349473
+transform 1 0 400 0 1 400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_8
+timestamp 1668349473
+transform 1 0 400 0 1 1200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_9
+timestamp 1668349473
+transform 1 0 400 0 1 2000
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_10
+timestamp 1668349473
+transform 1 0 400 0 1 2800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_11
+timestamp 1668349473
+transform 1 0 600 0 1 200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_12
+timestamp 1668349473
+transform 1 0 600 0 1 1000
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_13
+timestamp 1668349473
+transform 1 0 600 0 1 1800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_14
+timestamp 1668349473
+transform 1 0 600 0 1 2600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_15
+timestamp 1668349473
+transform 1 0 800 0 1 0
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_16
+timestamp 1668349473
+transform 1 0 800 0 1 800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_17
+timestamp 1668349473
+transform 1 0 800 0 1 1600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_18
+timestamp 1668349473
+transform 1 0 800 0 1 2400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_19
+timestamp 1668349473
+transform 1 0 1000 0 1 600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_20
+timestamp 1668349473
+transform 1 0 1000 0 1 1400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_21
+timestamp 1668349473
+transform 1 0 1000 0 1 2200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_22
+timestamp 1668349473
+transform 1 0 1200 0 1 400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_23
+timestamp 1668349473
+transform 1 0 1200 0 1 1200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_24
+timestamp 1668349473
+transform 1 0 1200 0 1 2000
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_25
+timestamp 1668349473
+transform 1 0 1200 0 1 2800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_26
+timestamp 1668349473
+transform 1 0 1400 0 1 200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_27
+timestamp 1668349473
+transform 1 0 1400 0 1 1000
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_28
+timestamp 1668349473
+transform 1 0 1400 0 1 1800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_29
+timestamp 1668349473
+transform 1 0 1400 0 1 2600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_30
+timestamp 1668349473
+transform 1 0 1600 0 1 0
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_31
+timestamp 1668349473
+transform 1 0 1600 0 1 800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_32
+timestamp 1668349473
+transform 1 0 1600 0 1 1600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_33
+timestamp 1668349473
+transform 1 0 1600 0 1 2400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_34
+timestamp 1668349473
+transform 1 0 1800 0 1 600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_35
+timestamp 1668349473
+transform 1 0 1800 0 1 1400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_36
+timestamp 1668349473
+transform 1 0 1800 0 1 2200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_37
+timestamp 1668349473
+transform 1 0 2000 0 1 400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_38
+timestamp 1668349473
+transform 1 0 2000 0 1 1200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_39
+timestamp 1668349473
+transform 1 0 2000 0 1 2000
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_40
+timestamp 1668349473
+transform 1 0 2000 0 1 2800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_41
+timestamp 1668349473
+transform 1 0 2200 0 1 200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_42
+timestamp 1668349473
+transform 1 0 2200 0 1 1000
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_43
+timestamp 1668349473
+transform 1 0 2200 0 1 1800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_44
+timestamp 1668349473
+transform 1 0 2200 0 1 2600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_45
+timestamp 1668349473
+transform 1 0 2400 0 1 0
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_46
+timestamp 1668349473
+transform 1 0 2400 0 1 800
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_47
+timestamp 1668349473
+transform 1 0 2400 0 1 1600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_48
+timestamp 1668349473
+transform 1 0 2400 0 1 2400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_49
+timestamp 1668349473
+transform 1 0 2600 0 1 600
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_50
+timestamp 1668349473
+transform 1 0 2600 0 1 1400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_51
+timestamp 1668349473
+transform 1 0 2600 0 1 2200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_52
+timestamp 1668349473
+transform 1 0 2800 0 1 400
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_53
+timestamp 1668349473
+transform 1 0 2800 0 1 1200
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_54
+timestamp 1668349473
+transform 1 0 2800 0 1 2000
+box 0 0 200 200
+use stack_2um_1_5  stack_2um_1_5_55
+timestamp 1668349473
+transform 1 0 2800 0 1 2800
+box 0 0 200 200
+<< end >>

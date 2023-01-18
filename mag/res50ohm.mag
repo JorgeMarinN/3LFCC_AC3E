@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1668450546
+use sky130_fd_pr__res_generic_po_KL3G6K  sky130_fd_pr__res_generic_po_KL3G6K_0
+timestamp 0
+transform 0 1 3653 -1 0 3113
+box -3166 -3706 3166 3706
+<< end >>
